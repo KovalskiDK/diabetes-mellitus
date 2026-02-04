@@ -279,11 +279,10 @@ fun ExpandableDietCard(
 ) {
     var expanded by remember { mutableStateOf(false) }
     
-    Card(
-        modifier = modifier
-            .fillMaxWidth()
-            .clickable { expanded = !expanded },
-        colors = CardDefaults.cardColors(
+    OutlinedCard(
+        onClick = { expanded = !expanded },
+        modifier = modifier.fillMaxWidth(),
+        colors = CardDefaults.outlinedCardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
     ) {
