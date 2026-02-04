@@ -7,15 +7,15 @@ import androidx.compose.ui.graphics.vector.ImageVector
 object CategoryIcons {
     fun getIconForCategory(category: String): ImageVector {
         return when (category.lowercase()) {
-            "фрукты" -> Icons.Filled.Apple
-            "овощи" -> Icons.Filled.Grass
-            "хлеб", "выпечка" -> Icons.Filled.Bakery
+            "фрукты" -> Icons.Filled.LocalFlorist
+            "овощи" -> Icons.Filled.Eco
+            "хлеб", "выпечка" -> Icons.Filled.Restaurant
             "крупы", "паста" -> Icons.Filled.RiceBowl
             "молочные продукты", "молочка" -> Icons.Filled.Icecream
             "мясо и рыба", "мясо", "рыба" -> Icons.Filled.Restaurant
             "сладости", "десерты" -> Icons.Filled.Cake
             "напитки" -> Icons.Filled.LocalCafe
-            "бобовые" -> Icons.Filled.Egg
+            "бобовые" -> Icons.Filled.Grass
             "орехи", "семена" -> Icons.Filled.Nature
             "снеки", "закуски" -> Icons.Filled.Fastfood
             "готовые блюда" -> Icons.Filled.DinnerDining
