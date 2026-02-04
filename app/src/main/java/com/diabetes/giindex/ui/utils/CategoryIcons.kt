@@ -9,21 +9,18 @@ object CategoryIcons {
         return when (category.lowercase()) {
             "фрукты" -> Icons.Filled.LocalFlorist
             "овощи" -> Icons.Filled.Eco
-            "хлеб", "выпечка" -> Icons.Filled.Restaurant
-            "крупы", "паста" -> Icons.Filled.RiceBowl
-            "молочные продукты", "молочка" -> Icons.Filled.Icecream
-            "мясо и рыба", "мясо", "рыба" -> Icons.Filled.Restaurant
-            "сладости", "десерты" -> Icons.Filled.Cake
+            "хлеб" -> Icons.Filled.Bakery
+            "крупы" -> Icons.Filled.RiceBowl
+            "молочные продукты" -> Icons.Filled.Icecream
+            "мясо и рыба" -> Icons.Filled.Restaurant
+            "сладости" -> Icons.Filled.Cake
             "напитки" -> Icons.Filled.LocalCafe
-            "бобовые" -> Icons.Filled.Grass
-            "орехи", "семена" -> Icons.Filled.Nature
-            "снеки", "закуски" -> Icons.Filled.Fastfood
+            "бобовые" -> Icons.Filled.Spa
+            "орехи" -> Icons.Filled.Nature
+            "снеки" -> Icons.Filled.Fastfood
             "готовые блюда" -> Icons.Filled.DinnerDining
             "завтраки" -> Icons.Filled.BreakfastDining
-            "соусы" -> Icons.Filled.WaterDrop
-            "яйца" -> Icons.Filled.Egg
-            "соевые продукты" -> Icons.Filled.Spa
-            else -> Icons.Filled.FoodBank
+            else -> Icons.Filled.Category  // Дефолтная иконка "Другое"
         }
     }
 }
