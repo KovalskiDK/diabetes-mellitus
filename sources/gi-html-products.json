@@ -1,1018 +1,1018 @@
 [
   {
-    "name": "Горох (лущеный)",
+    "name": "Split peas",
     "nameRu": "Горох (лущеный)",
     "category": "Бобовые",
     "gi": 28,
-    "gl": null,
-    "carbs": null
+    "gl": 14.8,
+    "carbs": 53.0
   },
   {
-    "name": "Горох зелёный (свежий)",
+    "name": "Green peas, fresh",
     "nameRu": "Горох зелёный (свежий)",
     "category": "Бобовые",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 4.5,
+    "carbs": 13.0
   },
   {
-    "name": "Соя (зерно)",
+    "name": "Soybeans",
     "nameRu": "Соя (зерно)",
     "category": "Бобовые",
     "gi": 21,
-    "gl": null,
-    "carbs": null
+    "gl": 6.3,
+    "carbs": 30.0
   },
   {
-    "name": "Суп фасолевый",
+    "name": "Bean soup",
     "nameRu": "Суп фасолевый",
     "category": "Бобовые",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 4.8,
+    "carbs": 12.0
   },
   {
-    "name": "Фасоль (стручковая)",
+    "name": "Green beans",
     "nameRu": "Фасоль (стручковая)",
     "category": "Бобовые",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 2.1,
+    "carbs": 7.0
   },
   {
-    "name": "Чечевица (зерно)",
+    "name": "Lentils",
     "nameRu": "Чечевица (зерно)",
     "category": "Бобовые",
     "gi": 27,
-    "gl": null,
-    "carbs": null
+    "gl": 5.4,
+    "carbs": 20.0
   },
   {
-    "name": "Пельмени отварные",
+    "name": "Dumplings, boiled",
     "nameRu": "Пельмени отварные",
     "category": "Готовые блюда",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 8.8,
+    "carbs": 16.0
   },
   {
-    "name": "Голубика",
+    "name": "Blueberries",
     "nameRu": "Голубика",
     "category": "Крупы",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 4.4,
+    "carbs": 8.0
   },
   {
-    "name": "Каша гречневая (из крупы ядрица)",
+    "name": "Buckwheat porridge",
     "nameRu": "Каша гречневая (из крупы ядрица)",
     "category": "Крупы",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 8.0,
+    "carbs": 20.0
   },
   {
-    "name": "Каша из овсяных хлопьев Геркулес",
+    "name": "Oatmeal, Hercules",
     "nameRu": "Каша из овсяных хлопьев Геркулес",
     "category": "Крупы",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 7.7,
+    "carbs": 14.0
   },
   {
-    "name": "Каша манная",
+    "name": "Semolina porridge",
     "nameRu": "Каша манная",
     "category": "Крупы",
     "gi": 75,
-    "gl": null,
-    "carbs": null
+    "gl": 12.0,
+    "carbs": 16.0
   },
   {
-    "name": "Каша овсяная",
+    "name": "Oatmeal",
     "nameRu": "Каша овсяная",
     "category": "Крупы",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 4.8,
+    "carbs": 12.0
   },
   {
-    "name": "Каша перловая",
+    "name": "Pearl barley porridge",
     "nameRu": "Каша перловая",
     "category": "Крупы",
     "gi": 50,
-    "gl": null,
-    "carbs": null
+    "gl": 11.5,
+    "carbs": 23.0
   },
   {
-    "name": "Каша пшеничная",
+    "name": "Wheat porridge",
     "nameRu": "Каша пшеничная",
     "category": "Крупы",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 11.2,
+    "carbs": 16.0
   },
   {
-    "name": "Каша пшенная",
+    "name": "Millet porridge",
     "nameRu": "Каша пшенная",
     "category": "Крупы",
     "gi": 50,
-    "gl": null,
-    "carbs": null
+    "gl": 8.5,
+    "carbs": 17.0
   },
   {
-    "name": "Каша рисовая",
+    "name": "Rice porridge",
     "nameRu": "Каша рисовая",
     "category": "Крупы",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 11.9,
+    "carbs": 17.0
   },
   {
-    "name": "Крупа гречневая (ядрица)",
+    "name": "Buckwheat groats",
     "nameRu": "Крупа гречневая (ядрица)",
     "category": "Крупы",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 34.1,
+    "carbs": 62.0
   },
   {
-    "name": "Крупа овсяная",
+    "name": "Oat groats",
     "nameRu": "Крупа овсяная",
     "category": "Крупы",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 33.0,
+    "carbs": 55.0
   },
   {
-    "name": "Кукуруза консервированная",
+    "name": "Corn, canned",
     "nameRu": "Кукуруза консервированная",
     "category": "Крупы",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 9.0,
+    "carbs": 15.0
   },
   {
-    "name": "Кукуруза сладкая",
+    "name": "Sweet corn",
     "nameRu": "Кукуруза сладкая",
     "category": "Крупы",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 13.3,
+    "carbs": 19.0
   },
   {
-    "name": "Макароны отварные",
+    "name": "Pasta, boiled",
     "nameRu": "Макароны отварные",
     "category": "Крупы",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 15.0,
+    "carbs": 25.0
   },
   {
-    "name": "Мороженое пломбир",
+    "name": "Ice cream",
     "nameRu": "Мороженое пломбир",
     "category": "Крупы",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 13.2,
+    "carbs": 22.0
   },
   {
-    "name": "Мука пшеничная в/с",
+    "name": "Wheat flour",
     "nameRu": "Мука пшеничная в/с",
     "category": "Крупы",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 49.0,
+    "carbs": 70.0
   },
   {
-    "name": "Пряники заварные",
+    "name": "Gingerbread",
     "nameRu": "Пряники заварные",
     "category": "Крупы",
     "gi": 65,
-    "gl": null,
-    "carbs": null
+    "gl": 45.5,
+    "carbs": 70.0
   },
   {
-    "name": "Рис (зерно)",
+    "name": "Rice",
     "nameRu": "Рис (зерно)",
     "category": "Крупы",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 46.8,
+    "carbs": 78.0
   },
   {
-    "name": "Запеканка из обезжиренного творога",
+    "name": "Cottage cheese",
     "nameRu": "Запеканка из обезжиренного творога",
     "category": "Молочные продукты",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 2.1,
+    "carbs": 3.0
   },
   {
-    "name": "Йогурт 3,2% сладкий",
+    "name": "Yogurt 3.2%, sweet",
     "nameRu": "Йогурт 3,2% сладкий",
     "category": "Молочные продукты",
     "gi": 52,
-    "gl": null,
-    "carbs": null
+    "gl": 7.8,
+    "carbs": 15.0
   },
   {
-    "name": "Масло арахисовое",
+    "name": "Peanut butter",
     "nameRu": "Масло арахисовое",
     "category": "Молочные продукты",
     "gi": 32,
-    "gl": null,
-    "carbs": null
+    "gl": 6.4,
+    "carbs": 20.0
   },
   {
-    "name": "Молоко 3,2%",
+    "name": "Milk",
     "nameRu": "Молоко 3,2%",
     "category": "Молочные продукты",
     "gi": 28,
-    "gl": null,
-    "carbs": null
+    "gl": 1.4,
+    "carbs": 5.0
   },
   {
-    "name": "Молоко нежирное",
+    "name": "Milk",
     "nameRu": "Молоко нежирное",
     "category": "Молочные продукты",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 1.2,
+    "carbs": 5.0
   },
   {
-    "name": "Молоко сгущённое с сахаром 8,5%",
+    "name": "Milk",
     "nameRu": "Молоко сгущённое с сахаром 8,5%",
     "category": "Молочные продукты",
     "gi": 80,
-    "gl": null,
-    "carbs": null
+    "gl": 4.0,
+    "carbs": 5.0
   },
   {
-    "name": "Сырки глазированные 27,7% жирности",
+    "name": "Glazed cheese curds",
     "nameRu": "Сырки глазированные 27,7% жирности",
     "category": "Молочные продукты",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 22.4,
+    "carbs": 32.0
   },
   {
-    "name": "Сырники из обезжиренного творога",
+    "name": "Cottage cheese",
     "nameRu": "Сырники из обезжиренного творога",
     "category": "Молочные продукты",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 2.1,
+    "carbs": 3.0
   },
   {
-    "name": "Сосиски говяжьи",
+    "name": "Beef sausages",
     "nameRu": "Сосиски говяжьи",
     "category": "Мясо и рыба",
     "gi": 28,
-    "gl": null,
-    "carbs": null
+    "gl": 0.4,
+    "carbs": 1.5
   },
   {
-    "name": "Сок грейпфрутовый",
+    "name": "Grapefruit",
     "nameRu": "Сок грейпфрутовый",
     "category": "Напитки",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 2.6,
+    "carbs": 6.5
   },
   {
-    "name": "Сок томатный",
+    "name": "Tomato juice",
     "nameRu": "Сок томатный",
     "category": "Напитки",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.6,
+    "carbs": 4.0
   },
   {
-    "name": "Сок яблочный",
+    "name": "Apple juice",
     "nameRu": "Сок яблочный",
     "category": "Напитки",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 4.0,
+    "carbs": 10.0
   },
   {
-    "name": "Алыча",
+    "name": "Cherry plum",
     "nameRu": "Алыча",
     "category": "Овощи",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 1.8,
+    "carbs": 7.0
   },
   {
-    "name": "Баклажаны",
+    "name": "Eggplants",
     "nameRu": "Баклажаны",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 0.5,
+    "carbs": 4.5
   },
   {
-    "name": "Брусника",
+    "name": "Lingonberry",
     "nameRu": "Брусника",
     "category": "Овощи",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 2.0,
+    "carbs": 8.0
   },
   {
-    "name": "Гранат",
+    "name": "Pomegranate",
     "nameRu": "Гранат",
     "category": "Овощи",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 4.2,
+    "carbs": 14.0
   },
   {
-    "name": "Грейпфрут",
+    "name": "Grapefruit",
     "nameRu": "Грейпфрут",
     "category": "Овощи",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 1.6,
+    "carbs": 6.5
   },
   {
-    "name": "Зелёный горошек (консервы)",
+    "name": "Green peas, canned",
     "nameRu": "Зелёный горошек (консервы)",
     "category": "Овощи",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 3.1,
+    "carbs": 9.0
   },
   {
-    "name": "Икра из баклажанов (консервы)",
+    "name": "Eggplant caviar",
     "nameRu": "Икра из баклажанов (консервы)",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 1.1,
+    "carbs": 7.0
   },
   {
-    "name": "Икра кабачковая (консервы)",
+    "name": "Zucchini caviar",
     "nameRu": "Икра кабачковая (консервы)",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 1.4,
+    "carbs": 9.0
   },
   {
-    "name": "Инжир свежий",
+    "name": "Fresh figs",
     "nameRu": "Инжир свежий",
     "category": "Овощи",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 4.5,
+    "carbs": 13.0
   },
   {
-    "name": "Кабачки",
+    "name": "Zucchini",
     "nameRu": "Кабачки",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.6,
+    "carbs": 4.0
   },
   {
-    "name": "Капуста белокочанная",
+    "name": "White cabbage",
     "nameRu": "Капуста белокочанная",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.8,
+    "carbs": 5.0
   },
   {
-    "name": "Капуста белокочанная тушёная",
+    "name": "White cabbage",
     "nameRu": "Капуста белокочанная тушёная",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.8,
+    "carbs": 5.0
   },
   {
-    "name": "Капуста брокколи",
+    "name": "Broccoli",
     "nameRu": "Капуста брокколи",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 0.4,
+    "carbs": 4.0
   },
   {
-    "name": "Курага",
+    "name": "Dried apricots",
     "nameRu": "Курага",
     "category": "Овощи",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 15.3,
+    "carbs": 51.0
   },
   {
-    "name": "Лимон",
+    "name": "Lemon",
     "nameRu": "Лимон",
     "category": "Овощи",
     "gi": 20,
-    "gl": null,
-    "carbs": null
+    "gl": 0.6,
+    "carbs": 3.0
   },
   {
-    "name": "Лук зелёный (перо)",
+    "name": "Green onions",
     "nameRu": "Лук зелёный (перо)",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.6,
+    "carbs": 4.0
   },
   {
-    "name": "Лук репчатый",
+    "name": "Onions",
     "nameRu": "Лук репчатый",
     "category": "Овощи",
     "gi": 20,
-    "gl": null,
-    "carbs": null
+    "gl": 1.8,
+    "carbs": 9.0
   },
   {
-    "name": "Морковь",
+    "name": "Carrots, boiled",
     "nameRu": "Морковь",
     "category": "Овощи",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 1.8,
+    "carbs": 5.0
   },
   {
-    "name": "Морковь отварная",
+    "name": "Carrots, boiled",
     "nameRu": "Морковь отварная",
     "category": "Овощи",
     "gi": 85,
-    "gl": null,
-    "carbs": null
+    "gl": 4.2,
+    "carbs": 5.0
   },
   {
-    "name": "Огурец",
+    "name": "Cucumber",
     "nameRu": "Огурец",
     "category": "Овощи",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 0.8,
+    "carbs": 3.0
   },
   {
-    "name": "Перец сладкий (болгарский)",
+    "name": "Bell peppers",
     "nameRu": "Перец сладкий (болгарский)",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.8,
+    "carbs": 5.0
   },
   {
-    "name": "Помидор (томат)",
+    "name": "Tomato",
     "nameRu": "Помидор (томат)",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 0.4,
+    "carbs": 4.0
   },
   {
-    "name": "Редис",
+    "name": "Radish",
     "nameRu": "Редис",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.5,
+    "carbs": 3.0
   },
   {
-    "name": "Репа",
+    "name": "Turnip",
     "nameRu": "Репа",
     "category": "Овощи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 0.8,
+    "carbs": 5.0
   },
   {
-    "name": "Салат листовой (зелень)",
+    "name": "Lettuce",
     "nameRu": "Салат листовой (зелень)",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 0.2,
+    "carbs": 2.0
   },
   {
-    "name": "Свекла",
+    "name": "Beets, boiled",
     "nameRu": "Свекла",
     "category": "Овощи",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 2.4,
+    "carbs": 8.0
   },
   {
-    "name": "Свекла отварная",
+    "name": "Beets, boiled",
     "nameRu": "Свекла отварная",
     "category": "Овощи",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 5.6,
+    "carbs": 8.0
   },
   {
-    "name": "Семена подсолнечника (семечки)",
+    "name": "Sunflower seeds",
     "nameRu": "Семена подсолнечника (семечки)",
     "category": "Овощи",
     "gi": 9,
-    "gl": null,
-    "carbs": null
+    "gl": 1.0,
+    "carbs": 11.0
   },
   {
-    "name": "Тыква",
+    "name": "Pumpkin",
     "nameRu": "Тыква",
     "category": "Овощи",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 1.1,
+    "carbs": 4.5
   },
   {
-    "name": "Тыква отварная",
+    "name": "Pumpkin",
     "nameRu": "Тыква отварная",
     "category": "Овощи",
     "gi": 75,
-    "gl": null,
-    "carbs": null
+    "gl": 3.4,
+    "carbs": 4.5
   },
   {
-    "name": "Укроп (зелень)",
+    "name": "Dill",
     "nameRu": "Укроп (зелень)",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 0.4,
+    "carbs": 4.0
   },
   {
-    "name": "Чеснок",
+    "name": "Garlic",
     "nameRu": "Чеснок",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 3.0,
+    "carbs": 30.0
   },
   {
-    "name": "Щавель (зелень)",
+    "name": "Sorrel",
     "nameRu": "Щавель (зелень)",
     "category": "Овощи",
     "gi": 10,
-    "gl": null,
-    "carbs": null
+    "gl": 0.3,
+    "carbs": 3.0
   },
   {
-    "name": "Грецкий орех",
+    "name": "Walnuts",
     "nameRu": "Грецкий орех",
     "category": "Орехи",
     "gi": 15,
-    "gl": null,
-    "carbs": null
+    "gl": 1.6,
+    "carbs": 11.0
   },
   {
-    "name": "Зефир",
+    "name": "Marshmallow",
     "nameRu": "Зефир",
     "category": "Сладости",
     "gi": 80,
-    "gl": null,
-    "carbs": null
+    "gl": 63.2,
+    "carbs": 79.0
   },
   {
-    "name": "Конфета леденец (карамель)",
+    "name": "Caramel",
     "nameRu": "Конфета леденец (карамель)",
     "category": "Сладости",
     "gi": 80,
-    "gl": null,
-    "carbs": null
+    "gl": 70.4,
+    "carbs": 88.0
   },
   {
-    "name": "Мармелад жевательный",
+    "name": "Marmalade",
     "nameRu": "Мармелад жевательный",
     "category": "Сладости",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 45.6,
+    "carbs": 76.0
   },
   {
-    "name": "Пастила",
+    "name": "Pastila",
     "nameRu": "Пастила",
     "category": "Сладости",
     "gi": 65,
-    "gl": null,
-    "carbs": null
+    "gl": 52.0,
+    "carbs": 80.0
   },
   {
-    "name": "Пирожное бисквитное с белковым кремом",
+    "name": "Pastry",
     "nameRu": "Пирожное бисквитное с белковым кремом",
     "category": "Сладости",
     "gi": 75,
-    "gl": null,
-    "carbs": null
+    "gl": 41.2,
+    "carbs": 55.0
   },
   {
-    "name": "Пирожное заварное с кремом (трубочка)",
+    "name": "Pastry",
     "nameRu": "Пирожное заварное с кремом (трубочка)",
     "category": "Сладости",
     "gi": 75,
-    "gl": null,
-    "carbs": null
+    "gl": 41.2,
+    "carbs": 55.0
   },
   {
-    "name": "Пирожное песочное с кремом",
+    "name": "Pastry",
     "nameRu": "Пирожное песочное с кремом",
     "category": "Сладости",
     "gi": 75,
-    "gl": null,
-    "carbs": null
+    "gl": 41.2,
+    "carbs": 55.0
   },
   {
-    "name": "Сахар-песок",
+    "name": "Sugar",
     "nameRu": "Сахар-песок",
     "category": "Сладости",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 59.4,
+    "carbs": 99.0
   },
   {
-    "name": "Халва подсолнечная",
+    "name": "Halva",
     "nameRu": "Халва подсолнечная",
     "category": "Сладости",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 37.8,
+    "carbs": 54.0
   },
   {
-    "name": "Шоколад горький",
+    "name": "Dark chocolate",
     "nameRu": "Шоколад горький",
     "category": "Сладости",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 12.0,
+    "carbs": 48.0
   },
   {
-    "name": "Абрикос",
+    "name": "Apricots",
     "nameRu": "Абрикос",
     "category": "Фрукты",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 3.1,
+    "carbs": 9.0
   },
   {
-    "name": "Ананас",
+    "name": "Pineapple",
     "nameRu": "Ананас",
     "category": "Фрукты",
     "gi": 65,
-    "gl": null,
-    "carbs": null
+    "gl": 7.2,
+    "carbs": 11.0
   },
   {
-    "name": "Апельсин",
+    "name": "Oranges",
     "nameRu": "Апельсин",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 3.2,
+    "carbs": 8.0
   },
   {
-    "name": "Арбуз",
+    "name": "Watermelon",
     "nameRu": "Арбуз",
     "category": "Фрукты",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 5.6,
+    "carbs": 8.0
   },
   {
-    "name": "Банан",
+    "name": "Bananas",
     "nameRu": "Банан",
     "category": "Фрукты",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 12.6,
+    "carbs": 21.0
   },
   {
-    "name": "Виноград",
+    "name": "Grapes",
     "nameRu": "Виноград",
     "category": "Фрукты",
     "gi": 45,
-    "gl": null,
-    "carbs": null
+    "gl": 7.2,
+    "carbs": 16.0
   },
   {
-    "name": "Вишня",
+    "name": "Cherries",
     "nameRu": "Вишня",
     "category": "Фрукты",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 2.8,
+    "carbs": 11.0
   },
   {
-    "name": "Груша",
+    "name": "Pear",
     "nameRu": "Груша",
     "category": "Фрукты",
     "gi": 33,
-    "gl": null,
-    "carbs": null
+    "gl": 3.3,
+    "carbs": 10.0
   },
   {
-    "name": "Дыня",
+    "name": "Melon",
     "nameRu": "Дыня",
     "category": "Фрукты",
     "gi": 45,
-    "gl": null,
-    "carbs": null
+    "gl": 3.1,
+    "carbs": 7.0
   },
   {
-    "name": "Земляника",
+    "name": "Wild strawberry",
     "nameRu": "Земляника",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 2.4,
+    "carbs": 6.0
   },
   {
-    "name": "Крыжовник",
+    "name": "Gooseberry",
     "nameRu": "Крыжовник",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 3.6,
+    "carbs": 9.0
   },
   {
-    "name": "Малина",
+    "name": "Raspberries",
     "nameRu": "Малина",
     "category": "Фрукты",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 2.4,
+    "carbs": 8.0
   },
   {
-    "name": "Манго",
+    "name": "Mango",
     "nameRu": "Манго",
     "category": "Фрукты",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 8.2,
+    "carbs": 15.0
   },
   {
-    "name": "Мороженое сливочное",
+    "name": "Ice cream",
     "nameRu": "Мороженое сливочное",
     "category": "Фрукты",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 13.2,
+    "carbs": 22.0
   },
   {
-    "name": "Персик",
+    "name": "Peaches",
     "nameRu": "Персик",
     "category": "Фрукты",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 2.7,
+    "carbs": 9.0
   },
   {
-    "name": "Слива",
+    "name": "Plum",
     "nameRu": "Слива",
     "category": "Фрукты",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 2.2,
+    "carbs": 9.0
   },
   {
-    "name": "Сливки сгущённые с сахаром 19%",
+    "name": "Cream",
     "nameRu": "Сливки сгущённые с сахаром 19%",
     "category": "Фрукты",
     "gi": 80,
-    "gl": null,
-    "carbs": null
+    "gl": 3.2,
+    "carbs": 4.0
   },
   {
-    "name": "Смородина красная",
+    "name": "Red currants",
     "nameRu": "Смородина красная",
     "category": "Фрукты",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 2.4,
+    "carbs": 8.0
   },
   {
-    "name": "Смородина чёрная",
+    "name": "Black currants",
     "nameRu": "Смородина чёрная",
     "category": "Фрукты",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 2.4,
+    "carbs": 8.0
   },
   {
-    "name": "Сок абрикосовый",
+    "name": "Apricot juice",
     "nameRu": "Сок абрикосовый",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 4.8,
+    "carbs": 12.0
   },
   {
-    "name": "Сок ананасовый",
+    "name": "Pineapple",
     "nameRu": "Сок ананасовый",
     "category": "Фрукты",
     "gi": 46,
-    "gl": null,
-    "carbs": null
+    "gl": 5.1,
+    "carbs": 11.0
   },
   {
-    "name": "Сок апельсиновый",
+    "name": "Orange juice",
     "nameRu": "Сок апельсиновый",
     "category": "Фрукты",
     "gi": 45,
-    "gl": null,
-    "carbs": null
+    "gl": 4.5,
+    "carbs": 10.0
   },
   {
-    "name": "Сок виноградный",
+    "name": "Grapes",
     "nameRu": "Сок виноградный",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 6.4,
+    "carbs": 16.0
   },
   {
-    "name": "Сок вишнёвый",
+    "name": "Cherry juice",
     "nameRu": "Сок вишнёвый",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 4.4,
+    "carbs": 11.0
   },
   {
-    "name": "Сок персиковый",
+    "name": "Peach juice",
     "nameRu": "Сок персиковый",
     "category": "Фрукты",
     "gi": 40,
-    "gl": null,
-    "carbs": null
+    "gl": 4.8,
+    "carbs": 12.0
   },
   {
-    "name": "Сухари сливочные",
+    "name": "Rusks",
     "nameRu": "Сухари сливочные",
     "category": "Фрукты",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 39.6,
+    "carbs": 72.0
   },
   {
-    "name": "Сушки простые",
+    "name": "Sushki",
     "nameRu": "Сушки простые",
     "category": "Фрукты",
     "gi": 50,
-    "gl": null,
-    "carbs": null
+    "gl": 36.5,
+    "carbs": 73.0
   },
   {
-    "name": "Томатная паста",
+    "name": "Tomato paste",
     "nameRu": "Томатная паста",
     "category": "Фрукты",
     "gi": 50,
-    "gl": null,
-    "carbs": null
+    "gl": 9.5,
+    "carbs": 19.0
   },
   {
-    "name": "Хурма",
+    "name": "Persimmon",
     "nameRu": "Хурма",
     "category": "Фрукты",
     "gi": 45,
-    "gl": null,
-    "carbs": null
+    "gl": 6.8,
+    "carbs": 15.0
   },
   {
-    "name": "Черешня",
+    "name": "Sweet cherries",
     "nameRu": "Черешня",
     "category": "Фрукты",
     "gi": 25,
-    "gl": null,
-    "carbs": null
+    "gl": 2.8,
+    "carbs": 11.0
   },
   {
-    "name": "Яблоки",
+    "name": "Apples",
     "nameRu": "Яблоки",
     "category": "Фрукты",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 3.5,
+    "carbs": 10.0
   },
   {
-    "name": "Яблоки сушёные",
+    "name": "Apples",
     "nameRu": "Яблоки сушёные",
     "category": "Фрукты",
     "gi": 30,
-    "gl": null,
-    "carbs": null
+    "gl": 3.0,
+    "carbs": 10.0
   },
   {
-    "name": "Батон нарезной",
+    "name": "White bread loaf",
     "nameRu": "Батон нарезной",
     "category": "Хлеб",
     "gi": 80,
-    "gl": null,
-    "carbs": null
+    "gl": 40.0,
+    "carbs": 50.0
   },
   {
-    "name": "Запеканка картофельная",
+    "name": "Potato casserole",
     "nameRu": "Запеканка картофельная",
     "category": "Хлеб",
     "gi": 90,
-    "gl": null,
-    "carbs": null
+    "gl": 12.6,
+    "carbs": 14.0
   },
   {
-    "name": "Картофель жареный",
+    "name": "Fried potatoes",
     "nameRu": "Картофель жареный",
     "category": "Хлеб",
     "gi": 95,
-    "gl": null,
-    "carbs": null
+    "gl": 21.9,
+    "carbs": 23.0
   },
   {
-    "name": "Квас хлебный",
+    "name": "Kvass",
     "nameRu": "Квас хлебный",
     "category": "Хлеб",
     "gi": 45,
-    "gl": null,
-    "carbs": null
+    "gl": 2.2,
+    "carbs": 5.0
   },
   {
-    "name": "Масса творожная 16,5% жирности",
+    "name": "Cottage cheese mass",
     "nameRu": "Масса творожная 16,5% жирности",
     "category": "Хлеб",
     "gi": 70,
-    "gl": null,
-    "carbs": null
+    "gl": 10.5,
+    "carbs": 15.0
   },
   {
-    "name": "Мёд пчелиный",
+    "name": "Honey",
     "nameRu": "Мёд пчелиный",
     "category": "Хлеб",
     "gi": 80,
-    "gl": null,
-    "carbs": null
+    "gl": 65.6,
+    "carbs": 82.0
   },
   {
-    "name": "Оладьи",
+    "name": "Fritters",
     "nameRu": "Оладьи",
     "category": "Хлеб",
     "gi": 62,
-    "gl": null,
-    "carbs": null
+    "gl": 23.6,
+    "carbs": 38.0
   },
   {
-    "name": "Печенье сахарное",
+    "name": "Sugar",
     "nameRu": "Печенье сахарное",
     "category": "Хлеб",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 59.4,
+    "carbs": 99.0
   },
   {
-    "name": "Печенье сдобное",
+    "name": "Butter cookies",
     "nameRu": "Печенье сдобное",
     "category": "Хлеб",
     "gi": 55,
-    "gl": null,
-    "carbs": null
+    "gl": 37.4,
+    "carbs": 68.0
   },
   {
-    "name": "Финики",
+    "name": "Dates",
     "nameRu": "Финики",
     "category": "Хлеб",
     "gi": 103,
-    "gl": null,
-    "carbs": null
+    "gl": 77.2,
+    "carbs": 75.0
   },
   {
-    "name": "Хлеб бородинский",
+    "name": "Borodino bread",
     "nameRu": "Хлеб бородинский",
     "category": "Хлеб",
     "gi": 50,
-    "gl": null,
-    "carbs": null
+    "gl": 20.0,
+    "carbs": 40.0
   },
   {
-    "name": "Хлеб пшеничный (из муки в/с)",
+    "name": "Wheat bread",
     "nameRu": "Хлеб пшеничный (из муки в/с)",
     "category": "Хлеб",
     "gi": 65,
-    "gl": null,
-    "carbs": null
+    "gl": 31.2,
+    "carbs": 48.0
   },
   {
-    "name": "Хлеб пшеничный (из обойной муки)",
+    "name": "Wheat bread",
     "nameRu": "Хлеб пшеничный (из обойной муки)",
     "category": "Хлеб",
     "gi": 60,
-    "gl": null,
-    "carbs": null
+    "gl": 28.8,
+    "carbs": 48.0
   },
   {
-    "name": "Хлеб цельнозерновой",
+    "name": "Whole grain bread",
     "nameRu": "Хлеб цельнозерновой",
     "category": "Хлеб",
     "gi": 35,
-    "gl": null,
-    "carbs": null
+    "gl": 15.1,
+    "carbs": 43.0
   }
 ]

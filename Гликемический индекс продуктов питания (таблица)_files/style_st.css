@@ -1,0 +1,38 @@
+div.small { font-size: x-small; text-align:center; }
+
+/* —“¿“‹» | “¿¡À»÷€ —–¿¬Õ≈Õ»ﬂ œ–Œƒ” “Œ¬,  ¿ÀŒ–»…ÕŒ—“» */
+table.klr { font-size: 11px; border: 1px solid; border-collapse: collapse; margin: 0 auto; }
+table.klr td { border: 1px solid; text-align: center; padding: 2px; }
+table.klr tr:hover td { text-decoration: underline; }
+td.klr_verh { font-weight: bold; background-color: #DAFFBD; }
+td.klr_1 { background-color: #d9ff86; font-weight: bold; }
+td.klr_2 { background-color: #d9ff86; }
+td.klr_3 { background-color: #e6ffb0; }
+div.klr_usl_sokr { font-size: 11px; }
+
+/* —“¿“‹» | “¿¡À»÷€ —Œƒ≈–∆¿Õ»ﬂ Ã» –Œ›À≈Ã≈Õ“Œ¬ */
+h2.skl {  text-shadow: 1px 1px 1px rgba(0,0,0,0.4); font-weight: bold;  text-align: center; font-size:13px; letter-spacing: 0.2px; margin: 0 auto; }
+h3.skl {  text-shadow: 1px 1px 1px rgba(0,0,0,0.2); font-weight: bold;  text-align: center; font-size:12px; letter-spacing: 0.1px; margin: 0 auto; }
+table.skl { font-size: 11px; border: 1px solid; border-collapse: collapse; margin: 0 auto; }
+table.skl td { border: 1px solid; text-align: center; padding: 2px; }
+table.skl tr { margin: 0 auto; }
+table.skl tr:hover td { background: #DAFFBD; }
+td.skl_verh { font-weight: bold; background-color: #DAFFBD; }
+
+/* —“¿“‹» | “¿¡À»÷€ ÕŒ–Ã¿“»¬Œ¬ | œ–¿¬»À¿ —Œ–≈¬ÕŒ¬¿Õ»… */
+h2.norm {  text-shadow: 1px 1px 1px rgba(0,0,0,0.4); font-weight: bold;  text-align: center; font-size:13px; letter-spacing: 0.2px; margin: 0 auto; }
+h3.norm {  text-shadow: 1px 1px 1px rgba(0,0,0,0.2); font-weight: bold;  text-align: center; font-size:12px; letter-spacing: 0.1px; margin: 0 auto; }
+table.norm { font-size: 11px; border: 1px solid; border-collapse: collapse; margin: 0 auto; }
+table.norm th { font-weight: bold; background-color: #DAFFBD; border: 1px solid; text-align: center; padding: 2px; }
+table.norm td { border: 1px solid; text-align: center; padding: 2px; }
+table.norm tr { margin: 0 auto; }
+table.norm tr:hover td { background: #DAFFBD; }
+td.norm_verh { font-weight: bold; background-color: #DAFFBD; }
+td.stlb1 { font-weight: bold; }
+p.prv { margin: 5px 0; }
+
+/* —“¿“‹» |  ¿À‹ ”Àﬂ“Œ–€ */
+table.calc { font-size: 11px; border: 1px solid; border-collapse: collapse; margin: 0 auto; }
+table.calc td { border: 1px solid; text-align: center; padding: 2px; }
+table.calc tr:hover td { text-decoration: underline; }
+td.calc_verh { font-weight: bold; background-color: #DAFFBD; }
