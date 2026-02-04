@@ -1,0 +1,1018 @@
+[
+  {
+    "name": "Горох (лущеный)",
+    "nameRu": "Горох (лущеный)",
+    "category": "Бобовые",
+    "gi": 28,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Горох зелёный (свежий)",
+    "nameRu": "Горох зелёный (свежий)",
+    "category": "Бобовые",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Соя (зерно)",
+    "nameRu": "Соя (зерно)",
+    "category": "Бобовые",
+    "gi": 21,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Суп фасолевый",
+    "nameRu": "Суп фасолевый",
+    "category": "Бобовые",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Фасоль (стручковая)",
+    "nameRu": "Фасоль (стручковая)",
+    "category": "Бобовые",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Чечевица (зерно)",
+    "nameRu": "Чечевица (зерно)",
+    "category": "Бобовые",
+    "gi": 27,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Пельмени отварные",
+    "nameRu": "Пельмени отварные",
+    "category": "Готовые блюда",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Голубика",
+    "nameRu": "Голубика",
+    "category": "Крупы",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша гречневая (из крупы ядрица)",
+    "nameRu": "Каша гречневая (из крупы ядрица)",
+    "category": "Крупы",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша из овсяных хлопьев Геркулес",
+    "nameRu": "Каша из овсяных хлопьев Геркулес",
+    "category": "Крупы",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша манная",
+    "nameRu": "Каша манная",
+    "category": "Крупы",
+    "gi": 75,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша овсяная",
+    "nameRu": "Каша овсяная",
+    "category": "Крупы",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша перловая",
+    "nameRu": "Каша перловая",
+    "category": "Крупы",
+    "gi": 50,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша пшеничная",
+    "nameRu": "Каша пшеничная",
+    "category": "Крупы",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша пшенная",
+    "nameRu": "Каша пшенная",
+    "category": "Крупы",
+    "gi": 50,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Каша рисовая",
+    "nameRu": "Каша рисовая",
+    "category": "Крупы",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Крупа гречневая (ядрица)",
+    "nameRu": "Крупа гречневая (ядрица)",
+    "category": "Крупы",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Крупа овсяная",
+    "nameRu": "Крупа овсяная",
+    "category": "Крупы",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Кукуруза консервированная",
+    "nameRu": "Кукуруза консервированная",
+    "category": "Крупы",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Кукуруза сладкая",
+    "nameRu": "Кукуруза сладкая",
+    "category": "Крупы",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Макароны отварные",
+    "nameRu": "Макароны отварные",
+    "category": "Крупы",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Мороженое пломбир",
+    "nameRu": "Мороженое пломбир",
+    "category": "Крупы",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Мука пшеничная в/с",
+    "nameRu": "Мука пшеничная в/с",
+    "category": "Крупы",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Пряники заварные",
+    "nameRu": "Пряники заварные",
+    "category": "Крупы",
+    "gi": 65,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Рис (зерно)",
+    "nameRu": "Рис (зерно)",
+    "category": "Крупы",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Запеканка из обезжиренного творога",
+    "nameRu": "Запеканка из обезжиренного творога",
+    "category": "Молочные продукты",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Йогурт 3,2% сладкий",
+    "nameRu": "Йогурт 3,2% сладкий",
+    "category": "Молочные продукты",
+    "gi": 52,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Масло арахисовое",
+    "nameRu": "Масло арахисовое",
+    "category": "Молочные продукты",
+    "gi": 32,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Молоко 3,2%",
+    "nameRu": "Молоко 3,2%",
+    "category": "Молочные продукты",
+    "gi": 28,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Молоко нежирное",
+    "nameRu": "Молоко нежирное",
+    "category": "Молочные продукты",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Молоко сгущённое с сахаром 8,5%",
+    "nameRu": "Молоко сгущённое с сахаром 8,5%",
+    "category": "Молочные продукты",
+    "gi": 80,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сырки глазированные 27,7% жирности",
+    "nameRu": "Сырки глазированные 27,7% жирности",
+    "category": "Молочные продукты",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сырники из обезжиренного творога",
+    "nameRu": "Сырники из обезжиренного творога",
+    "category": "Молочные продукты",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сосиски говяжьи",
+    "nameRu": "Сосиски говяжьи",
+    "category": "Мясо и рыба",
+    "gi": 28,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок грейпфрутовый",
+    "nameRu": "Сок грейпфрутовый",
+    "category": "Напитки",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок томатный",
+    "nameRu": "Сок томатный",
+    "category": "Напитки",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок яблочный",
+    "nameRu": "Сок яблочный",
+    "category": "Напитки",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Алыча",
+    "nameRu": "Алыча",
+    "category": "Овощи",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Баклажаны",
+    "nameRu": "Баклажаны",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Брусника",
+    "nameRu": "Брусника",
+    "category": "Овощи",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Гранат",
+    "nameRu": "Гранат",
+    "category": "Овощи",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Грейпфрут",
+    "nameRu": "Грейпфрут",
+    "category": "Овощи",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Зелёный горошек (консервы)",
+    "nameRu": "Зелёный горошек (консервы)",
+    "category": "Овощи",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Икра из баклажанов (консервы)",
+    "nameRu": "Икра из баклажанов (консервы)",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Икра кабачковая (консервы)",
+    "nameRu": "Икра кабачковая (консервы)",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Инжир свежий",
+    "nameRu": "Инжир свежий",
+    "category": "Овощи",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Кабачки",
+    "nameRu": "Кабачки",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Капуста белокочанная",
+    "nameRu": "Капуста белокочанная",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Капуста белокочанная тушёная",
+    "nameRu": "Капуста белокочанная тушёная",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Капуста брокколи",
+    "nameRu": "Капуста брокколи",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Курага",
+    "nameRu": "Курага",
+    "category": "Овощи",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Лимон",
+    "nameRu": "Лимон",
+    "category": "Овощи",
+    "gi": 20,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Лук зелёный (перо)",
+    "nameRu": "Лук зелёный (перо)",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Лук репчатый",
+    "nameRu": "Лук репчатый",
+    "category": "Овощи",
+    "gi": 20,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Морковь",
+    "nameRu": "Морковь",
+    "category": "Овощи",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Морковь отварная",
+    "nameRu": "Морковь отварная",
+    "category": "Овощи",
+    "gi": 85,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Огурец",
+    "nameRu": "Огурец",
+    "category": "Овощи",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Перец сладкий (болгарский)",
+    "nameRu": "Перец сладкий (болгарский)",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Помидор (томат)",
+    "nameRu": "Помидор (томат)",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Редис",
+    "nameRu": "Редис",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Репа",
+    "nameRu": "Репа",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Салат листовой (зелень)",
+    "nameRu": "Салат листовой (зелень)",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Свекла",
+    "nameRu": "Свекла",
+    "category": "Овощи",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Свекла отварная",
+    "nameRu": "Свекла отварная",
+    "category": "Овощи",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Семена подсолнечника (семечки)",
+    "nameRu": "Семена подсолнечника (семечки)",
+    "category": "Овощи",
+    "gi": 9,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Тыква",
+    "nameRu": "Тыква",
+    "category": "Овощи",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Тыква отварная",
+    "nameRu": "Тыква отварная",
+    "category": "Овощи",
+    "gi": 75,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Укроп (зелень)",
+    "nameRu": "Укроп (зелень)",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Чеснок",
+    "nameRu": "Чеснок",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Щавель (зелень)",
+    "nameRu": "Щавель (зелень)",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Грецкий орех",
+    "nameRu": "Грецкий орех",
+    "category": "Орехи",
+    "gi": 15,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Зефир",
+    "nameRu": "Зефир",
+    "category": "Сладости",
+    "gi": 80,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Конфета леденец (карамель)",
+    "nameRu": "Конфета леденец (карамель)",
+    "category": "Сладости",
+    "gi": 80,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Мармелад жевательный",
+    "nameRu": "Мармелад жевательный",
+    "category": "Сладости",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Пастила",
+    "nameRu": "Пастила",
+    "category": "Сладости",
+    "gi": 65,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Пирожное бисквитное с белковым кремом",
+    "nameRu": "Пирожное бисквитное с белковым кремом",
+    "category": "Сладости",
+    "gi": 75,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Пирожное заварное с кремом (трубочка)",
+    "nameRu": "Пирожное заварное с кремом (трубочка)",
+    "category": "Сладости",
+    "gi": 75,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Пирожное песочное с кремом",
+    "nameRu": "Пирожное песочное с кремом",
+    "category": "Сладости",
+    "gi": 75,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сахар-песок",
+    "nameRu": "Сахар-песок",
+    "category": "Сладости",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Халва подсолнечная",
+    "nameRu": "Халва подсолнечная",
+    "category": "Сладости",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Шоколад горький",
+    "nameRu": "Шоколад горький",
+    "category": "Сладости",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Абрикос",
+    "nameRu": "Абрикос",
+    "category": "Фрукты",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Ананас",
+    "nameRu": "Ананас",
+    "category": "Фрукты",
+    "gi": 65,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Апельсин",
+    "nameRu": "Апельсин",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Арбуз",
+    "nameRu": "Арбуз",
+    "category": "Фрукты",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Банан",
+    "nameRu": "Банан",
+    "category": "Фрукты",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Виноград",
+    "nameRu": "Виноград",
+    "category": "Фрукты",
+    "gi": 45,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Вишня",
+    "nameRu": "Вишня",
+    "category": "Фрукты",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Груша",
+    "nameRu": "Груша",
+    "category": "Фрукты",
+    "gi": 33,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Дыня",
+    "nameRu": "Дыня",
+    "category": "Фрукты",
+    "gi": 45,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Земляника",
+    "nameRu": "Земляника",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Крыжовник",
+    "nameRu": "Крыжовник",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Малина",
+    "nameRu": "Малина",
+    "category": "Фрукты",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Манго",
+    "nameRu": "Манго",
+    "category": "Фрукты",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Мороженое сливочное",
+    "nameRu": "Мороженое сливочное",
+    "category": "Фрукты",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Персик",
+    "nameRu": "Персик",
+    "category": "Фрукты",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Слива",
+    "nameRu": "Слива",
+    "category": "Фрукты",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сливки сгущённые с сахаром 19%",
+    "nameRu": "Сливки сгущённые с сахаром 19%",
+    "category": "Фрукты",
+    "gi": 80,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Смородина красная",
+    "nameRu": "Смородина красная",
+    "category": "Фрукты",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Смородина чёрная",
+    "nameRu": "Смородина чёрная",
+    "category": "Фрукты",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок абрикосовый",
+    "nameRu": "Сок абрикосовый",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок ананасовый",
+    "nameRu": "Сок ананасовый",
+    "category": "Фрукты",
+    "gi": 46,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок апельсиновый",
+    "nameRu": "Сок апельсиновый",
+    "category": "Фрукты",
+    "gi": 45,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок виноградный",
+    "nameRu": "Сок виноградный",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок вишнёвый",
+    "nameRu": "Сок вишнёвый",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сок персиковый",
+    "nameRu": "Сок персиковый",
+    "category": "Фрукты",
+    "gi": 40,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сухари сливочные",
+    "nameRu": "Сухари сливочные",
+    "category": "Фрукты",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Сушки простые",
+    "nameRu": "Сушки простые",
+    "category": "Фрукты",
+    "gi": 50,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Томатная паста",
+    "nameRu": "Томатная паста",
+    "category": "Фрукты",
+    "gi": 50,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Хурма",
+    "nameRu": "Хурма",
+    "category": "Фрукты",
+    "gi": 45,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Черешня",
+    "nameRu": "Черешня",
+    "category": "Фрукты",
+    "gi": 25,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Яблоки",
+    "nameRu": "Яблоки",
+    "category": "Фрукты",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Яблоки сушёные",
+    "nameRu": "Яблоки сушёные",
+    "category": "Фрукты",
+    "gi": 30,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Батон нарезной",
+    "nameRu": "Батон нарезной",
+    "category": "Хлеб",
+    "gi": 80,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Запеканка картофельная",
+    "nameRu": "Запеканка картофельная",
+    "category": "Хлеб",
+    "gi": 90,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Картофель жареный",
+    "nameRu": "Картофель жареный",
+    "category": "Хлеб",
+    "gi": 95,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Квас хлебный",
+    "nameRu": "Квас хлебный",
+    "category": "Хлеб",
+    "gi": 45,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Масса творожная 16,5% жирности",
+    "nameRu": "Масса творожная 16,5% жирности",
+    "category": "Хлеб",
+    "gi": 70,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Мёд пчелиный",
+    "nameRu": "Мёд пчелиный",
+    "category": "Хлеб",
+    "gi": 80,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Оладьи",
+    "nameRu": "Оладьи",
+    "category": "Хлеб",
+    "gi": 62,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Печенье сахарное",
+    "nameRu": "Печенье сахарное",
+    "category": "Хлеб",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Печенье сдобное",
+    "nameRu": "Печенье сдобное",
+    "category": "Хлеб",
+    "gi": 55,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Финики",
+    "nameRu": "Финики",
+    "category": "Хлеб",
+    "gi": 103,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Хлеб бородинский",
+    "nameRu": "Хлеб бородинский",
+    "category": "Хлеб",
+    "gi": 50,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Хлеб пшеничный (из муки в/с)",
+    "nameRu": "Хлеб пшеничный (из муки в/с)",
+    "category": "Хлеб",
+    "gi": 65,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Хлеб пшеничный (из обойной муки)",
+    "nameRu": "Хлеб пшеничный (из обойной муки)",
+    "category": "Хлеб",
+    "gi": 60,
+    "gl": null,
+    "carbs": null
+  },
+  {
+    "name": "Хлеб цельнозерновой",
+    "nameRu": "Хлеб цельнозерновой",
+    "category": "Хлеб",
+    "gi": 35,
+    "gl": null,
+    "carbs": null
+  }
+]
