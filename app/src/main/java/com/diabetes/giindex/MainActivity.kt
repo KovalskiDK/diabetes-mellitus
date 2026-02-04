@@ -238,6 +238,12 @@ class MainActivity : ComponentActivity() {
                                     },
                                     onMedicalDietsClick = {
                                         navController.navigate(Screen.MedicalDiets.route)
+                                    },
+                                    onInsulinClick = {
+                                        navController.navigate(Screen.Insulin.route)
+                                    },
+                                    onHbA1cClick = {
+                                        navController.navigate(Screen.HbA1c.route)
                                     }
                                 )
                             }
@@ -274,6 +280,18 @@ class MainActivity : ComponentActivity() {
                             
                             composable(Screen.MedicalDiets.route) {
                                 MedicalDietsScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
+                            }
+                            
+                            composable(Screen.Insulin.route) {
+                                InsulinInfoScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
+                            }
+                            
+                            composable(Screen.HbA1c.route) {
+                                HbA1cInfoScreen(
                                     onBackClick = { navController.popBackStack() }
                                 )
                             }

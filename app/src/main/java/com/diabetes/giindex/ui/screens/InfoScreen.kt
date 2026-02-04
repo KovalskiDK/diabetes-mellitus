@@ -21,6 +21,8 @@ fun InfoScreen(
     onAlcoholClick: () -> Unit,
     onTrafficLightClick: () -> Unit,
     onMedicalDietsClick: () -> Unit,
+    onInsulinClick: () -> Unit,
+    onHbA1cClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -59,6 +61,22 @@ fun InfoScreen(
                 title = "Лечебные столы питания",
                 description = "Медицинские диеты по Певзнеру (столы №1, 2, 5, 8, 9, 10, 15)",
                 onClick = onMedicalDietsClick
+            )
+            
+            // Инсулин
+            InfoCard(
+                icon = Icons.Filled.Medication,
+                title = "Инсулин и инсулинорезистентность",
+                description = "Что такое инсулин, как он работает и что такое инсулинорезистентность",
+                onClick = onInsulinClick
+            )
+            
+            // HbA1c
+            InfoCard(
+                icon = Icons.Filled.Science,
+                title = "Анализ HbA1c",
+                description = "Гликированный гемоглобин: что это, нормы и формула расчета",
+                onClick = onHbA1cClick
             )
             
             // Об углеводах
