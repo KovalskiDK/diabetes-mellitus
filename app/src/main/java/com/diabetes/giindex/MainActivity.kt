@@ -214,12 +214,21 @@ class MainActivity : ComponentActivity() {
                                     onBackClick = { navController.popBackStack() },
                                     onSourcesClick = {
                                         navController.navigate(Screen.Sources.route)
+                                    },
+                                    onEducationClick = {
+                                        navController.navigate(Screen.Education.route)
                                     }
                                 )
                             }
                             
                             composable(Screen.FAQ.route) {
                                 FAQScreen()
+                            }
+                            
+                            composable(Screen.Education.route) {
+                                EducationScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
                             }
                         }
                     }

@@ -20,6 +20,7 @@ fun SettingsScreen(
     viewModel: com.diabetes.giindex.ui.viewmodel.SettingsViewModel,
     onBackClick: () -> Unit,
     onSourcesClick: () -> Unit,
+    onEducationClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
@@ -45,6 +46,16 @@ fun SettingsScreen(
                     title = "Источники данных",
                     subtitle = "Управление источниками ГИ",
                     onClick = onSourcesClick
+                )
+            }
+            
+            Divider()
+            
+            SettingsSection(title = "Обучение") {
+                SettingsItem(
+                    title = "Об углеводах",
+                    subtitle = "Типы углеводов и их усвоение",
+                    onClick = onEducationClick
                 )
             }
             
