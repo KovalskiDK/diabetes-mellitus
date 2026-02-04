@@ -53,7 +53,7 @@ fun SettingsScreen(
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.4.1",
+                    subtitle = "1.4.2",
                     onClick = { }
                 )
                 SettingsItem(

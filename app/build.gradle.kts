@@ -12,8 +12,8 @@ android {
         applicationId = "com.diabetes.giindex"
         minSdk = 26
         targetSdk = 34
-        versionCode = 19
-        versionName = "1.4.1"
+        versionCode = 20
+        versionName = "1.4.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -108,7 +108,7 @@ dependencies {
     implementation("com.opencsv:opencsv:5.9")
 
     // Google Generative AI (Gemini)
-    implementation("com.google.ai.client.generativeai:generativeai:0.1.2")
+    implementation("com.google.ai.client.generativeai:generativeai:0.9.0")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
