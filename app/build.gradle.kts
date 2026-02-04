@@ -12,8 +12,8 @@ android {
         applicationId = "com.diabetes.giindex"
         minSdk = 26
         targetSdk = 34
-        versionCode = 12
-        versionName = "1.2.7"
+        versionCode = 13
+        versionName = "1.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -106,6 +106,9 @@ dependencies {
 
     // CSV Parser
     implementation("com.opencsv:opencsv:5.9")
+
+    // Google Generative AI (Gemini)
+    implementation("com.google.ai.client.generativeai:generativeai:0.1.2")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
