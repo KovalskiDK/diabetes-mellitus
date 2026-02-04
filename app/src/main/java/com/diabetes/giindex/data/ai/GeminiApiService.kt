@@ -1,0 +1,43 @@
+package com.diabetes.giindex.data.ai
+
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.POST
+import retrofit2.http.Query
+
+interface GeminiApiService {
+    
+    @POST("v1beta/models/gemini-2.0-flash-exp:generateContent")
+    suspend fun generateContent(
+        @Query("key") apiKey: String,
+        @Body request: GeminiRequest
+    ): Response<GeminiResponse>
+}
+
+data class GeminiRequest(
+    val contents: List<Content>
+)
+
+data class Content(
+    val parts: List<Part>
+)
+
+data class Part(
+    val text: String
+)
+
+data class GeminiResponse(
+    val candidates: List<Candidate>?
+)
+
+data class Candidate(
+    val content: ContentResponse?
+)
+
+data class ContentResponse(
+    val parts: List<PartResponse>?
+)
+
+data class PartResponse(
+    val text: String?
+)

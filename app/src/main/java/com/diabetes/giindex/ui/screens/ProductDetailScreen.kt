@@ -185,11 +185,11 @@ fun ProductDetailScreen(
                                 modifier = Modifier.size(20.dp)
                             )
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Получить рекомендацию")
+                            Text("Получить AI-рекомендацию")
                         }
                         
                         Text(
-                            text = "Умный анализ на основе ГИ, углеводов и гликемической нагрузки с персональными рекомендациями",
+                            text = "Получите умный AI-анализ продукта с персональными рекомендациями по употреблению при диабете",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.fillMaxWidth()
@@ -238,8 +238,23 @@ fun ProductDetailScreen(
                                         text = result.recommendation,
                                         style = MaterialTheme.typography.titleMedium,
                                         fontWeight = FontWeight.Bold,
-                                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                                        color = MaterialTheme.colorScheme.onPrimaryContainer,
+                                        modifier = Modifier.weight(1f)
                                     )
+                                    
+                                    if (result.isAiGenerated) {
+                                        Surface(
+                                            color = MaterialTheme.colorScheme.primary,
+                                            shape = MaterialTheme.shapes.small
+                                        ) {
+                                            Text(
+                                                text = "AI",
+                                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
+                                                style = MaterialTheme.typography.labelSmall,
+                                                color = MaterialTheme.colorScheme.onPrimary
+                                            )
+                                        }
+                                    }
                                 }
                                 
                                 Divider(color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.2f))

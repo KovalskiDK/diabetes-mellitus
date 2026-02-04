@@ -12,8 +12,8 @@ android {
         applicationId = "com.diabetes.giindex"
         minSdk = 26
         targetSdk = 34
-        versionCode = 23
-        versionName = "1.5.0"
+        versionCode = 24
+        versionName = "1.5.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

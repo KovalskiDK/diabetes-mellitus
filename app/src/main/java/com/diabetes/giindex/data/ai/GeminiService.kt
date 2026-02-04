@@ -1,37 +1,62 @@
 package com.diabetes.giindex.data.ai
 
 import com.diabetes.giindex.data.local.entity.Product
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.generationConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 class GeminiService(private val apiKey: String) {
     
-    private val model = GenerativeModel(
-        modelName = "gemini-pro",
-        apiKey = apiKey,
-        generationConfig = generationConfig {
-            temperature = 0.7f
-            topK = 40
-            topP = 0.95f
-            maxOutputTokens = 1024
-        }
-    )
+    private val client = OkHttpClient.Builder()
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
+        .writeTimeout(30, TimeUnit.SECONDS)
+        .build()
+    
+    private val retrofit = Retrofit.Builder()
+        .baseUrl("https://generativelanguage.googleapis.com/")
+        .client(client)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+    
+    private val api = retrofit.create(GeminiApiService::class.java)
     
     suspend fun analyzeProduct(product: Product): ProductAnalysis {
         return withContext(Dispatchers.IO) {
             try {
                 val prompt = buildPrompt(product)
-                val response = model.generateContent(prompt)
-                val text = response.text ?: "Не удалось получить анализ"
+                val request = GeminiRequest(
+                    contents = listOf(
+                        Content(
+                            parts = listOf(Part(text = prompt))
+                        )
+                    )
+                )
                 
-                parseAnalysis(text, product)
+                val response = api.generateContent(apiKey, request)
+                
+                if (response.isSuccessful) {
+                    val text = response.body()?.candidates?.firstOrNull()
+                        ?.content?.parts?.firstOrNull()?.text
+                        ?: "Не удалось получить анализ"
+                    
+                    parseAnalysis(text, product)
+                } else {
+                    ProductAnalysis(
+                        recommendation = getBasicRecommendation(product),
+                        explanation = "Ошибка API: ${response.code()} - ${response.message()}",
+                        tips = getBasicTips(product),
+                        isAiGenerated = false
+                    )
+                }
             } catch (e: Exception) {
                 ProductAnalysis(
                     recommendation = getBasicRecommendation(product),
                     explanation = "Ошибка при получении AI-анализа: ${e.message}",
-                    tips = emptyList(),
+                    tips = getBasicTips(product),
                     isAiGenerated = false
                 )
             }
