@@ -185,11 +185,11 @@ fun ProductDetailScreen(
                                 modifier = Modifier.size(20.dp)
                             )
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Получить рекомендацию")
+                            Text("Получить AI-рекомендацию")
                         }
                         
                         Text(
-                            text = "Нажмите, чтобы получить AI-анализ продукта с рекомендациями по употреблению при диабете",
+                            text = "Получите умный анализ продукта с персональными рекомендациями по употреблению при диабете",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.fillMaxWidth()

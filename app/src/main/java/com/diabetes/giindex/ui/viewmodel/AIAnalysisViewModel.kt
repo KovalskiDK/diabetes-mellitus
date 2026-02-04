@@ -2,6 +2,7 @@ package com.diabetes.giindex.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.diabetes.giindex.data.ai.GeminiConfig
 import com.diabetes.giindex.data.ai.GeminiService
 import com.diabetes.giindex.data.ai.ProductAnalysis
 import com.diabetes.giindex.data.local.entity.Product
@@ -21,7 +22,16 @@ class AIAnalysisViewModel : ViewModel() {
     private val _error = MutableStateFlow<String?>(null)
     val error: StateFlow<String?> = _error.asStateFlow()
     
-    private var geminiService: GeminiService? = null
+    // Автоматически инициализируем с встроенным API ключом
+    private var geminiService: GeminiService? = try {
+        if (GeminiConfig.API_KEY.isNotBlank() && !GeminiConfig.API_KEY.contains("Demo")) {
+            GeminiService(GeminiConfig.API_KEY)
+        } else {
+            null // Используем офлайн-режим если ключ не настроен
+        }
+    } catch (e: Exception) {
+        null
+    }
     
     fun setApiKey(apiKey: String) {
         geminiService = if (apiKey.isNotBlank()) {
