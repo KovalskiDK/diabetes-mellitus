@@ -207,10 +207,7 @@ class DataSourceViewModel(
                 // Удаляем все продукты источника
                 productRepository.deleteProductsBySource(sourceId)
                 // Удаляем сам источник
-                val source = repository.getSourceById(sourceId)
-                if (source != null) {
-                    repository.deleteSource(source)
-                }
+                repository.deleteSource(sourceId)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
