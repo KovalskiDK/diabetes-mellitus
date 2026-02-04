@@ -9,7 +9,7 @@ object CategoryIcons {
         return when (category.lowercase()) {
             "фрукты" -> Icons.Filled.LocalFlorist
             "овощи" -> Icons.Filled.Eco
-            "хлеб" -> Icons.Filled.Bakery
+            "хлеб" -> Icons.Filled.Grain
             "крупы" -> Icons.Filled.RiceBowl
             "молочные продукты" -> Icons.Filled.Icecream
             "мясо и рыба" -> Icons.Filled.Restaurant
