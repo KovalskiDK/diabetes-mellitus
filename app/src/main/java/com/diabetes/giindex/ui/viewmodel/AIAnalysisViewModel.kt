@@ -35,16 +35,9 @@ class AIAnalysisViewModel(application: Application) : AndroidViewModel(applicati
     private val CACHE_VALIDITY_DAYS = 7L
     private val CACHE_VALIDITY_MS = CACHE_VALIDITY_DAYS * 24 * 60 * 60 * 1000
     
-    // Автоматически инициализируем с встроенным API ключом
-    private var geminiService: GeminiService? = try {
-        if (GeminiConfig.API_KEY.isNotBlank() && !GeminiConfig.API_KEY.contains("Demo")) {
-            GeminiService(GeminiConfig.API_KEY)
-        } else {
-            null // Используем офлайн-режим если ключ не настроен
-        }
-    } catch (e: Exception) {
-        null
-    }
+    // Используем только офлайн-режим (умные правила на основе ГИ, углеводов, ГН)
+    // Gemini API временно отключен из-за проблем совместимости SDK
+    private var geminiService: GeminiService? = null
     
     fun setApiKey(apiKey: String) {
         geminiService = if (apiKey.isNotBlank()) {
