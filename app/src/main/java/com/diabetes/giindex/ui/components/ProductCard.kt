@@ -63,18 +63,22 @@ fun ProductCard(
                 
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    modifier = Modifier.fillMaxWidth()
                 ) {
-                    GIBadge(gi = product.gi)
+                    GIBadge(gi = product.gi, modifier = Modifier.wrapContentWidth())
                     
                     product.gl?.let { gl ->
-                        GLBadge(gl = gl)
+                        GLBadge(gl = gl, modifier = Modifier.wrapContentWidth())
                     }
                     
                     Text(
                         text = product.category,
                         style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f, fill = false)
                     )
                 }
             }
