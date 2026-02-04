@@ -9,7 +9,7 @@ import kotlinx.coroutines.withContext
 class GeminiService(private val apiKey: String) {
     
     private val model = GenerativeModel(
-        modelName = "gemini-pro",
+        modelName = "gemini-1.5-flash",
         apiKey = apiKey,
         generationConfig = generationConfig {
             temperature = 0.7f
