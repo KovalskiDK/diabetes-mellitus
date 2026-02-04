@@ -214,17 +214,7 @@ class MainActivity : ComponentActivity() {
                                     onBackClick = { navController.popBackStack() },
                                     onSourcesClick = {
                                         navController.navigate(Screen.Sources.route)
-                                    },
-                                    onDebugClick = {
-                                        navController.navigate(Screen.Debug.route)
                                     }
-                                )
-                            }
-                            
-                            composable(Screen.Debug.route) {
-                                DebugScreen(
-                                    database = database,
-                                    onBackClick = { navController.popBackStack() }
                                 )
                             }
                             

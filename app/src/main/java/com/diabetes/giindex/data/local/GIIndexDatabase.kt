@@ -19,7 +19,7 @@ import com.diabetes.giindex.data.local.entity.*
         TranslationCache::class,
         SyncLog::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = true
 )
 @TypeConverters(Converters::class)
@@ -60,6 +60,16 @@ abstract class GIIndexDatabase : RoomDatabase() {
             }
         }
         
+        private val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                // Добавляем колонку sourceId в таблицу products
+                database.execSQL("ALTER TABLE products ADD COLUMN sourceId INTEGER NOT NULL DEFAULT 0")
+                
+                // Создаем индекс для sourceId
+                database.execSQL("CREATE INDEX IF NOT EXISTS `index_products_sourceId` ON `products` (`sourceId`)")
+            }
+        }
+        
         fun getDatabase(context: Context): GIIndexDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
@@ -67,7 +77,7 @@ abstract class GIIndexDatabase : RoomDatabase() {
                     GIIndexDatabase::class.java,
                     "giindex_database"
                 )
-                    .addMigrations(MIGRATION_1_2)
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
                     .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance

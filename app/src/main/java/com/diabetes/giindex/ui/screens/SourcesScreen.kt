@@ -162,11 +162,25 @@ fun SourcesScreen(
                             
                             if (source.url.isNotBlank() && source.type != SourceType.MANUAL) {
                                 Spacer(modifier = Modifier.height(8.dp))
-                                Button(
-                                    onClick = { viewModel.refreshSource(source.id) },
-                                    modifier = Modifier.fillMaxWidth()
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp)
                                 ) {
-                                    Text("Обновить данные")
+                                    Button(
+                                        onClick = { viewModel.refreshSource(source.id) },
+                                        modifier = Modifier.weight(1f)
+                                    ) {
+                                        Text("Обновить данные")
+                                    }
+                                    
+                                    if (source.recordsCount > 0) {
+                                        OutlinedButton(
+                                            onClick = { viewModel.clearSourceData(source.id) },
+                                            modifier = Modifier.weight(1f)
+                                        ) {
+                                            Text("Удалить данные")
+                                        }
+                                    }
                                 }
                             }
                         }

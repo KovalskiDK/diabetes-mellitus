@@ -56,4 +56,10 @@ interface ProductDao {
     
     @Query("SELECT COUNT(*) FROM products")
     suspend fun getProductCount(): Int
+    
+    @Query("DELETE FROM products WHERE sourceId = :sourceId")
+    suspend fun deleteProductsBySource(sourceId: Long): Int
+    
+    @Query("SELECT COUNT(*) FROM products WHERE sourceId = :sourceId")
+    suspend fun getProductCountBySource(sourceId: Long): Int
 }

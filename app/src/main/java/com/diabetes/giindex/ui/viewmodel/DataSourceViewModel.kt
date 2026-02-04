@@ -62,6 +62,34 @@ class DataSourceViewModel(
         }
     }
     
+    fun clearSourceData(sourceId: Long) {
+        viewModelScope.launch {
+            val deletedCount = productRepository.deleteProductsBySource(sourceId)
+            
+            // Обновляем счетчик записей источника
+            repository.updateSourceVersion(
+                sourceId = sourceId,
+                version = "",
+                timestamp = System.currentTimeMillis(),
+                count = 0
+            )
+            
+            // Создаем лог об удалении
+            repository.insertSyncLog(
+                SyncLog(
+                    sourceId = sourceId,
+                    sourceName = repository.getSourceById(sourceId)?.name ?: "",
+                    sourceVersion = "",
+                    status = SyncStatus.SUCCESS,
+                    recordsAdded = -deletedCount,
+                    recordsTotal = 0,
+                    startedAt = System.currentTimeMillis(),
+                    completedAt = System.currentTimeMillis()
+                )
+            )
+        }
+    }
+    
     fun refreshSource(sourceId: Long) {
         viewModelScope.launch {
             _isRefreshing.value = true

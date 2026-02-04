@@ -10,12 +10,15 @@ import androidx.room.Index
         Index(value = ["nameOriginal"]),
         Index(value = ["nameRu"]),
         Index(value = ["category"]),
-        Index(value = ["gi"])
+        Index(value = ["gi"]),
+        Index(value = ["sourceId"])
     ]
 )
 data class Product(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
+    
+    val sourceId: Long = 0,
     
     val nameOriginal: String,
     val nameRu: String? = null,

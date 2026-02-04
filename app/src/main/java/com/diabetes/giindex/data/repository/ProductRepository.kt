@@ -54,4 +54,10 @@ class ProductRepository(
     
     suspend fun linkProductToSource(productSource: ProductSource) = 
         productSourceDao.insertProductSource(productSource)
+    
+    suspend fun deleteProductsBySource(sourceId: Long): Int = 
+        productDao.deleteProductsBySource(sourceId)
+    
+    suspend fun getProductCountBySource(sourceId: Long): Int = 
+        productDao.getProductCountBySource(sourceId)
 }

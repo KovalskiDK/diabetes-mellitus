@@ -29,6 +29,7 @@ object SourceDataParser {
                     products.add(
                         Product(
                             id = productId,
+                            sourceId = sourceId,
                             nameOriginal = nameEn,
                             nameRu = nameRu.takeIf { it.isNotBlank() },
                             category = category,
@@ -84,6 +85,7 @@ object SourceDataParser {
                     products.add(
                         Product(
                             id = productId,
+                            sourceId = sourceId,
                             nameOriginal = nameEn,
                             nameRu = nameRu.takeIf { it.isNotBlank() },
                             category = category,

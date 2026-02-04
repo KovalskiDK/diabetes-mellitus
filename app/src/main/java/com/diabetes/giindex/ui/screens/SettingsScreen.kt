@@ -20,7 +20,6 @@ fun SettingsScreen(
     viewModel: com.diabetes.giindex.ui.viewmodel.SettingsViewModel,
     onBackClick: () -> Unit,
     onSourcesClick: () -> Unit,
-    onDebugClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
@@ -47,16 +46,6 @@ fun SettingsScreen(
                     subtitle = "Управление источниками ГИ",
                     onClick = onSourcesClick
                 )
-                SettingsItem(
-                    title = "Отладка",
-                    subtitle = "Инициализация базы данных",
-                    onClick = onDebugClick
-                )
-                SettingsItem(
-                    title = "Очистить кэш переводов",
-                    subtitle = "Удалить сохраненные переводы",
-                    onClick = { /* TODO */ }
-                )
             }
             
             Divider()
@@ -64,7 +53,7 @@ fun SettingsScreen(
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.0.1",
+                    subtitle = "1.1.3",
                     onClick = { }
                 )
                 SettingsItem(
