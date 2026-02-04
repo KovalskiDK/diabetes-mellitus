@@ -2,6 +2,7 @@ package com.diabetes.giindex.data.ai
 
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Query
 
@@ -12,6 +13,11 @@ interface GeminiApiService {
         @Query("key") apiKey: String,
         @Body request: GeminiRequest
     ): Response<GeminiResponse>
+    
+    @GET("v1beta/models")
+    suspend fun listModels(
+        @Query("key") apiKey: String
+    ): Response<ModelsListResponse>
 }
 
 data class GeminiRequest(
@@ -40,4 +46,14 @@ data class ContentResponse(
 
 data class PartResponse(
     val text: String?
+)
+
+data class ModelsListResponse(
+    val models: List<ModelInfo>?
+)
+
+data class ModelInfo(
+    val name: String?,
+    val displayName: String?,
+    val supportedGenerationMethods: List<String>?
 )

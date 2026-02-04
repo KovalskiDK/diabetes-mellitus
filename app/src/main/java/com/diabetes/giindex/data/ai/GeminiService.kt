@@ -44,6 +44,22 @@ class GeminiService(private val apiKey: String) {
                 Log.d(TAG, "Product: ${product.nameRu ?: product.nameOriginal}")
                 Log.d(TAG, "API Key (first 10 chars): ${apiKey.take(10)}...")
                 
+                // Проверяем доступные модели
+                try {
+                    val modelsResponse = api.listModels(apiKey)
+                    if (modelsResponse.isSuccessful) {
+                        Log.d(TAG, "Available models:")
+                        modelsResponse.body()?.models?.forEach { model ->
+                            Log.d(TAG, "  - ${model.name} (${model.displayName})")
+                            Log.d(TAG, "    Methods: ${model.supportedGenerationMethods}")
+                        }
+                    } else {
+                        Log.e(TAG, "Failed to list models: ${modelsResponse.code()}")
+                    }
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error listing models", e)
+                }
+                
                 val prompt = buildPrompt(product)
                 Log.d(TAG, "Prompt: $prompt")
                 
