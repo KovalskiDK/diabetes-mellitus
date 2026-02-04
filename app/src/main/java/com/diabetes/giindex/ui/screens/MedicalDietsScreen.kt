@@ -1,12 +1,21 @@
 package com.diabetes.giindex.ui.screens
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.shrinkVertically
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -38,13 +47,13 @@ fun MedicalDietsScreen(
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Text(
-                text = "Система лечебных столов по Певзнеру — это классификация диет для различных заболеваний, разработанная советским ученым М.И. Певзнером.",
-                style = MaterialTheme.typography.bodyLarge,
+                text = "Система лечебных столов по Певзнеру — это классификация диет для различных заболеваний. Нажмите на стол, чтобы увидеть подробности.",
+                style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
             
             // Стол №1
-            DietCard(
+            ExpandableDietCard(
                 number = "1",
                 title = "Стол №1",
                 indication = "Язвенная болезнь желудка и двенадцатиперстной кишки",
@@ -70,7 +79,7 @@ fun MedicalDietsScreen(
             )
             
             // Стол №2
-            DietCard(
+            ExpandableDietCard(
                 number = "2",
                 title = "Стол №2",
                 indication = "Хронический гастрит с пониженной кислотностью",
@@ -95,7 +104,7 @@ fun MedicalDietsScreen(
             )
             
             // Стол №5
-            DietCard(
+            ExpandableDietCard(
                 number = "5",
                 title = "Стол №5",
                 indication = "Заболевания печени, желчного пузыря, желчевыводящих путей",
@@ -123,7 +132,7 @@ fun MedicalDietsScreen(
             )
             
             // Стол №8
-            DietCard(
+            ExpandableDietCard(
                 number = "8",
                 title = "Стол №8",
                 indication = "Ожирение",
@@ -149,7 +158,7 @@ fun MedicalDietsScreen(
             )
             
             // Стол №9
-            DietCard(
+            ExpandableDietCard(
                 number = "9",
                 title = "Стол №9",
                 indication = "Сахарный диабет легкой и средней степени тяжести",
@@ -179,7 +188,7 @@ fun MedicalDietsScreen(
             )
             
             // Стол №10
-            DietCard(
+            ExpandableDietCard(
                 number = "10",
                 title = "Стол №10",
                 indication = "Заболевания сердечно-сосудистой системы",
@@ -209,7 +218,7 @@ fun MedicalDietsScreen(
             )
             
             // Стол №15
-            DietCard(
+            ExpandableDietCard(
                 number = "15",
                 title = "Стол №15",
                 indication = "Общий стол (при отсутствии специальных показаний)",
@@ -259,7 +268,7 @@ fun MedicalDietsScreen(
 }
 
 @Composable
-fun DietCard(
+fun ExpandableDietCard(
     number: String,
     title: String,
     indication: String,
@@ -268,81 +277,107 @@ fun DietCard(
     forbidden: List<String>,
     modifier: Modifier = Modifier
 ) {
+    var expanded by remember { mutableStateOf(false) }
+    
     Card(
-        modifier = modifier.fillMaxWidth(),
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable { expanded = !expanded },
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
     ) {
         Column(
-            modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            modifier = Modifier.padding(16.dp)
         ) {
-            Text(
-                text = title,
-                style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.primary
-            )
-            
-            Text(
-                text = "Показания: $indication",
-                style = MaterialTheme.typography.bodyMedium,
-                fontWeight = FontWeight.SemiBold
-            )
-            
-            Text(
-                text = description,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-            
-            Divider()
-            
-            Text(
-                text = "✅ Разрешено:",
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.primary
-            )
-            
-            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                allowed.forEach { item ->
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Text(
-                            text = "•",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.primary
-                        )
-                        Text(
-                            text = item,
-                            style = MaterialTheme.typography.bodyMedium
-                        )
-                    }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = title,
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                    Text(
+                        text = indication,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                 }
+                Icon(
+                    imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
+                    contentDescription = if (expanded) "Свернуть" else "Развернуть",
+                    tint = MaterialTheme.colorScheme.primary
+                )
             }
             
-            Divider()
-            
-            Text(
-                text = "❌ Запрещено:",
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.error
-            )
-            
-            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                forbidden.forEach { item ->
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Text(
-                            text = "•",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.error
-                        )
-                        Text(
-                            text = item,
-                            style = MaterialTheme.typography.bodyMedium
-                        )
+            AnimatedVisibility(
+                visible = expanded,
+                enter = expandVertically() + fadeIn(),
+                exit = shrinkVertically() + fadeOut()
+            ) {
+                Column(
+                    modifier = Modifier.padding(top = 12.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(
+                        text = description,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    
+                    HorizontalDivider()
+                    
+                    Text(
+                        text = "✅ Разрешено:",
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                    
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        allowed.forEach { item ->
+                            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                Text(
+                                    text = "•",
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    color = MaterialTheme.colorScheme.primary
+                                )
+                                Text(
+                                    text = item,
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                            }
+                        }
+                    }
+                    
+                    HorizontalDivider()
+                    
+                    Text(
+                        text = "❌ Запрещено:",
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.error
+                    )
+                    
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        forbidden.forEach { item ->
+                            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                Text(
+                                    text = "•",
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    color = MaterialTheme.colorScheme.error
+                                )
+                                Text(
+                                    text = item,
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                            }
+                        }
                     }
                 }
             }
