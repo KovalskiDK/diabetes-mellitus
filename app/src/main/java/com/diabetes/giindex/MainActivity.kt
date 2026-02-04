@@ -235,6 +235,9 @@ class MainActivity : ComponentActivity() {
                                     },
                                     onTrafficLightClick = {
                                         navController.navigate(Screen.TrafficLight.route)
+                                    },
+                                    onMedicalDietsClick = {
+                                        navController.navigate(Screen.MedicalDiets.route)
                                     }
                                 )
                             }
@@ -265,6 +268,12 @@ class MainActivity : ComponentActivity() {
                             
                             composable(Screen.TrafficLight.route) {
                                 TrafficLightScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
+                            }
+                            
+                            composable(Screen.MedicalDiets.route) {
+                                MedicalDietsScreen(
                                     onBackClick = { navController.popBackStack() }
                                 )
                             }

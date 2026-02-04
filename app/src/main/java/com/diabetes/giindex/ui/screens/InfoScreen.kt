@@ -20,6 +20,7 @@ fun InfoScreen(
     onFiberClick: () -> Unit,
     onAlcoholClick: () -> Unit,
     onTrafficLightClick: () -> Unit,
+    onMedicalDietsClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -50,6 +51,14 @@ fun InfoScreen(
                 title = "Правила питания «Светофор»",
                 description = "Зеленая, желтая и красная зоны продуктов по ГИ",
                 onClick = onTrafficLightClick
+            )
+            
+            // Лечебные столы
+            InfoCard(
+                icon = Icons.Filled.LocalDining,
+                title = "Лечебные столы питания",
+                description = "Медицинские диеты по Певзнеру (столы №1, 2, 5, 8, 9, 10, 15)",
+                onClick = onMedicalDietsClick
             )
             
             // Об углеводах

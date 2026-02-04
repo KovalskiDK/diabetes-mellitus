@@ -15,5 +15,6 @@ sealed class Screen(val route: String) {
     object Fiber : Screen("fiber")
     object Alcohol : Screen("alcohol")
     object TrafficLight : Screen("traffic_light")
+    object MedicalDiets : Screen("medical_diets")
     object Settings : Screen("settings")
 }
