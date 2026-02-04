@@ -96,9 +96,9 @@ class MainActivity : ComponentActivity() {
                                 NavigationBarItem(
                                     icon = { Icon(Icons.Filled.Info, contentDescription = "Информация") },
                                     label = { Text("Инфо") },
-                                    selected = currentDestination?.hierarchy?.any { it.route == Screen.FAQ.route } == true,
+                                    selected = currentDestination?.hierarchy?.any { it.route == Screen.Info.route } == true,
                                     onClick = {
-                                        navController.navigate(Screen.FAQ.route) {
+                                        navController.navigate(Screen.Info.route) {
                                             popUpTo(navController.graph.findStartDestination().id) {
                                                 saveState = true
                                             }
@@ -214,6 +214,14 @@ class MainActivity : ComponentActivity() {
                                     onBackClick = { navController.popBackStack() },
                                     onSourcesClick = {
                                         navController.navigate(Screen.Sources.route)
+                                    }
+                                )
+                            }
+                            
+                            composable(Screen.Info.route) {
+                                InfoScreen(
+                                    onGeneralInfoClick = {
+                                        navController.navigate(Screen.GeneralInfo.route)
                                     },
                                     onEducationClick = {
                                         navController.navigate(Screen.Education.route)
@@ -224,8 +232,10 @@ class MainActivity : ComponentActivity() {
                                 )
                             }
                             
-                            composable(Screen.FAQ.route) {
-                                FAQScreen()
+                            composable(Screen.GeneralInfo.route) {
+                                GeneralInfoScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
                             }
                             
                             composable(Screen.Education.route) {
