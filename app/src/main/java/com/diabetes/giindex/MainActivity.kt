@@ -217,6 +217,9 @@ class MainActivity : ComponentActivity() {
                                     },
                                     onEducationClick = {
                                         navController.navigate(Screen.Education.route)
+                                    },
+                                    onFiberClick = {
+                                        navController.navigate(Screen.Fiber.route)
                                     }
                                 )
                             }
@@ -227,6 +230,12 @@ class MainActivity : ComponentActivity() {
                             
                             composable(Screen.Education.route) {
                                 EducationScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
+                            }
+                            
+                            composable(Screen.Fiber.route) {
+                                FiberScreen(
                                     onBackClick = { navController.popBackStack() }
                                 )
                             }

@@ -21,6 +21,7 @@ fun SettingsScreen(
     onBackClick: () -> Unit,
     onSourcesClick: () -> Unit,
     onEducationClick: () -> Unit,
+    onFiberClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
@@ -56,6 +57,11 @@ fun SettingsScreen(
                     title = "Об углеводах",
                     subtitle = "Типы углеводов и их усвоение",
                     onClick = onEducationClick
+                )
+                SettingsItem(
+                    title = "Клетчатка",
+                    subtitle = "Продукты с высоким содержанием клетчатки",
+                    onClick = onFiberClick
                 )
             }
             
