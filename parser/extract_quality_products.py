@@ -25,25 +25,50 @@ def is_quality_translation(product):
     name_ru = product.get('nameRu', '')
     name_en = product.get('name', '')
     
-    # Плохие признаки:
-    # 1. Перевод содержит английские слова (кроме брендов)
-    bad_words = ['NS', 'packet mix', 'GI', 'variant', 'ratio', 'wheat flour', 'coconut flour']
-    for word in bad_words:
-        if word.lower() in name_ru.lower():
-            return False
-    
-    # 2. Перевод слишком длинный и технический
-    if len(name_ru) > 80:
+    # 1. Проверка на латиницу в русском названии (кроме брендов в скобках)
+    import re
+    # Убираем содержимое скобок (там могут быть бренды)
+    name_without_brackets = re.sub(r'\([^)]*\)', '', name_ru)
+    # Считаем латинские буквы
+    latin_chars = len(re.findall(r'[a-zA-Z]', name_without_brackets))
+    # Если больше 3 латинских букв - плохой перевод
+    if latin_chars > 3:
         return False
     
-    # 3. Перевод содержит транслит вместо перевода
-    translits = ['мадкейк', 'капкейк', 'крекер']
-    for translit in translits:
-        if translit in name_ru.lower():
+    # 2. Перевод содержит английские/технические слова
+    bad_words = [
+        'NS', 'GI', 'GL', 'variant', 'ratio', 'mix', 'packet', 'flour', 
+        'wheat', 'coconut', 'sugar', 'added', 'premix', 'fibre', 'fiber',
+        'noodle', 'burger', 'high', 'low', 'no', 'free', 'lite', 'light',
+        'AF-', 'LC', 'HFP', 'made', 'with', 'from', 'prepared', 'cooked',
+        'boiled', 'fried', 'baked', 'raw', 'fresh', 'frozen', 'canned',
+        'decreased', 'increased', 'reduced', 'enriched', 'fortified'
+    ]
+    name_lower = name_ru.lower()
+    for word in bad_words:
+        if word.lower() in name_lower:
             return False
     
-    # 4. Перевод идентичен английскому (кроме брендов)
+    # 3. Перевод слишком длинный и технический
+    if len(name_ru) > 70:
+        return False
+    
+    # 4. Транслит вместо перевода
+    translits = [
+        'мадкейк', 'капкейк', 'крекер', 'чипс', 'снек', 'микс',
+        'фреш', 'лайт', 'фри', 'бургер', 'ролл', 'сэндвич'
+    ]
+    for translit in translits:
+        if translit in name_lower:
+            return False
+    
+    # 5. Перевод идентичен английскому
     if name_ru == name_en and len(name_en) > 5:
+        return False
+    
+    # 6. Проверка на минимальное количество русских букв
+    russian_chars = len(re.findall(r'[а-яА-ЯёЁ]', name_ru))
+    if russian_chars < 5:
         return False
     
     return True
