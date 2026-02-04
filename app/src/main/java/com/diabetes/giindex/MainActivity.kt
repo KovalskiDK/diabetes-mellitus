@@ -232,6 +232,9 @@ class MainActivity : ComponentActivity() {
                                     },
                                     onAlcoholClick = {
                                         navController.navigate(Screen.Alcohol.route)
+                                    },
+                                    onTrafficLightClick = {
+                                        navController.navigate(Screen.TrafficLight.route)
                                     }
                                 )
                             }
@@ -256,6 +259,12 @@ class MainActivity : ComponentActivity() {
                             
                             composable(Screen.Alcohol.route) {
                                 AlcoholInfoScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
+                            }
+                            
+                            composable(Screen.TrafficLight.route) {
+                                TrafficLightScreen(
                                     onBackClick = { navController.popBackStack() }
                                 )
                             }

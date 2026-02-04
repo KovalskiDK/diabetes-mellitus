@@ -19,6 +19,7 @@ fun InfoScreen(
     onEducationClick: () -> Unit,
     onFiberClick: () -> Unit,
     onAlcoholClick: () -> Unit,
+    onTrafficLightClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -41,6 +42,14 @@ fun InfoScreen(
                 title = "Общая информация",
                 description = "Что такое ГИ и ГН, как они влияют на организм",
                 onClick = onGeneralInfoClick
+            )
+            
+            // Правила питания Светофор
+            InfoCard(
+                icon = Icons.Filled.Traffic,
+                title = "Правила питания «Светофор»",
+                description = "Зеленая, желтая и красная зоны продуктов по ГИ",
+                onClick = onTrafficLightClick
             )
             
             // Об углеводах
