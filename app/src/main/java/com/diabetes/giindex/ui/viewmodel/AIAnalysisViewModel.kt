@@ -55,6 +55,8 @@ class AIAnalysisViewModel(application: Application) : AndroidViewModel(applicati
     }
     
     fun analyzeProduct(product: Product) {
+        currentProduct = product // Сохраняем для повторного анализа
+        
         viewModelScope.launch {
             _isLoading.value = true
             _error.value = null
@@ -179,8 +181,21 @@ class AIAnalysisViewModel(application: Application) : AndroidViewModel(applicati
         )
     }
     
+    private var currentProduct: Product? = null
+    
     fun clearAnalysis() {
-        _analysis.value = null
-        _error.value = null
+        viewModelScope.launch {
+            _analysis.value = null
+            _error.value = null
+            
+            // Удаляем из кэша, чтобы получить свежий анализ
+            currentProduct?.let { product ->
+                cacheDao.getAnalysis(product.id)?.let {
+                    cacheDao.deleteExpiredAnalyses(System.currentTimeMillis() + 1000) // Удаляем все
+                }
+                // Сразу запрашиваем новый анализ
+                analyzeProduct(product)
+            }
+        }
     }
 }
