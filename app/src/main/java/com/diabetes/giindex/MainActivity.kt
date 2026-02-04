@@ -229,6 +229,9 @@ class MainActivity : ComponentActivity() {
                                     },
                                     onFiberClick = {
                                         navController.navigate(Screen.Fiber.route)
+                                    },
+                                    onAlcoholClick = {
+                                        navController.navigate(Screen.Alcohol.route)
                                     }
                                 )
                             }
@@ -247,6 +250,12 @@ class MainActivity : ComponentActivity() {
                             
                             composable(Screen.Fiber.route) {
                                 FiberScreen(
+                                    onBackClick = { navController.popBackStack() }
+                                )
+                            }
+                            
+                            composable(Screen.Alcohol.route) {
+                                AlcoholInfoScreen(
                                     onBackClick = { navController.popBackStack() }
                                 )
                             }

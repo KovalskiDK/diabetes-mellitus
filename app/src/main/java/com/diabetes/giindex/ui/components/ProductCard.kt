@@ -17,6 +17,7 @@ import com.diabetes.giindex.data.local.entity.Product
 import com.diabetes.giindex.ui.theme.GIHigh
 import com.diabetes.giindex.ui.theme.GILow
 import com.diabetes.giindex.ui.theme.GIMedium
+import com.diabetes.giindex.ui.utils.CategoryIcons
 
 @Composable
 fun ProductCard(
@@ -72,14 +73,25 @@ fun ProductCard(
                         GLBadge(gl = gl, modifier = Modifier.wrapContentWidth())
                     }
                     
-                    Text(
-                        text = product.category,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
                         modifier = Modifier.weight(1f, fill = false)
-                    )
+                    ) {
+                        Icon(
+                            imageVector = CategoryIcons.getIconForCategory(product.category),
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp),
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Text(
+                            text = product.category,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
                 }
             }
             

@@ -18,6 +18,7 @@ fun InfoScreen(
     onGeneralInfoClick: () -> Unit,
     onEducationClick: () -> Unit,
     onFiberClick: () -> Unit,
+    onAlcoholClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -56,6 +57,14 @@ fun InfoScreen(
                 title = "Клетчатка",
                 description = "Продукты с высоким содержанием клетчатки",
                 onClick = onFiberClick
+            )
+            
+            // Алкоголь
+            InfoCard(
+                icon = Icons.Filled.Warning,
+                title = "Алкоголь и диабет",
+                description = "ГИ и ГН алкогольных напитков, рекомендации",
+                onClick = onAlcoholClick
             )
         }
     }
