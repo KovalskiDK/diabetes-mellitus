@@ -40,6 +40,14 @@ fun MedicalDietsScreen(
             modifier = modifier
                 .fillMaxSize()
                 .padding(paddingValues)
+                .pointerInput(Unit) {
+                    awaitEachGesture {
+                        val event = awaitPointerEvent()
+                        if (event.type == PointerEventType.Exit) {
+                            event.changes.forEach { it.consume() }
+                        }
+                    }
+                }
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
@@ -278,17 +286,7 @@ fun ExpandableDietCard(
     var expanded by remember { mutableStateOf(false) }
     
     Card(
-        modifier = modifier
-            .fillMaxWidth()
-            .pointerInput(Unit) {
-                awaitEachGesture {
-                    val event = awaitPointerEvent()
-                    if (event.type == PointerEventType.Exit) {
-                        // Игнорируем hover exit события
-                        event.changes.forEach { it.consume() }
-                    }
-                }
-            },
+        modifier = modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
