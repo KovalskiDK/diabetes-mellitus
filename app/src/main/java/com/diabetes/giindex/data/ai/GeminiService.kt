@@ -1,16 +1,29 @@
 package com.diabetes.giindex.data.ai
 
 import com.diabetes.giindex.data.local.entity.Product
+import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 class GeminiService(private val apiKey: String) {
     
+    companion object {
+        private const val TAG = "GeminiService"
+    }
+    
+    private val loggingInterceptor = HttpLoggingInterceptor { message ->
+        Log.d(TAG, message)
+    }.apply {
+        level = HttpLoggingInterceptor.Level.BODY
+    }
+    
     private val client = OkHttpClient.Builder()
+        .addInterceptor(loggingInterceptor)
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .writeTimeout(30, TimeUnit.SECONDS)
@@ -27,7 +40,13 @@ class GeminiService(private val apiKey: String) {
     suspend fun analyzeProduct(product: Product): ProductAnalysis {
         return withContext(Dispatchers.IO) {
             try {
+                Log.d(TAG, "=== Starting Gemini API request ===")
+                Log.d(TAG, "Product: ${product.nameRu ?: product.nameOriginal}")
+                Log.d(TAG, "API Key (first 10 chars): ${apiKey.take(10)}...")
+                
                 val prompt = buildPrompt(product)
+                Log.d(TAG, "Prompt: $prompt")
+                
                 val request = GeminiRequest(
                     contents = listOf(
                         Content(
@@ -36,26 +55,46 @@ class GeminiService(private val apiKey: String) {
                     )
                 )
                 
+                Log.d(TAG, "Sending request to Gemini API...")
                 val response = api.generateContent(apiKey, request)
                 
+                Log.d(TAG, "Response code: ${response.code()}")
+                Log.d(TAG, "Response message: ${response.message()}")
+                
                 if (response.isSuccessful) {
-                    val text = response.body()?.candidates?.firstOrNull()
+                    val body = response.body()
+                    Log.d(TAG, "Response body: $body")
+                    
+                    val text = body?.candidates?.firstOrNull()
                         ?.content?.parts?.firstOrNull()?.text
                         ?: "Не удалось получить анализ"
                     
-                    parseAnalysis(text, product)
+                    Log.d(TAG, "AI Response text: $text")
+                    
+                    val result = parseAnalysis(text, product)
+                    Log.d(TAG, "=== Gemini API request SUCCESS ===")
+                    result
                 } else {
+                    val errorBody = response.errorBody()?.string()
+                    Log.e(TAG, "API Error: ${response.code()} - ${response.message()}")
+                    Log.e(TAG, "Error body: $errorBody")
+                    
                     ProductAnalysis(
                         recommendation = getBasicRecommendation(product),
-                        explanation = "Ошибка API: ${response.code()} - ${response.message()}",
+                        explanation = "Ошибка API: ${response.code()} - ${response.message()}\n$errorBody",
                         tips = getBasicTips(product),
                         isAiGenerated = false
                     )
                 }
             } catch (e: Exception) {
+                Log.e(TAG, "=== Gemini API request FAILED ===", e)
+                Log.e(TAG, "Exception: ${e.javaClass.simpleName}")
+                Log.e(TAG, "Message: ${e.message}")
+                e.printStackTrace()
+                
                 ProductAnalysis(
                     recommendation = getBasicRecommendation(product),
-                    explanation = "Ошибка при получении AI-анализа: ${e.message}",
+                    explanation = "Ошибка: ${e.javaClass.simpleName}\n${e.message}",
                     tips = getBasicTips(product),
                     isAiGenerated = false
                 )
