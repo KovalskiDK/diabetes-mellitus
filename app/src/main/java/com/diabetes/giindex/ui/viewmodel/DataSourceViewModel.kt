@@ -11,6 +11,7 @@ import com.diabetes.giindex.data.network.LoadResult
 import com.diabetes.giindex.data.network.SourceDataLoader
 import com.diabetes.giindex.data.parser.ParseResult
 import com.diabetes.giindex.data.parser.SourceDataParser
+import com.diabetes.giindex.data.remote.GitHubSourcesApi
 import com.diabetes.giindex.data.repository.DataSourceRepository
 import com.diabetes.giindex.data.repository.ProductRepository
 import kotlinx.coroutines.flow.*
@@ -194,6 +195,38 @@ class DataSourceViewModel(
                         completedAt = System.currentTimeMillis()
                     )
                 )
+            } finally {
+                _isRefreshing.value = false
+            }
+        }
+    }
+    
+    fun discoverGitHubSources() {
+        viewModelScope.launch {
+            _isRefreshing.value = true
+            try {
+                val githubFiles = GitHubSourcesApi.getAvailableSources()
+                val existingSources = sources.value
+                
+                // Добавляем только новые источники
+                githubFiles.forEach { file ->
+                    val exists = existingSources.any { it.url == file.downloadUrl }
+                    if (!exists) {
+                        val newSource = DataSource(
+                            name = file.name,
+                            description = "",
+                            url = file.downloadUrl,
+                            type = SourceType.JSON,
+                            isActive = false,
+                            version = "",
+                            lastUpdated = 0,
+                            recordsCount = 0
+                        )
+                        repository.insertSource(newSource)
+                    }
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
             } finally {
                 _isRefreshing.value = false
             }
