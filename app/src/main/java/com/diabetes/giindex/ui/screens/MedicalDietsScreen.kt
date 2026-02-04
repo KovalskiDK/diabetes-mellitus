@@ -267,6 +267,7 @@ fun MedicalDietsScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ExpandableDietCard(
     number: String,
