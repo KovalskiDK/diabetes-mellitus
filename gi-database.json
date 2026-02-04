@@ -1,0 +1,514 @@
+[
+  {
+    "name": "Apple, raw",
+    "nameRu": "Яблоко сырое",
+    "category": "Фрукты",
+    "gi": 36,
+    "gl": 6.0,
+    "carbs": 14.0
+  },
+  {
+    "name": "Banana, raw",
+    "nameRu": "Банан сырой",
+    "category": "Фрукты",
+    "gi": 51,
+    "gl": 13.0,
+    "carbs": 23.0
+  },
+  {
+    "name": "Orange, raw",
+    "nameRu": "Апельсин сырой",
+    "category": "Фрукты",
+    "gi": 43,
+    "gl": 5.0,
+    "carbs": 12.0
+  },
+  {
+    "name": "Grapes, raw",
+    "nameRu": "Виноград сырой",
+    "category": "Фрукты",
+    "gi": 46,
+    "gl": 8.0,
+    "carbs": 18.0
+  },
+  {
+    "name": "Watermelon, raw",
+    "nameRu": "Арбуз сырой",
+    "category": "Фрукты",
+    "gi": 76,
+    "gl": 4.0,
+    "carbs": 8.0
+  },
+  {
+    "name": "Strawberries, raw",
+    "nameRu": "Клубника сырая",
+    "category": "Фрукты",
+    "gi": 41,
+    "gl": 1.0,
+    "carbs": 8.0
+  },
+  {
+    "name": "Pineapple, raw",
+    "nameRu": "Ананас сырой",
+    "category": "Фрукты",
+    "gi": 59,
+    "gl": 7.0,
+    "carbs": 13.0
+  },
+  {
+    "name": "Mango, raw",
+    "nameRu": "Манго сырое",
+    "category": "Фрукты",
+    "gi": 51,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Peach, raw",
+    "nameRu": "Персик сырой",
+    "category": "Фрукты",
+    "gi": 42,
+    "gl": 5.0,
+    "carbs": 10.0
+  },
+  {
+    "name": "Pear, raw",
+    "nameRu": "Груша сырая",
+    "category": "Фрукты",
+    "gi": 38,
+    "gl": 4.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "White bread",
+    "nameRu": "Белый хлеб",
+    "category": "Хлебобулочные",
+    "gi": 75,
+    "gl": 11.0,
+    "carbs": 49.0
+  },
+  {
+    "name": "Whole wheat bread",
+    "nameRu": "Цельнозерновой хлеб",
+    "category": "Хлебобулочные",
+    "gi": 74,
+    "gl": 9.0,
+    "carbs": 41.0
+  },
+  {
+    "name": "Rye bread",
+    "nameRu": "Ржаной хлеб",
+    "category": "Хлебобулочные",
+    "gi": 65,
+    "gl": 8.0,
+    "carbs": 48.0
+  },
+  {
+    "name": "Baguette",
+    "nameRu": "Багет",
+    "category": "Хлебобулочные",
+    "gi": 95,
+    "gl": 15.0,
+    "carbs": 58.0
+  },
+  {
+    "name": "Brown rice, boiled",
+    "nameRu": "Коричневый рис вареный",
+    "category": "Крупы",
+    "gi": 68,
+    "gl": 16.0,
+    "carbs": 23.0
+  },
+  {
+    "name": "White rice, boiled",
+    "nameRu": "Белый рис вареный",
+    "category": "Крупы",
+    "gi": 73,
+    "gl": 29.0,
+    "carbs": 28.0
+  },
+  {
+    "name": "Basmati rice, boiled",
+    "nameRu": "Рис басмати вареный",
+    "category": "Крупы",
+    "gi": 58,
+    "gl": 22.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Pasta, white, boiled",
+    "nameRu": "Макароны белые вареные",
+    "category": "Крупы",
+    "gi": 49,
+    "gl": 23.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Pasta, whole wheat, boiled",
+    "nameRu": "Макароны цельнозерновые вареные",
+    "category": "Крупы",
+    "gi": 42,
+    "gl": 17.0,
+    "carbs": 26.0
+  },
+  {
+    "name": "Oatmeal, cooked",
+    "nameRu": "Овсяная каша",
+    "category": "Крупы",
+    "gi": 55,
+    "gl": 13.0,
+    "carbs": 12.0
+  },
+  {
+    "name": "Quinoa, cooked",
+    "nameRu": "Киноа вареная",
+    "category": "Крупы",
+    "gi": 53,
+    "gl": 13.0,
+    "carbs": 21.0
+  },
+  {
+    "name": "Buckwheat, cooked",
+    "nameRu": "Гречка вареная",
+    "category": "Крупы",
+    "gi": 54,
+    "gl": 16.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Corn flakes",
+    "nameRu": "Кукурузные хлопья",
+    "category": "Крупы",
+    "gi": 81,
+    "gl": 21.0,
+    "carbs": 84.0
+  },
+  {
+    "name": "Muesli",
+    "nameRu": "Мюсли",
+    "category": "Крупы",
+    "gi": 57,
+    "gl": 10.0,
+    "carbs": 66.0
+  },
+  {
+    "name": "Potato, boiled",
+    "nameRu": "Картофель вареный",
+    "category": "Овощи",
+    "gi": 78,
+    "gl": 14.0,
+    "carbs": 17.0
+  },
+  {
+    "name": "Potato, baked",
+    "nameRu": "Картофель печеный",
+    "category": "Овощи",
+    "gi": 85,
+    "gl": 26.0,
+    "carbs": 21.0
+  },
+  {
+    "name": "Potato, french fries",
+    "nameRu": "Картофель фри",
+    "category": "Овощи",
+    "gi": 75,
+    "gl": 22.0,
+    "carbs": 29.0
+  },
+  {
+    "name": "Sweet potato, boiled",
+    "nameRu": "Батат вареный",
+    "category": "Овощи",
+    "gi": 63,
+    "gl": 11.0,
+    "carbs": 17.0
+  },
+  {
+    "name": "Carrot, raw",
+    "nameRu": "Морковь сырая",
+    "category": "Овощи",
+    "gi": 16,
+    "gl": 1.0,
+    "carbs": 7.0
+  },
+  {
+    "name": "Carrot, boiled",
+    "nameRu": "Морковь вареная",
+    "category": "Овощи",
+    "gi": 39,
+    "gl": 2.0,
+    "carbs": 8.0
+  },
+  {
+    "name": "Broccoli",
+    "nameRu": "Брокколи",
+    "category": "Овощи",
+    "gi": 10,
+    "gl": 1.0,
+    "carbs": 7.0
+  },
+  {
+    "name": "Tomato",
+    "nameRu": "Помидор",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": 1.0,
+    "carbs": 4.0
+  },
+  {
+    "name": "Cucumber",
+    "nameRu": "Огурец",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": 0.0,
+    "carbs": 3.0
+  },
+  {
+    "name": "Lettuce",
+    "nameRu": "Салат",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": 0.0,
+    "carbs": 3.0
+  },
+  {
+    "name": "Spinach",
+    "nameRu": "Шпинат",
+    "category": "Овощи",
+    "gi": 15,
+    "gl": 0.0,
+    "carbs": 4.0
+  },
+  {
+    "name": "Corn, sweet",
+    "nameRu": "Кукуруза сладкая",
+    "category": "Овощи",
+    "gi": 52,
+    "gl": 9.0,
+    "carbs": 19.0
+  },
+  {
+    "name": "Peas, green",
+    "nameRu": "Горошек зеленый",
+    "category": "Овощи",
+    "gi": 48,
+    "gl": 3.0,
+    "carbs": 14.0
+  },
+  {
+    "name": "Lentils, boiled",
+    "nameRu": "Чечевица вареная",
+    "category": "Бобовые",
+    "gi": 32,
+    "gl": 5.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Chickpeas, boiled",
+    "nameRu": "Нут вареный",
+    "category": "Бобовые",
+    "gi": 28,
+    "gl": 8.0,
+    "carbs": 27.0
+  },
+  {
+    "name": "Kidney beans, boiled",
+    "nameRu": "Фасоль красная вареная",
+    "category": "Бобовые",
+    "gi": 24,
+    "gl": 6.0,
+    "carbs": 23.0
+  },
+  {
+    "name": "Black beans, boiled",
+    "nameRu": "Фасоль черная вареная",
+    "category": "Бобовые",
+    "gi": 30,
+    "gl": 7.0,
+    "carbs": 24.0
+  },
+  {
+    "name": "Soybeans, boiled",
+    "nameRu": "Соя вареная",
+    "category": "Бобовые",
+    "gi": 16,
+    "gl": 1.0,
+    "carbs": 9.0
+  },
+  {
+    "name": "Milk, whole",
+    "nameRu": "Молоко цельное",
+    "category": "Молочные",
+    "gi": 39,
+    "gl": 5.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Milk, skim",
+    "nameRu": "Молоко обезжиренное",
+    "category": "Молочные",
+    "gi": 37,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Yogurt, plain",
+    "nameRu": "Йогурт натуральный",
+    "category": "Молочные",
+    "gi": 41,
+    "gl": 5.0,
+    "carbs": 4.0
+  },
+  {
+    "name": "Yogurt, low-fat",
+    "nameRu": "Йогурт нежирный",
+    "category": "Молочные",
+    "gi": 33,
+    "gl": 10.0,
+    "carbs": 17.0
+  },
+  {
+    "name": "Ice cream",
+    "nameRu": "Мороженое",
+    "category": "Сладости",
+    "gi": 51,
+    "gl": 8.0,
+    "carbs": 24.0
+  },
+  {
+    "name": "Chocolate, dark",
+    "nameRu": "Шоколад темный",
+    "category": "Сладости",
+    "gi": 40,
+    "gl": 14.0,
+    "carbs": 52.0
+  },
+  {
+    "name": "Chocolate, milk",
+    "nameRu": "Шоколад молочный",
+    "category": "Сладости",
+    "gi": 43,
+    "gl": 12.0,
+    "carbs": 59.0
+  },
+  {
+    "name": "Honey",
+    "nameRu": "Мед",
+    "category": "Сладости",
+    "gi": 61,
+    "gl": 10.0,
+    "carbs": 82.0
+  },
+  {
+    "name": "Sugar, white",
+    "nameRu": "Сахар белый",
+    "category": "Сладости",
+    "gi": 65,
+    "gl": 7.0,
+    "carbs": 100.0
+  },
+  {
+    "name": "Coca-Cola",
+    "nameRu": "Кока-Кола",
+    "category": "Напитки",
+    "gi": 63,
+    "gl": 16.0,
+    "carbs": 11.0
+  },
+  {
+    "name": "Orange juice",
+    "nameRu": "Апельсиновый сок",
+    "category": "Напитки",
+    "gi": 50,
+    "gl": 12.0,
+    "carbs": 10.0
+  },
+  {
+    "name": "Apple juice",
+    "nameRu": "Яблочный сок",
+    "category": "Напитки",
+    "gi": 41,
+    "gl": 12.0,
+    "carbs": 12.0
+  },
+  {
+    "name": "Tomato juice",
+    "nameRu": "Томатный сок",
+    "category": "Напитки",
+    "gi": 38,
+    "gl": 4.0,
+    "carbs": 4.0
+  },
+  {
+    "name": "Pizza, cheese",
+    "nameRu": "Пицца с сыром",
+    "category": "Готовые блюда",
+    "gi": 60,
+    "gl": 16.0,
+    "carbs": 27.0
+  },
+  {
+    "name": "Hamburger bun",
+    "nameRu": "Булочка для гамбургера",
+    "category": "Хлебобулочные",
+    "gi": 61,
+    "gl": 9.0,
+    "carbs": 51.0
+  },
+  {
+    "name": "Popcorn",
+    "nameRu": "Попкорн",
+    "category": "Снеки",
+    "gi": 65,
+    "gl": 8.0,
+    "carbs": 63.0
+  },
+  {
+    "name": "Pretzels",
+    "nameRu": "Крендельки",
+    "category": "Снеки",
+    "gi": 83,
+    "gl": 16.0,
+    "carbs": 80.0
+  },
+  {
+    "name": "Potato chips",
+    "nameRu": "Картофельные чипсы",
+    "category": "Снеки",
+    "gi": 56,
+    "gl": 11.0,
+    "carbs": 53.0
+  },
+  {
+    "name": "Peanuts",
+    "nameRu": "Арахис",
+    "category": "Орехи",
+    "gi": 14,
+    "gl": 1.0,
+    "carbs": 16.0
+  },
+  {
+    "name": "Cashews",
+    "nameRu": "Кешью",
+    "category": "Орехи",
+    "gi": 22,
+    "gl": 3.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Almonds",
+    "nameRu": "Миндаль",
+    "category": "Орехи",
+    "gi": 0,
+    "gl": 0.0,
+    "carbs": 22.0
+  },
+  {
+    "name": "Walnuts",
+    "nameRu": "Грецкие орехи",
+    "category": "Орехи",
+    "gi": 15,
+    "gl": 1.0,
+    "carbs": 14.0
+  }
+]
