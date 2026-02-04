@@ -44,7 +44,8 @@ class MainActivity : ComponentActivity() {
                 
                 val productRepository = ProductRepository(
                     database.productDao(),
-                    database.productSourceDao()
+                    database.productSourceDao(),
+                    database.dataSourceDao()
                 )
                 
                 val dataSourceRepository = DataSourceRepository(

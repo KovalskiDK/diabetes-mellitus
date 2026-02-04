@@ -201,6 +201,22 @@ class DataSourceViewModel(
         }
     }
     
+    fun deleteSourceCompletely(sourceId: Long) {
+        viewModelScope.launch {
+            try {
+                // Удаляем все продукты источника
+                productRepository.deleteProductsBySource(sourceId)
+                // Удаляем сам источник
+                val source = repository.getSourceById(sourceId)
+                if (source != null) {
+                    repository.deleteSource(source)
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+    }
+    
     fun discoverGitHubSources() {
         viewModelScope.launch {
             _isRefreshing.value = true

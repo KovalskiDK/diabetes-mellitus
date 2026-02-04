@@ -210,6 +210,17 @@ fun SourcesScreen(
                                         }
                                     }
                                 }
+                                
+                                Spacer(modifier = Modifier.height(8.dp))
+                                OutlinedButton(
+                                    onClick = { viewModel.deleteSourceCompletely(source.id) },
+                                    modifier = Modifier.fillMaxWidth(),
+                                    colors = ButtonDefaults.outlinedButtonColors(
+                                        contentColor = MaterialTheme.colorScheme.error
+                                    )
+                                ) {
+                                    Text("Удалить источник")
+                                }
                             }
                         }
                     }

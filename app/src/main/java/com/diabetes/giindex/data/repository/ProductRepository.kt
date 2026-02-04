@@ -10,10 +10,11 @@ import javax.inject.Singleton
 
 class ProductRepository(
     private val productDao: ProductDao,
-    private val productSourceDao: ProductSourceDao
+    private val productSourceDao: ProductSourceDao,
+    private val dataSourceDao: com.diabetes.giindex.data.local.dao.DataSourceDao
 ) {
     
-    fun getAllProducts(): Flow<List<Product>> = productDao.getAllProducts()
+    fun getAllProducts(): Flow<List<Product>> = productDao.getAllProductsFromActiveSources()
     
     fun getFavoriteProducts(): Flow<List<Product>> = productDao.getFavoriteProducts()
     

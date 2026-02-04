@@ -10,6 +10,14 @@ interface ProductDao {
     @Query("SELECT * FROM products ORDER BY nameRu ASC")
     fun getAllProducts(): Flow<List<Product>>
     
+    @Query("""
+        SELECT p.* FROM products p
+        INNER JOIN data_sources ds ON p.sourceId = ds.id
+        WHERE ds.isActive = 1
+        ORDER BY p.nameRu ASC
+    """)
+    fun getAllProductsFromActiveSources(): Flow<List<Product>>
+    
     @Query("SELECT * FROM products WHERE id = :id")
     suspend fun getProductById(id: Long): Product?
     
