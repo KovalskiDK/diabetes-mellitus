@@ -19,8 +19,16 @@ class GIIndexApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         
+        android.util.Log.d("GIIndexApplication", "Application onCreate called")
+        
         applicationScope.launch {
-            DatabaseInitializer.initializeIfNeeded(this@GIIndexApplication, database)
+            try {
+                android.util.Log.d("GIIndexApplication", "Starting database initialization")
+                DatabaseInitializer.initializeDatabase(database)
+                android.util.Log.d("GIIndexApplication", "Database initialization completed")
+            } catch (e: Exception) {
+                android.util.Log.e("GIIndexApplication", "Error initializing database", e)
+            }
         }
     }
 }

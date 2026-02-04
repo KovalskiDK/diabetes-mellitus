@@ -1,9 +1,9 @@
 package com.diabetes.giindex.ui.screens
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.selection.selectable
-import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ChevronRight
@@ -11,9 +11,8 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.diabetes.giindex.data.preferences.ProductLanguage
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -21,9 +20,10 @@ fun SettingsScreen(
     viewModel: com.diabetes.giindex.ui.viewmodel.SettingsViewModel,
     onBackClick: () -> Unit,
     onSourcesClick: () -> Unit,
+    onDebugClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val productLanguage by viewModel.productLanguage.collectAsState()
+    val context = LocalContext.current
     Scaffold(
         topBar = {
             TopAppBar(
@@ -48,6 +48,11 @@ fun SettingsScreen(
                     onClick = onSourcesClick
                 )
                 SettingsItem(
+                    title = "Отладка",
+                    subtitle = "Инициализация базы данных",
+                    onClick = onDebugClick
+                )
+                SettingsItem(
                     title = "Очистить кэш переводов",
                     subtitle = "Удалить сохраненные переводы",
                     onClick = { /* TODO */ }
@@ -56,25 +61,19 @@ fun SettingsScreen(
             
             Divider()
             
-            SettingsSection(title = "Отображение") {
-                LanguageSelectionItem(
-                    selectedLanguage = productLanguage,
-                    onLanguageSelected = { viewModel.setProductLanguage(it) }
-                )
-            }
-            
-            Divider()
-            
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.0.0",
+                    subtitle = "1.0.1",
                     onClick = { }
                 )
                 SettingsItem(
                     title = "GitHub",
                     subtitle = "github.com/KovalskiDK/diabetes-mellitus",
-                    onClick = { }
+                    onClick = {
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/KovalskiDK/diabetes-mellitus"))
+                        context.startActivity(intent)
+                    }
                 )
             }
         }
@@ -132,62 +131,5 @@ fun SettingsItem(
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurfaceVariant
         )
-    }
-}
-
-@Composable
-fun LanguageSelectionItem(
-    selectedLanguage: ProductLanguage,
-    onLanguageSelected: (ProductLanguage) -> Unit,
-    modifier: Modifier = Modifier
-) {
-    Column(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
-            .selectableGroup()
-    ) {
-        Text(
-            text = "Язык названий продуктов",
-            style = MaterialTheme.typography.bodyLarge,
-            modifier = Modifier.padding(bottom = 8.dp)
-        )
-        
-        ProductLanguage.values().forEach { language ->
-            val (title, subtitle) = when (language) {
-                ProductLanguage.RUSSIAN -> "Русский" to "Показывать только русские названия"
-                ProductLanguage.ENGLISH -> "Английский" to "Показывать только английские названия"
-                ProductLanguage.BOTH -> "Оба языка" to "Русский + английский мелким шрифтом"
-            }
-            
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .selectable(
-                        selected = (language == selectedLanguage),
-                        onClick = { onLanguageSelected(language) },
-                        role = Role.RadioButton
-                    )
-                    .padding(vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                RadioButton(
-                    selected = (language == selectedLanguage),
-                    onClick = null
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-                Column {
-                    Text(
-                        text = title,
-                        style = MaterialTheme.typography.bodyMedium
-                    )
-                    Text(
-                        text = subtitle,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-        }
     }
 }

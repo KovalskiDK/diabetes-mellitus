@@ -3,6 +3,7 @@ package com.diabetes.giindex.data.repository
 import com.diabetes.giindex.data.local.dao.DataSourceDao
 import com.diabetes.giindex.data.local.dao.SyncLogDao
 import com.diabetes.giindex.data.local.entity.DataSource
+import com.diabetes.giindex.data.local.entity.SourceType
 import com.diabetes.giindex.data.local.entity.SyncLog
 import kotlinx.coroutines.flow.Flow
 
@@ -17,17 +18,33 @@ class DataSourceRepository(
     
     suspend fun getSourceById(id: Long): DataSource? = dataSourceDao.getSourceById(id)
     
-    suspend fun insertSource(source: DataSource): Long = dataSourceDao.insertSource(source)
+    suspend fun insertSource(source: DataSource) {
+        dataSourceDao.insertSource(source)
+    }
     
     suspend fun updateSource(source: DataSource) = dataSourceDao.updateSource(source)
     
-    suspend fun deleteSource(source: DataSource) = dataSourceDao.deleteSource(source)
+    suspend fun deleteSource(sourceId: Long) {
+        val source = dataSourceDao.getSourceById(sourceId)
+        source?.let {
+            dataSourceDao.deleteSource(it)
+        }
+    }
     
-    suspend fun toggleSourceActive(sourceId: Long, isActive: Boolean) = 
-        dataSourceDao.updateActiveStatus(sourceId, isActive)
+    suspend fun toggleSourceActive(sourceId: Long, isActive: Boolean) {
+        val source = dataSourceDao.getSourceById(sourceId)
+        source?.let {
+            dataSourceDao.updateSource(it.copy(isActive = isActive))
+        }
+    }
     
-    suspend fun updateSourceVersion(sourceId: Long, version: String, timestamp: Long, count: Int) = 
+    suspend fun updateSourceVersion(sourceId: Long, version: String, timestamp: Long, count: Int) {
         dataSourceDao.updateSourceVersion(sourceId, version, timestamp, count)
+    }
+    
+    suspend fun updateSourceUrlAndType(sourceId: Long, url: String, type: SourceType) {
+        dataSourceDao.updateSourceUrlAndType(sourceId, url, type)
+    }
     
     fun getRecentSyncLogs(): Flow<List<SyncLog>> = syncLogDao.getRecentLogs()
     

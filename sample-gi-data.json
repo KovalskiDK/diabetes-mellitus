@@ -1,0 +1,42 @@
+[
+  {
+    "name": "White Bread",
+    "nameRu": "Белый хлеб",
+    "category": "Хлебобулочные",
+    "gi": 75,
+    "gl": 11.0,
+    "carbs": 49.0
+  },
+  {
+    "name": "Apple",
+    "nameRu": "Яблоко",
+    "category": "Фрукты",
+    "gi": 38,
+    "gl": 6.0,
+    "carbs": 14.0
+  },
+  {
+    "name": "Watermelon",
+    "nameRu": "Арбуз",
+    "category": "Фрукты",
+    "gi": 76,
+    "gl": 4.0,
+    "carbs": 8.0
+  },
+  {
+    "name": "Brown Rice",
+    "nameRu": "Коричневый рис",
+    "category": "Крупы",
+    "gi": 68,
+    "gl": 16.0,
+    "carbs": 23.0
+  },
+  {
+    "name": "Lentils",
+    "nameRu": "Чечевица",
+    "category": "Бобовые",
+    "gi": 32,
+    "gl": 5.0,
+    "carbs": 20.0
+  }
+]

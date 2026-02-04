@@ -6,11 +6,13 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.diabetes.giindex.data.local.entity.SourceType
 import com.diabetes.giindex.ui.viewmodel.DataSourceViewModel
 import java.text.SimpleDateFormat
 import java.util.*
@@ -20,9 +22,24 @@ import java.util.*
 fun SourcesScreen(
     viewModel: DataSourceViewModel,
     onBackClick: () -> Unit,
+    onAddSourceClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val sources by viewModel.sources.collectAsState()
+    var sourceToEdit by remember { mutableStateOf<com.diabetes.giindex.data.local.entity.DataSource?>(null) }
+    
+    sourceToEdit?.let { source ->
+        UpdateSourceDialog(
+            sourceName = source.name,
+            currentUrl = source.url,
+            currentType = source.type,
+            onDismiss = { sourceToEdit = null },
+            onConfirm = { newUrl, newType ->
+                viewModel.updateSourceUrlAndType(source.id, newUrl, newType)
+                sourceToEdit = null
+            }
+        )
+    }
     
     Scaffold(
         topBar = {
@@ -34,7 +51,7 @@ fun SourcesScreen(
                     }
                 },
                 actions = {
-                    IconButton(onClick = { /* TODO: Add source */ }) {
+                    IconButton(onClick = onAddSourceClick) {
                         Icon(Icons.Filled.Add, contentDescription = "Добавить источник")
                     }
                 }
@@ -85,16 +102,26 @@ fun SourcesScreen(
                                 horizontalArrangement = Arrangement.SpaceBetween,
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
-                                Text(
-                                    text = source.name,
-                                    style = MaterialTheme.typography.titleMedium
-                                )
-                                Switch(
-                                    checked = source.isActive,
-                                    onCheckedChange = { 
-                                        viewModel.toggleSourceActive(source.id, source.isActive)
+                                Column(modifier = Modifier.weight(1f)) {
+                                    Text(
+                                        text = source.name,
+                                        style = MaterialTheme.typography.titleMedium
+                                    )
+                                }
+                                Row(
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    IconButton(onClick = { sourceToEdit = source }) {
+                                        Icon(Icons.Filled.Edit, contentDescription = "Редактировать")
                                     }
-                                )
+                                    Switch(
+                                        checked = source.isActive,
+                                        onCheckedChange = { 
+                                            viewModel.toggleSourceActive(source.id, source.isActive)
+                                        }
+                                    )
+                                }
                             }
                             
                             Spacer(modifier = Modifier.height(8.dp))
@@ -111,12 +138,37 @@ fun SourcesScreen(
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                             
-                            val dateFormat = SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault())
+                            val lastUpdatedText = if (source.lastUpdated > 0) {
+                                val dateFormat = SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault())
+                                "Обновлено: ${dateFormat.format(Date(source.lastUpdated))}"
+                            } else {
+                                "Обновлено: Никогда"
+                            }
+                            
                             Text(
-                                text = "Обновлено: ${dateFormat.format(Date(source.lastUpdated))}",
+                                text = lastUpdatedText,
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
+                            
+                            if (!source.description.isNullOrBlank()) {
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = source.description,
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                            }
+                            
+                            if (source.url.isNotBlank() && source.type != SourceType.MANUAL) {
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Button(
+                                    onClick = { viewModel.refreshSource(source.id) },
+                                    modifier = Modifier.fillMaxWidth()
+                                ) {
+                                    Text("Обновить данные")
+                                }
+                            }
                         }
                     }
                 }

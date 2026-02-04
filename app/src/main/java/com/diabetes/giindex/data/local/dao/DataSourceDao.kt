@@ -30,4 +30,7 @@ interface DataSourceDao {
     
     @Query("UPDATE data_sources SET version = :version, lastUpdated = :timestamp, recordsCount = :count WHERE id = :sourceId")
     suspend fun updateSourceVersion(sourceId: Long, version: String, timestamp: Long, count: Int)
+    
+    @Query("UPDATE data_sources SET url = :url, type = :type WHERE id = :sourceId")
+    suspend fun updateSourceUrlAndType(sourceId: Long, url: String, type: com.diabetes.giindex.data.local.entity.SourceType)
 }

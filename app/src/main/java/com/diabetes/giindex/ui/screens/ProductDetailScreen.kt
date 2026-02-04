@@ -119,6 +119,38 @@ fun ProductDetailScreen(
                         fontWeight = FontWeight.Medium
                     )
                     
+                    Divider()
+                    
+                    Text(
+                        text = "Данные по источникам",
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = CardDefaults.cardColors(
+                            containerColor = MaterialTheme.colorScheme.surfaceVariant
+                        )
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(16.dp),
+                            verticalArrangement = Arrangement.spacedBy(12.dp)
+                        ) {
+                            SourceDataRow(
+                                sourceName = "Sydney University",
+                                gi = prod.gi,
+                                gl = prod.gl
+                            )
+                            
+                            Text(
+                                text = "Добавьте источники данных для сравнения значений ГИ и ГН",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                    
                     prod.descriptionRu?.let { desc ->
                         Card(
                             modifier = Modifier.fillMaxWidth(),
@@ -159,5 +191,43 @@ fun InfoRow(
             style = MaterialTheme.typography.bodyLarge,
             fontWeight = FontWeight.Medium
         )
+    }
+}
+
+@Composable
+fun SourceDataRow(
+    sourceName: String,
+    gi: Int,
+    gl: Float?,
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(
+            text = sourceName,
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.weight(1f)
+        )
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "ГИ: $gi",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.primary
+            )
+            gl?.let {
+                Text(
+                    text = "ГН: ${String.format("%.1f", it)}",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.secondary
+                )
+            }
+        }
     }
 }

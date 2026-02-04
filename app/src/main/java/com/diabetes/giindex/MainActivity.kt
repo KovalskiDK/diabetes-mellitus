@@ -181,11 +181,27 @@ class MainActivity : ComponentActivity() {
                             
                             composable(Screen.Sources.route) {
                                 val viewModel: DataSourceViewModel = viewModel(
-                                    factory = DataSourceViewModelFactory(dataSourceRepository)
+                                    factory = DataSourceViewModelFactory(dataSourceRepository, productRepository)
                                 )
                                 SourcesScreen(
                                     viewModel = viewModel,
-                                    onBackClick = { navController.popBackStack() }
+                                    onBackClick = { navController.popBackStack() },
+                                    onAddSourceClick = {
+                                        navController.navigate(Screen.AddSource.route)
+                                    }
+                                )
+                            }
+                            
+                            composable(Screen.AddSource.route) {
+                                val viewModel: DataSourceViewModel = viewModel(
+                                    factory = DataSourceViewModelFactory(dataSourceRepository, productRepository)
+                                )
+                                AddSourceScreen(
+                                    onBackClick = { navController.popBackStack() },
+                                    onSaveClick = { source ->
+                                        viewModel.addSource(source)
+                                        navController.popBackStack()
+                                    }
                                 )
                             }
                             
@@ -198,7 +214,17 @@ class MainActivity : ComponentActivity() {
                                     onBackClick = { navController.popBackStack() },
                                     onSourcesClick = {
                                         navController.navigate(Screen.Sources.route)
+                                    },
+                                    onDebugClick = {
+                                        navController.navigate(Screen.Debug.route)
                                     }
+                                )
+                            }
+                            
+                            composable(Screen.Debug.route) {
+                                DebugScreen(
+                                    database = database,
+                                    onBackClick = { navController.popBackStack() }
                                 )
                             }
                             

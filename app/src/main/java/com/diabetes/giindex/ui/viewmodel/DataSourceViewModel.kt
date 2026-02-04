@@ -4,13 +4,21 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.diabetes.giindex.data.local.entity.DataSource
+import com.diabetes.giindex.data.local.entity.SourceType
 import com.diabetes.giindex.data.local.entity.SyncLog
+import com.diabetes.giindex.data.local.entity.SyncStatus
+import com.diabetes.giindex.data.network.LoadResult
+import com.diabetes.giindex.data.network.SourceDataLoader
+import com.diabetes.giindex.data.parser.ParseResult
+import com.diabetes.giindex.data.parser.SourceDataParser
 import com.diabetes.giindex.data.repository.DataSourceRepository
+import com.diabetes.giindex.data.repository.ProductRepository
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 class DataSourceViewModel(
-    private val repository: DataSourceRepository
+    private val repository: DataSourceRepository,
+    private val productRepository: ProductRepository
 ) : ViewModel() {
     
     val sources: StateFlow<List<DataSource>> = repository.getAllSources()
@@ -30,9 +38,15 @@ class DataSourceViewModel(
     private val _isRefreshing = MutableStateFlow(false)
     val isRefreshing: StateFlow<Boolean> = _isRefreshing.asStateFlow()
     
-    fun toggleSourceActive(sourceId: Long, isActive: Boolean) {
+    fun toggleSourceActive(sourceId: Long, currentStatus: Boolean) {
         viewModelScope.launch {
-            repository.toggleSourceActive(sourceId, !isActive)
+            repository.toggleSourceActive(sourceId, !currentStatus)
+        }
+    }
+    
+    fun updateSourceUrlAndType(sourceId: Long, url: String, type: com.diabetes.giindex.data.local.entity.SourceType) {
+        viewModelScope.launch {
+            repository.updateSourceUrlAndType(sourceId, url, type)
         }
     }
     
@@ -42,27 +56,131 @@ class DataSourceViewModel(
         }
     }
     
-    fun deleteSource(source: DataSource) {
+    fun deleteSource(sourceId: Long) {
         viewModelScope.launch {
-            repository.deleteSource(source)
+            repository.deleteSource(sourceId)
         }
     }
     
     fun refreshSource(sourceId: Long) {
         viewModelScope.launch {
             _isRefreshing.value = true
-            _isRefreshing.value = false
+            
+            val source = repository.getSourceById(sourceId)
+            if (source == null) {
+                _isRefreshing.value = false
+                return@launch
+            }
+            
+            // Создаем лог синхронизации
+            val logId = repository.insertSyncLog(
+                SyncLog(
+                    sourceId = sourceId,
+                    sourceName = source.name,
+                    sourceVersion = source.version,
+                    status = SyncStatus.IN_PROGRESS,
+                    startedAt = System.currentTimeMillis()
+                )
+            )
+            
+            try {
+                // Загружаем данные из URL
+                when (val loadResult = SourceDataLoader.loadFromUrl(source.url)) {
+                    is LoadResult.Success -> {
+                        // Парсим данные
+                        val parseResult = when (source.type) {
+                            SourceType.JSON -> SourceDataParser.parseJson(loadResult.content, sourceId)
+                            SourceType.CSV -> SourceDataParser.parseCsv(loadResult.content, sourceId)
+                            else -> ParseResult.Error("Неподдерживаемый тип источника")
+                        }
+                        
+                        when (parseResult) {
+                            is ParseResult.Success -> {
+                                // Сохраняем продукты и данные источников
+                                productRepository.insertProducts(parseResult.products)
+                                
+                                // Обновляем версию источника
+                                repository.updateSourceVersion(
+                                    sourceId = sourceId,
+                                    version = source.version,
+                                    timestamp = System.currentTimeMillis(),
+                                    count = parseResult.products.size
+                                )
+                                
+                                // Обновляем лог
+                                repository.updateSyncLog(
+                                    SyncLog(
+                                        id = logId,
+                                        sourceId = sourceId,
+                                        sourceName = source.name,
+                                        sourceVersion = source.version,
+                                        status = SyncStatus.SUCCESS,
+                                        recordsAdded = parseResult.products.size,
+                                        recordsTotal = parseResult.products.size,
+                                        startedAt = System.currentTimeMillis(),
+                                        completedAt = System.currentTimeMillis()
+                                    )
+                                )
+                            }
+                            is ParseResult.Error -> {
+                                repository.updateSyncLog(
+                                    SyncLog(
+                                        id = logId,
+                                        sourceId = sourceId,
+                                        sourceName = source.name,
+                                        sourceVersion = source.version,
+                                        status = SyncStatus.FAILED,
+                                        errorMessage = parseResult.message,
+                                        startedAt = System.currentTimeMillis(),
+                                        completedAt = System.currentTimeMillis()
+                                    )
+                                )
+                            }
+                        }
+                    }
+                    is LoadResult.Error -> {
+                        repository.updateSyncLog(
+                            SyncLog(
+                                id = logId,
+                                sourceId = sourceId,
+                                sourceName = source.name,
+                                sourceVersion = source.version,
+                                status = SyncStatus.FAILED,
+                                errorMessage = loadResult.message,
+                                startedAt = System.currentTimeMillis(),
+                                completedAt = System.currentTimeMillis()
+                            )
+                        )
+                    }
+                }
+            } catch (e: Exception) {
+                repository.updateSyncLog(
+                    SyncLog(
+                        id = logId,
+                        sourceId = sourceId,
+                        sourceName = source.name,
+                        sourceVersion = source.version,
+                        status = SyncStatus.FAILED,
+                        errorMessage = e.message ?: "Неизвестная ошибка",
+                        startedAt = System.currentTimeMillis(),
+                        completedAt = System.currentTimeMillis()
+                    )
+                )
+            } finally {
+                _isRefreshing.value = false
+            }
         }
     }
 }
 
 class DataSourceViewModelFactory(
-    private val repository: DataSourceRepository
+    private val repository: DataSourceRepository,
+    private val productRepository: ProductRepository
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(DataSourceViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return DataSourceViewModel(repository) as T
+            return DataSourceViewModel(repository, productRepository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
