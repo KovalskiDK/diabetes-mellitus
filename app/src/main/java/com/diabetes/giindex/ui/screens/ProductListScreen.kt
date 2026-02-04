@@ -109,6 +109,7 @@ fun SearchBar(
     )
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GiRangeFilter(
     selectedRange: GiRange,
@@ -129,6 +130,7 @@ fun GiRangeFilter(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CategoryFilter(
     categories: List<String>,

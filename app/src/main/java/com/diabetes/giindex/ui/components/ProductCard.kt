@@ -67,6 +67,10 @@ fun ProductCard(
                 ) {
                     GIBadge(gi = product.gi)
                     
+                    product.gl?.let { gl ->
+                        GLBadge(gl = gl)
+                    }
+                    
                     Text(
                         text = product.category,
                         style = MaterialTheme.typography.bodySmall,
@@ -106,6 +110,44 @@ fun GIBadge(gi: Int, modifier: Modifier = Modifier) {
         ) {
             Text(
                 text = "ГИ $gi",
+                style = MaterialTheme.typography.labelMedium,
+                fontWeight = FontWeight.Bold,
+                color = color
+            )
+            Text(
+                text = "•",
+                style = MaterialTheme.typography.labelMedium,
+                color = color
+            )
+            Text(
+                text = label,
+                style = MaterialTheme.typography.labelSmall,
+                color = color
+            )
+        }
+    }
+}
+
+@Composable
+fun GLBadge(gl: Float, modifier: Modifier = Modifier) {
+    val (color, label) = when {
+        gl <= 10 -> GILow to "Низкая"
+        gl <= 19 -> GIMedium to "Средняя"
+        else -> GIHigh to "Высокая"
+    }
+    
+    Surface(
+        modifier = modifier,
+        color = color.copy(alpha = 0.2f),
+        shape = MaterialTheme.shapes.small
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            Text(
+                text = "ГН ${String.format("%.1f", gl)}",
                 style = MaterialTheme.typography.labelMedium,
                 fontWeight = FontWeight.Bold,
                 color = color

@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.diabetes.giindex.ui.components.GIBadge
+import com.diabetes.giindex.ui.components.GLBadge
 import com.diabetes.giindex.ui.viewmodel.ProductDetailViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -53,7 +54,10 @@ fun ProductDetailScreen(
                     .padding(paddingValues),
                 contentAlignment = Alignment.Center
             ) {
-                CircularProgressIndicator()
+                Text(
+                    text = "Загрузка...",
+                    style = MaterialTheme.typography.bodyLarge
+                )
             }
         } else {
             product?.let { prod ->
@@ -80,7 +84,15 @@ fun ProductDetailScreen(
                     
                     Divider()
                     
-                    GIBadge(gi = prod.gi, modifier = Modifier.fillMaxWidth())
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        GIBadge(gi = prod.gi, modifier = Modifier.weight(1f))
+                        prod.gl?.let { gl ->
+                            GLBadge(gl = gl, modifier = Modifier.weight(1f))
+                        }
+                    }
                     
                     InfoRow(label = "Категория", value = prod.category)
                     

@@ -37,11 +37,13 @@
     
     <!-- Settings -->
     <string name="settings_title">Настройки</string>
-    <string name="settings_language">Язык</string>
-    <string name="settings_show_original">Показывать оригинальные названия</string>
-    <string name="settings_auto_translate">Автоматический перевод</string>
+    <string name="settings_language">Язык названий продуктов</string>
+    <string name="settings_language_russian">Русский</string>
+    <string name="settings_language_english">Английский</string>
+    <string name="settings_language_both">Оба языка</string>
     <string name="settings_cache">Кэш</string>
     <string name="settings_clear_cache">Очистить кэш</string>
+    <string name="app_version">1.0.1</string>
     <string name="settings_export">Экспорт данных</string>
     <string name="settings_import">Импорт данных</string>
     
