@@ -1,17 +1,22 @@
 package com.diabetes.giindex.ui.viewmodel
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.diabetes.giindex.data.ai.GeminiConfig
 import com.diabetes.giindex.data.ai.GeminiService
 import com.diabetes.giindex.data.ai.ProductAnalysis
+import com.diabetes.giindex.data.local.GIIndexDatabase
+import com.diabetes.giindex.data.local.entity.AIAnalysisCache
 import com.diabetes.giindex.data.local.entity.Product
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class AIAnalysisViewModel : ViewModel() {
+class AIAnalysisViewModel(application: Application) : AndroidViewModel(application) {
     
     private val _analysis = MutableStateFlow<ProductAnalysis?>(null)
     val analysis: StateFlow<ProductAnalysis?> = _analysis.asStateFlow()
@@ -21,6 +26,14 @@ class AIAnalysisViewModel : ViewModel() {
     
     private val _error = MutableStateFlow<String?>(null)
     val error: StateFlow<String?> = _error.asStateFlow()
+    
+    private val database = GIIndexDatabase.getDatabase(application)
+    private val cacheDao = database.aiAnalysisCacheDao()
+    private val gson = Gson()
+    
+    // Кэш действителен 7 дней
+    private val CACHE_VALIDITY_DAYS = 7L
+    private val CACHE_VALIDITY_MS = CACHE_VALIDITY_DAYS * 24 * 60 * 60 * 1000
     
     // Автоматически инициализируем с встроенным API ключом
     private var geminiService: GeminiService? = try {
@@ -47,12 +60,53 @@ class AIAnalysisViewModel : ViewModel() {
             _error.value = null
             
             try {
-                val service = geminiService
-                if (service == null) {
-                    _analysis.value = getOfflineAnalysis(product)
-                } else {
-                    _analysis.value = service.analyzeProduct(product)
+                // Проверяем кэш
+                val cached = cacheDao.getAnalysis(product.id)
+                val now = System.currentTimeMillis()
+                
+                if (cached != null && 
+                    (now - cached.timestamp) < CACHE_VALIDITY_MS &&
+                    cached.productGi == product.gi &&
+                    cached.productCarbs == (product.carbsPer100g ?: 0f)) {
+                    
+                    // Используем кэшированный результат
+                    _analysis.value = ProductAnalysis(
+                        recommendation = cached.recommendation,
+                        explanation = cached.explanation,
+                        tips = gson.fromJson(cached.tips, object : TypeToken<List<String>>() {}.type),
+                        isAiGenerated = cached.isAiGenerated
+                    )
+                    _isLoading.value = false
+                    return@launch
                 }
+                
+                // Получаем новый анализ
+                val service = geminiService
+                val result = if (service == null) {
+                    getOfflineAnalysis(product)
+                } else {
+                    service.analyzeProduct(product)
+                }
+                
+                // Сохраняем в кэш
+                cacheDao.insertAnalysis(
+                    AIAnalysisCache(
+                        productId = product.id,
+                        recommendation = result.recommendation,
+                        explanation = result.explanation,
+                        tips = gson.toJson(result.tips),
+                        isAiGenerated = result.isAiGenerated,
+                        timestamp = now,
+                        productGi = product.gi,
+                        productCarbs = product.carbsPer100g ?: 0f
+                    )
+                )
+                
+                _analysis.value = result
+                
+                // Очищаем устаревший кэш
+                cacheDao.deleteExpiredAnalyses(now - CACHE_VALIDITY_MS)
+                
             } catch (e: Exception) {
                 _error.value = "Ошибка анализа: ${e.message}"
                 _analysis.value = getOfflineAnalysis(product)

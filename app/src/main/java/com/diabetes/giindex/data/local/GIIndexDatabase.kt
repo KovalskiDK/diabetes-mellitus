@@ -17,9 +17,10 @@ import com.diabetes.giindex.data.local.entity.*
         ProductSource::class,
         ProductSourceData::class,
         TranslationCache::class,
-        SyncLog::class
+        SyncLog::class,
+        AIAnalysisCache::class
     ],
-    version = 3,
+    version = 4,
     exportSchema = true
 )
 @TypeConverters(Converters::class)
@@ -31,6 +32,7 @@ abstract class GIIndexDatabase : RoomDatabase() {
     abstract fun productSourceDataDao(): ProductSourceDataDao
     abstract fun translationCacheDao(): TranslationCacheDao
     abstract fun syncLogDao(): SyncLogDao
+    abstract fun aiAnalysisCacheDao(): AIAnalysisCacheDao
     
     companion object {
         @Volatile
@@ -70,6 +72,25 @@ abstract class GIIndexDatabase : RoomDatabase() {
             }
         }
         
+        private val MIGRATION_3_4 = object : Migration(3, 4) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                // Создаем таблицу для кэширования AI-анализов
+                database.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `ai_analysis_cache` (
+                        `productId` INTEGER NOT NULL,
+                        `recommendation` TEXT NOT NULL,
+                        `explanation` TEXT NOT NULL,
+                        `tips` TEXT NOT NULL,
+                        `isAiGenerated` INTEGER NOT NULL,
+                        `timestamp` INTEGER NOT NULL,
+                        `productGi` INTEGER NOT NULL,
+                        `productCarbs` REAL NOT NULL,
+                        PRIMARY KEY(`productId`)
+                    )
+                """.trimIndent())
+            }
+        }
+        
         fun getDatabase(context: Context): GIIndexDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
@@ -77,7 +98,7 @@ abstract class GIIndexDatabase : RoomDatabase() {
                     GIIndexDatabase::class.java,
                     "giindex_database"
                 )
-                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
                     .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance
