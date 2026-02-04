@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GI Index</string>
+    
+    <!-- Navigation -->
+    <string name="nav_products">Продукты</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_sources">Источники</string>
+    <string name="nav_settings">Настройки</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Поиск продуктов…</string>
+    <string name="search_no_results">Ничего не найдено</string>
+    
+    <!-- Product Details -->
+    <string name="gi_label">Гликемический индекс</string>
+    <string name="gl_label">Гликемическая нагрузка</string>
+    <string name="portion_label">Порция</string>
+    <string name="carbs_label">Углеводы</string>
+    <string name="source_label">Источник</string>
+    <string name="original_name">Оригинальное название</string>
+    
+    <!-- GI Categories -->
+    <string name="gi_low">Низкий (1–55)</string>
+    <string name="gi_medium">Средний (56–69)</string>
+    <string name="gi_high">Высокий (70+)</string>
+    
+    <!-- Sources -->
+    <string name="sources_title">Источники данных</string>
+    <string name="source_add">Добавить источник</string>
+    <string name="source_update">Обновить</string>
+    <string name="source_updated">Обновлено</string>
+    <string name="source_version">Версия</string>
+    <string name="source_records">Записей</string>
+    <string name="source_updating">Обновление…</string>
+    <string name="source_error">Ошибка обновления</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_show_original">Показывать оригинальные названия</string>
+    <string name="settings_auto_translate">Автоматический перевод</string>
+    <string name="settings_cache">Кэш</string>
+    <string name="settings_clear_cache">Очистить кэш</string>
+    <string name="settings_export">Экспорт данных</string>
+    <string name="settings_import">Импорт данных</string>
+    
+    <!-- Actions -->
+    <string name="action_add_favorite">Добавить в избранное</string>
+    <string name="action_remove_favorite">Удалить из избранного</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_edit_translation">Исправить перевод</string>
+    
+    <!-- Messages -->
+    <string name="loading">Загрузка…</string>
+    <string name="error_generic">Произошла ошибка</string>
+    <string name="success">Успешно</string>
+    
+    <!-- Categories -->
+    <string name="category_all">Все продукты</string>
+    <string name="category_fruits">Фрукты</string>
+    <string name="category_vegetables">Овощи</string>
+    <string name="category_grains">Злаки</string>
+    <string name="category_dairy">Молочные</string>
+    <string name="category_meat">Мясо и рыба</string>
+    <string name="category_sweets">Сладости</string>
+    <string name="category_beverages">Напитки</string>
+    <string name="category_other">Прочее</string>
+</resources>

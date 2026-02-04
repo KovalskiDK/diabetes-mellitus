@@ -1,0 +1,322 @@
+package com.diabetes.giindex.data
+
+import com.diabetes.giindex.data.local.entity.Product
+import com.diabetes.giindex.data.local.entity.TranslationSource
+
+object SampleData {
+    
+    val sampleProducts = listOf(
+        Product(
+            nameOriginal = "Apple",
+            nameRu = "Яблоко",
+            gi = 38,
+            gl = 6f,
+            carbsPer100g = 14f,
+            portionSize = 120,
+            portionUnit = "г",
+            category = "Фрукты",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Banana",
+            nameRu = "Банан",
+            gi = 51,
+            gl = 13f,
+            carbsPer100g = 23f,
+            portionSize = 120,
+            portionUnit = "г",
+            category = "Фрукты",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "White bread",
+            nameRu = "Белый хлеб",
+            gi = 75,
+            gl = 11f,
+            carbsPer100g = 49f,
+            portionSize = 30,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Whole wheat bread",
+            nameRu = "Цельнозерновой хлеб",
+            gi = 74,
+            gl = 9f,
+            carbsPer100g = 41f,
+            portionSize = 30,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Brown rice",
+            nameRu = "Коричневый рис",
+            gi = 68,
+            gl = 16f,
+            carbsPer100g = 23f,
+            portionSize = 150,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "White rice",
+            nameRu = "Белый рис",
+            gi = 73,
+            gl = 29f,
+            carbsPer100g = 28f,
+            portionSize = 150,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Pasta",
+            nameRu = "Макароны",
+            gi = 49,
+            gl = 23f,
+            carbsPer100g = 25f,
+            portionSize = 180,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Potato, boiled",
+            nameRu = "Картофель вареный",
+            gi = 78,
+            gl = 14f,
+            carbsPer100g = 17f,
+            portionSize = 150,
+            portionUnit = "г",
+            category = "Овощи",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Sweet potato",
+            nameRu = "Батат",
+            gi = 63,
+            gl = 11f,
+            carbsPer100g = 17f,
+            portionSize = 150,
+            portionUnit = "г",
+            category = "Овощи",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Carrot, raw",
+            nameRu = "Морковь сырая",
+            gi = 16,
+            gl = 1f,
+            carbsPer100g = 7f,
+            portionSize = 80,
+            portionUnit = "г",
+            category = "Овощи",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Broccoli",
+            nameRu = "Брокколи",
+            gi = 10,
+            gl = 1f,
+            carbsPer100g = 7f,
+            portionSize = 80,
+            portionUnit = "г",
+            category = "Овощи",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Milk, whole",
+            nameRu = "Молоко цельное",
+            gi = 39,
+            gl = 5f,
+            carbsPer100g = 5f,
+            portionSize = 250,
+            portionUnit = "мл",
+            category = "Молочные",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Yogurt, plain",
+            nameRu = "Йогурт натуральный",
+            gi = 41,
+            gl = 5f,
+            carbsPer100g = 4f,
+            portionSize = 200,
+            portionUnit = "г",
+            category = "Молочные",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Ice cream",
+            nameRu = "Мороженое",
+            gi = 51,
+            gl = 8f,
+            carbsPer100g = 24f,
+            portionSize = 50,
+            portionUnit = "г",
+            category = "Сладости",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Chocolate",
+            nameRu = "Шоколад",
+            gi = 40,
+            gl = 14f,
+            carbsPer100g = 52f,
+            portionSize = 40,
+            portionUnit = "г",
+            category = "Сладости",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Honey",
+            nameRu = "Мёд",
+            gi = 61,
+            gl = 10f,
+            carbsPer100g = 82f,
+            portionSize = 25,
+            portionUnit = "г",
+            category = "Сладости",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Orange",
+            nameRu = "Апельсин",
+            gi = 43,
+            gl = 5f,
+            carbsPer100g = 12f,
+            portionSize = 120,
+            portionUnit = "г",
+            category = "Фрукты",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Grapes",
+            nameRu = "Виноград",
+            gi = 46,
+            gl = 8f,
+            carbsPer100g = 18f,
+            portionSize = 120,
+            portionUnit = "г",
+            category = "Фрукты",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Watermelon",
+            nameRu = "Арбуз",
+            gi = 76,
+            gl = 4f,
+            carbsPer100g = 8f,
+            portionSize = 120,
+            portionUnit = "г",
+            category = "Фрукты",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Strawberries",
+            nameRu = "Клубника",
+            gi = 41,
+            gl = 1f,
+            carbsPer100g = 8f,
+            portionSize = 120,
+            portionUnit = "г",
+            category = "Фрукты",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Oatmeal",
+            nameRu = "Овсяная каша",
+            gi = 55,
+            gl = 13f,
+            carbsPer100g = 12f,
+            portionSize = 250,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Corn flakes",
+            nameRu = "Кукурузные хлопья",
+            gi = 81,
+            gl = 21f,
+            carbsPer100g = 84f,
+            portionSize = 30,
+            portionUnit = "г",
+            category = "Злаки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Lentils",
+            nameRu = "Чечевица",
+            gi = 32,
+            gl = 5f,
+            carbsPer100g = 20f,
+            portionSize = 150,
+            portionUnit = "г",
+            category = "Бобовые",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Chickpeas",
+            nameRu = "Нут",
+            gi = 28,
+            gl = 8f,
+            carbsPer100g = 27f,
+            portionSize = 150,
+            portionUnit = "г",
+            category = "Бобовые",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Coca-Cola",
+            nameRu = "Кока-Кола",
+            gi = 63,
+            gl = 16f,
+            carbsPer100g = 11f,
+            portionSize = 250,
+            portionUnit = "мл",
+            category = "Напитки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        ),
+        Product(
+            nameOriginal = "Orange juice",
+            nameRu = "Апельсиновый сок",
+            gi = 50,
+            gl = 12f,
+            carbsPer100g = 10f,
+            portionSize = 250,
+            portionUnit = "мл",
+            category = "Напитки",
+            translationSource = TranslationSource.DICTIONARY,
+            translationVerified = true
+        )
+    )
+}
