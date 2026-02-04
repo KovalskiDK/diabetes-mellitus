@@ -267,7 +267,6 @@ fun MedicalDietsScreen(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ExpandableDietCard(
     number: String,
@@ -280,10 +279,9 @@ fun ExpandableDietCard(
 ) {
     var expanded by remember { mutableStateOf(false) }
     
-    OutlinedCard(
-        onClick = { expanded = !expanded },
+    Card(
         modifier = modifier.fillMaxWidth(),
-        colors = CardDefaults.outlinedCardColors(
+        colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
     ) {
@@ -295,7 +293,11 @@ fun ExpandableDietCard(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Column(modifier = Modifier.weight(1f)) {
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(end = 8.dp)
+                ) {
                     Text(
                         text = title,
                         style = MaterialTheme.typography.titleMedium,
@@ -308,11 +310,13 @@ fun ExpandableDietCard(
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
-                Icon(
-                    imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
-                    contentDescription = if (expanded) "Свернуть" else "Развернуть",
-                    tint = MaterialTheme.colorScheme.primary
-                )
+                IconButton(onClick = { expanded = !expanded }) {
+                    Icon(
+                        imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
+                        contentDescription = if (expanded) "Свернуть" else "Развернуть",
+                        tint = MaterialTheme.colorScheme.primary
+                    )
+                }
             }
             
             AnimatedVisibility(
