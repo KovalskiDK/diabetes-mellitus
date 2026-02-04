@@ -60,28 +60,27 @@ fun SourcesScreen(
             )
         }
     ) { paddingValues ->
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(paddingValues)
-        ) {
-            // Кнопка обновления списка источников
-            Button(
-                onClick = { viewModel.discoverGitHubSources() },
+        if (sources.isEmpty()) {
+            Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
+                    .fillMaxSize()
+                    .padding(paddingValues)
             ) {
-                Icon(
-                    imageVector = Icons.Filled.Refresh,
-                    contentDescription = null,
-                    modifier = Modifier.size(20.dp)
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-                Text("Обновить список источников")
-            }
-            
-            if (sources.isEmpty()) {
+                Button(
+                    onClick = { viewModel.discoverGitHubSources() },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Filled.Refresh,
+                        contentDescription = null,
+                        modifier = Modifier.size(20.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text("Обновить список источников")
+                }
+                
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
@@ -89,28 +88,43 @@ fun SourcesScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
-                    Text(
-                        text = "Нет источников данных",
-                        style = MaterialTheme.typography.titleLarge
-                    )
-                    Text(
-                        text = "Добавьте источник для загрузки продуктов",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Text(
+                            text = "Нет источников данных",
+                            style = MaterialTheme.typography.titleLarge
+                        )
+                        Text(
+                            text = "Добавьте источник для загрузки продуктов",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                 }
             }
         } else {
             LazyColumn(
-                modifier = modifier
+                modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues),
                 contentPadding = PaddingValues(16.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
+                item {
+                    Button(
+                        onClick = { viewModel.discoverGitHubSources() },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(
+                            imageVector = Icons.Filled.Refresh,
+                            contentDescription = null,
+                            modifier = Modifier.size(20.dp)
+                        )
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("Обновить список источников")
+                    }
+                }
                 items(sources, key = { it.id }) { source ->
                     Card(
                         modifier = Modifier.fillMaxWidth()
@@ -211,7 +225,6 @@ fun SourcesScreen(
                                     }
                                 }
                                 
-                                Spacer(modifier = Modifier.height(8.dp))
                                 OutlinedButton(
                                     onClick = { viewModel.deleteSourceCompletely(source.id) },
                                     modifier = Modifier.fillMaxWidth(),
@@ -224,7 +237,6 @@ fun SourcesScreen(
                             }
                         }
                     }
-                }
                 }
             }
         }
