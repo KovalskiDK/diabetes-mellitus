@@ -71,14 +71,16 @@ fun ProductDetailScreen(
                     Text(
                         text = prod.nameRu ?: prod.nameOriginal,
                         style = MaterialTheme.typography.headlineMedium,
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.fillMaxWidth()
                     )
                     
                     if (prod.nameRu != null && prod.nameOriginal != prod.nameRu) {
                         Text(
                             text = prod.nameOriginal,
                             style = MaterialTheme.typography.titleMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.fillMaxWidth()
                         )
                     }
                     
@@ -146,7 +148,8 @@ fun ProductDetailScreen(
                             Text(
                                 text = "Добавьте источники данных для сравнения значений ГИ и ГН",
                                 style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.fillMaxWidth()
                             )
                         }
                     }
@@ -184,12 +187,14 @@ fun InfoRow(
         Text(
             text = label,
             style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.weight(1f, fill = false)
         )
         Text(
             text = value,
             style = MaterialTheme.typography.bodyLarge,
-            fontWeight = FontWeight.Medium
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.wrapContentWidth(Alignment.End)
         )
     }
 }
