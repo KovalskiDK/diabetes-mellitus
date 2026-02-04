@@ -6,21 +6,23 @@ import androidx.compose.ui.graphics.vector.ImageVector
 
 object CategoryIcons {
     fun getIconForCategory(category: String): ImageVector {
-        return when (category.lowercase()) {
-            "фрукты" -> Icons.Filled.LocalFlorist
-            "овощи" -> Icons.Filled.Eco
-            "хлеб" -> Icons.Filled.Grain
-            "крупы" -> Icons.Filled.RiceBowl
-            "молочные продукты" -> Icons.Filled.Icecream
-            "мясо и рыба" -> Icons.Filled.Restaurant
-            "сладости" -> Icons.Filled.Cake
-            "напитки" -> Icons.Filled.LocalCafe
-            "бобовые" -> Icons.Filled.Spa
-            "орехи" -> Icons.Filled.Nature
-            "снеки" -> Icons.Filled.Fastfood
-            "готовые блюда" -> Icons.Filled.DinnerDining
-            "завтраки" -> Icons.Filled.BreakfastDining
-            else -> Icons.Filled.Category  // Дефолтная иконка "Другое"
+        return when (category) {
+            "Бобовые" -> Icons.Filled.Spa
+            "Выпечка" -> Icons.Filled.Cake
+            "Готовые блюда" -> Icons.Filled.DinnerDining
+            "Завтраки" -> Icons.Filled.BreakfastDining
+            "Крупы" -> Icons.Filled.RiceBowl
+            "Молочные продукты" -> Icons.Filled.Icecream
+            "Мясо и рыба" -> Icons.Filled.Restaurant
+            "Напитки" -> Icons.Filled.LocalCafe
+            "Овощи" -> Icons.Filled.Eco
+            "Орехи" -> Icons.Filled.Nature
+            "Сладости" -> Icons.Filled.Cake
+            "Снеки" -> Icons.Filled.Fastfood
+            "Соусы" -> Icons.Filled.WaterDrop
+            "Фрукты" -> Icons.Filled.LocalFlorist
+            "Хлеб" -> Icons.Filled.Grain
+            else -> Icons.Filled.Category  // Дефолтная иконка для остальных
         }
     }
 }
