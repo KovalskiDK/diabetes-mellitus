@@ -317,8 +317,8 @@ fun ExpandableDietCard(
             
             AnimatedVisibility(
                 visible = expanded,
-                enter = expandVertically() + fadeIn(),
-                exit = shrinkVertically() + fadeOut()
+                enter = expandVertically(),
+                exit = shrinkVertically()
             ) {
                 Column(
                     modifier = Modifier.padding(top = 12.dp),
@@ -330,7 +330,7 @@ fun ExpandableDietCard(
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     
-                    HorizontalDivider()
+                    Divider()
                     
                     Text(
                         text = "✅ Разрешено:",
@@ -355,7 +355,7 @@ fun ExpandableDietCard(
                         }
                     }
                     
-                    HorizontalDivider()
+                    Divider()
                     
                     Text(
                         text = "❌ Запрещено:",
