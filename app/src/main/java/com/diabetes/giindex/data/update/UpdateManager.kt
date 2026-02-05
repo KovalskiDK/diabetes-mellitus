@@ -141,8 +141,33 @@ class UpdateManager(private val context: Context) {
     
     private fun installApk(uriString: String) {
         try {
-            val file = File(Uri.parse(uriString).path ?: return)
-            Log.d(TAG, "Installing APK: ${file.absolutePath}")
+            Log.d(TAG, "Installing APK from URI: $uriString")
+            
+            // DownloadManager возвращает file:// URI, конвертируем в File
+            val uri = Uri.parse(uriString)
+            val file = if (uri.scheme == "file") {
+                File(uri.path ?: return)
+            } else {
+                // Если content:// URI, получаем путь из DownloadManager
+                val downloadManager = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+                val cursor = downloadManager.query(DownloadManager.Query())
+                if (cursor.moveToFirst()) {
+                    val pathIndex = cursor.getColumnIndex(DownloadManager.COLUMN_LOCAL_URI)
+                    val path = cursor.getString(pathIndex)
+                    cursor.close()
+                    File(Uri.parse(path).path ?: return)
+                } else {
+                    cursor.close()
+                    return
+                }
+            }
+            
+            Log.d(TAG, "APK file path: ${file.absolutePath}")
+            
+            if (!file.exists()) {
+                Log.e(TAG, "APK file does not exist: ${file.absolutePath}")
+                return
+            }
             
             val intent = Intent(Intent.ACTION_VIEW)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
@@ -160,6 +185,7 @@ class UpdateManager(private val context: Context) {
             intent.setDataAndType(apkUri, "application/vnd.android.package-archive")
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
             
+            Log.d(TAG, "Starting install activity")
             context.startActivity(intent)
         } catch (e: Exception) {
             Log.e(TAG, "Error installing APK", e)

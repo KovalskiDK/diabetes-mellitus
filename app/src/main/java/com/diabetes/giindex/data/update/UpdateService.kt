@@ -45,6 +45,9 @@ class UpdateService(private val context: Context) {
             
             val request = Request.Builder()
                 .url(VERSION_URL)
+                .addHeader("Cache-Control", "no-cache, no-store, must-revalidate")
+                .addHeader("Pragma", "no-cache")
+                .addHeader("Expires", "0")
                 .build()
             
             val response = client.newCall(request).execute()

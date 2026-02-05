@@ -78,7 +78,7 @@ fun SettingsScreen(
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.9.3 (Автозагрузка данных)",
+                    subtitle = "1.9.4 (Исправлено кэширование)",
                     onClick = { }
                 )
                 
