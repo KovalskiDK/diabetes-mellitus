@@ -78,7 +78,7 @@ fun SettingsScreen(
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.9.2 (Исправлен прогресс-бар)",
+                    subtitle = "1.9.3 (Автозагрузка данных)",
                     onClick = { }
                 )
                 
