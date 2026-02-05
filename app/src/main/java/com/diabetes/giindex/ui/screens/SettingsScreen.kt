@@ -78,7 +78,7 @@ fun SettingsScreen(
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.9.0",
+                    subtitle = "1.9.1 (Тестовое обновление)",
                     onClick = { }
                 )
                 
