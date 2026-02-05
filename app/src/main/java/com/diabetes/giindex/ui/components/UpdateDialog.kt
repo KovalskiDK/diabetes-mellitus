@@ -85,7 +85,7 @@ fun UpdateProgressDialog(
     onDismiss: () -> Unit
 ) {
     AlertDialog(
-        onDismissRequest = onDismiss,
+        onDismissRequest = {}, // Не закрываем диалог при нажатии вне его
         title = {
             Text("Загрузка обновления")
         },
@@ -101,6 +101,11 @@ fun UpdateProgressDialog(
                 Text(
                     text = "Загружено: $progress%",
                     style = MaterialTheme.typography.bodyMedium
+                )
+                Text(
+                    text = "Пожалуйста, дождитесь завершения загрузки",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
         },
