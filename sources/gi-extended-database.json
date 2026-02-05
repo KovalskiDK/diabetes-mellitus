@@ -1,0 +1,1850 @@
+[
+  {
+    "name": "Sponge cake with cocoa, milk cream-filled, coated with chocolate",
+    "nameRu": "Бисквит с какао, молоко крем -с начинкой, в глазури из шоколад",
+    "category": "Выпечка",
+    "gi": 58,
+    "gl": 17.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Sponge cake, filled with marmalade and yogurt cream",
+    "nameRu": "Бисквит, с начинкой из мармелада и йогуртового крема",
+    "category": "Выпечка",
+    "gi": 57,
+    "gl": 17.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Vanilla cake, made from packet mix with vanilla frosting",
+    "nameRu": "Ваниль торт, сделанный из смеси из пакетика, с ваниль глазурь",
+    "category": "Выпечка",
+    "gi": 42,
+    "gl": 13.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pastry #",
+    "nameRu": "Выпечка #",
+    "category": "Выпечка",
+    "gi": 59,
+    "gl": 18.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pastry, puff",
+    "nameRu": "Выпечка, слоёный",
+    "category": "Выпечка",
+    "gi": 56,
+    "gl": 17.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Gingerbread",
+    "nameRu": "Имбирный пряник",
+    "category": "Выпечка",
+    "gi": 81,
+    "gl": 24.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Gingerbread",
+    "nameRu": "Имбирный пряник",
+    "category": "Выпечка",
+    "gi": 88,
+    "gl": 26.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Gingerbread",
+    "nameRu": "Имбирный пряник",
+    "category": "Выпечка",
+    "gi": 89,
+    "gl": 27.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Cake, prepared with yoghurt, gluten-free (Plum cake)",
+    "nameRu": "Кекс, приготовленный из йогурт, без глютена (слива cake)",
+    "category": "Выпечка",
+    "gi": 42,
+    "gl": 13.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Croissant (Food City, Toronto, Canada) #",
+    "nameRu": "Круассан (Food City, Toronto, Canada) #",
+    "category": "Выпечка",
+    "gi": 68,
+    "gl": 20.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Muffin made with oat flour",
+    "nameRu": "Маффин",
+    "category": "Выпечка",
+    "gi": 54,
+    "gl": 16.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Muffin made with barley flour",
+    "nameRu": "Маффин",
+    "category": "Выпечка",
+    "gi": 55,
+    "gl": 17.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Muffin made with corn flour",
+    "nameRu": "Маффин",
+    "category": "Выпечка",
+    "gi": 74,
+    "gl": 22.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Muffin made with wheat flour",
+    "nameRu": "Маффин",
+    "category": "Выпечка",
+    "gi": 74,
+    "gl": 22.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Muffin made with rice flour",
+    "nameRu": "Маффин",
+    "category": "Выпечка",
+    "gi": 79,
+    "gl": 24.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Muffin, NS #",
+    "nameRu": "Маффин , без уточнения #",
+    "category": "Выпечка",
+    "gi": 63,
+    "gl": 19.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Cranberry Raisin muffin",
+    "nameRu": "Маффин клюква изюм",
+    "category": "Выпечка",
+    "gi": 43,
+    "gl": 13.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Bran muffin (Culinar Inc., Grandma Martin's Muffins, Aurora, Canada) #",
+    "nameRu": "Маффин отруби",
+    "category": "Выпечка",
+    "gi": 60,
+    "gl": 18.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Double chocolate muffin",
+    "nameRu": "Маффин с двойным шоколадом",
+    "category": "Выпечка",
+    "gi": 46,
+    "gl": 14.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Carrot muffin (Culinar Inc., Canada) #",
+    "nameRu": "Маффин с морковью",
+    "category": "Выпечка",
+    "gi": 62,
+    "gl": 19.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Blueberry muffin",
+    "nameRu": "Маффин с черникой",
+    "category": "Выпечка",
+    "gi": 50,
+    "gl": 15.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Blueberry muffin (Culinar Inc., Canada) #",
+    "nameRu": "Маффин с черникой",
+    "category": "Выпечка",
+    "gi": 60,
+    "gl": 18.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Chocolate chip muffin",
+    "nameRu": "Маффин с шоколадной крошкой",
+    "category": "Выпечка",
+    "gi": 52,
+    "gl": 16.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Apple Blueberry muffin",
+    "nameRu": "Маффин яблоко черника",
+    "category": "Выпечка",
+    "gi": 49,
+    "gl": 15.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Carrot cake, prepared with wheat flour and coconut flour",
+    "nameRu": "Морковный кекс, приготовленный из пшеничной муки и кокосовой муки",
+    "category": "Выпечка",
+    "gi": 37,
+    "gl": 11.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Carrot cake, prepared with wheat flour and coconut flour #",
+    "nameRu": "Морковный кекс, приготовленный из пшеничной муки и кокосовой муки #",
+    "category": "Выпечка",
+    "gi": 39,
+    "gl": 12.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, gluten-free, made from packet mix",
+    "nameRu": "Оладьи, без глютена, сделанный из смеси из пакетика",
+    "category": "Выпечка",
+    "gi": 61,
+    "gl": 18.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, buckwheat, gluten-free, made from packet mix",
+    "nameRu": "Оладьи, гречка, без глютена, сделанный из смеси из пакетика",
+    "category": "Выпечка",
+    "gi": 102,
+    "gl": 31.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, prepared from wheat flour",
+    "nameRu": "Оладьи, приготовленный из пшеничной муки",
+    "category": "Выпечка",
+    "gi": 80,
+    "gl": 24.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, prepared from wheat flour and water",
+    "nameRu": "Оладьи, приготовленный из пшеничной муки и вода",
+    "category": "Выпечка",
+    "gi": 61,
+    "gl": 18.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, prepared with wheat flour and coconut flour",
+    "nameRu": "Оладьи, приготовленный из пшеничной муки и кокосовой муки",
+    "category": "Выпечка",
+    "gi": 46,
+    "gl": 14.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, prepared with wheat flour and coconut flour #",
+    "nameRu": "Оладьи, приготовленный из пшеничной муки и кокосовой муки #",
+    "category": "Выпечка",
+    "gi": 51,
+    "gl": 15.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pancakes, millet (100% foxtail millet flour)",
+    "nameRu": "Оладьи, просо (100% foxtail пшённая мука)",
+    "category": "Выпечка",
+    "gi": 76,
+    "gl": 23.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Christmas fruit cake",
+    "nameRu": "Рождественский фруктовый кекс",
+    "category": "Выпечка",
+    "gi": 53,
+    "gl": 16.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Plumcake, prepared with wheat flour and yogurt",
+    "nameRu": "Сливовый кекс, приготовленный из пшеничной муки и йогурта",
+    "category": "Выпечка",
+    "gi": 47,
+    "gl": 14.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pound cake (Sara Lee Canada, Bramalea, Canada) #",
+    "nameRu": "Фунтовый кекс (Sara Lee Canada, Bramalea, Canada) #",
+    "category": "Выпечка",
+    "gi": 55,
+    "gl": 17.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Pound cake 0%",
+    "nameRu": "Фунтовый кекс 0%",
+    "category": "Выпечка",
+    "gi": 38,
+    "gl": 11.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Chocolate cake made from packet mix with chocolate frosting",
+    "nameRu": "Шоколадный торт, сделанный из смеси из пакетика, с шоколадной глазурью",
+    "category": "Выпечка",
+    "gi": 38,
+    "gl": 11.0,
+    "carbs": 30.0
+  },
+  {
+    "name": "Oat biscuit",
+    "nameRu": "Овсяный печенье",
+    "category": "Крекеры",
+    "gi": 46,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Rice cake #",
+    "nameRu": "Рис кекс #",
+    "category": "Крекеры",
+    "gi": 82,
+    "gl": 12.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Buckwheat #",
+    "nameRu": "Гречка #",
+    "category": "Крупы и зерновые",
+    "gi": 50,
+    "gl": 23.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Buckwheat #",
+    "nameRu": "Гречка #",
+    "category": "Крупы и зерновые",
+    "gi": 64,
+    "gl": 29.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Buckwheat powder #",
+    "nameRu": "Гречка порошок #",
+    "category": "Крупы и зерновые",
+    "gi": 54,
+    "gl": 24.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Corn, fresh, boiled #",
+    "nameRu": "Кукуруза, свежий, вареный #",
+    "category": "Крупы и зерновые",
+    "gi": 82,
+    "gl": 37.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Wheat, NS #",
+    "nameRu": "Пшеница, без уточнения #",
+    "category": "Крупы и зерновые",
+    "gi": 63,
+    "gl": 28.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Rice, NDR-97, boiled",
+    "nameRu": "Рис, NDR -97, вареный",
+    "category": "Крупы и зерновые",
+    "gi": 78,
+    "gl": 35.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Rice, PR-113, boiled",
+    "nameRu": "Рис, PR -113, вареный",
+    "category": "Крупы и зерновые",
+    "gi": 77,
+    "gl": 35.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Barley flour, prepared with water and baked #",
+    "nameRu": "Ячменная мука, приготовленный из вода и запечённый #",
+    "category": "Крупы и зерновые",
+    "gi": 70,
+    "gl": 32.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Barley #",
+    "nameRu": "Ячмень #",
+    "category": "Крупы и зерновые",
+    "gi": 22,
+    "gl": 10.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Barley #",
+    "nameRu": "Ячмень #",
+    "category": "Крупы и зерновые",
+    "gi": 28,
+    "gl": 13.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Barley, pot, boiled",
+    "nameRu": "Ячмень, pot, вареный",
+    "category": "Крупы и зерновые",
+    "gi": 35,
+    "gl": 16.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Barley, pot, boiled",
+    "nameRu": "Ячмень, pot, вареный",
+    "category": "Крупы и зерновые",
+    "gi": 33,
+    "gl": 15.0,
+    "carbs": 45.0
+  },
+  {
+    "name": "Yoghurt, NS #",
+    "nameRu": "Йогурт, без уточнения #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 36,
+    "gl": 7.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, vanilla (Healthy Living Light, UK) #",
+    "nameRu": "Йогурт, ваниль (Healthy Living лёгкий, UK) #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 47,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, strawberry",
+    "nameRu": "Йогурт, клубника",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 30,
+    "gl": 6.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, strawberry",
+    "nameRu": "Йогурт, клубника",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 44,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, Strawberry #",
+    "nameRu": "Йогурт, клубника #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 38,
+    "gl": 8.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, Strawberry #",
+    "nameRu": "Йогурт, клубника #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 51,
+    "gl": 10.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, Strawberry (Healthy Living Light, UK) #",
+    "nameRu": "Йогурт, клубника (Healthy Living лёгкий, UK) #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 45,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, strawberry and cream",
+    "nameRu": "Йогурт, клубника и крем",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 41,
+    "gl": 8.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, raspberry",
+    "nameRu": "Йогурт, малина",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 43,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yoghurt, peach &apricot",
+    "nameRu": "Йогурт, персик и абрикос",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 28,
+    "gl": 6.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Low-fat yoghurt, apricot",
+    "nameRu": "Обезжиренный йогурт, абрикос",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 42,
+    "gl": 8.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Low-fat yoghurt, strawberry",
+    "nameRu": "Обезжиренный йогурт, клубника",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 61,
+    "gl": 12.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Low-fat yoghurt, raspberry",
+    "nameRu": "Обезжиренный йогурт, малина",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 34,
+    "gl": 7.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream (half vanilla, half chocolate) #",
+    "nameRu": "Со льдом крем (half ваниль, half шоколад) #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 58,
+    "gl": 12.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream (half vanilla, half chocolate) #",
+    "nameRu": "Со льдом крем (half ваниль, half шоколад) #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 81,
+    "gl": 16.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, NS #",
+    "nameRu": "Со льдом крем, без уточнения #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 36,
+    "gl": 7.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, NS #",
+    "nameRu": "Со льдом крем, без уточнения #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 62,
+    "gl": 12.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, low fat (Light™ Peters, Nestle Australia) #",
+    "nameRu": "Со льдом крем, обезжиренный (лёгкий™ Peters, Nestle Australia) #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 50,
+    "gl": 10.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, low-fat, vanilla, 'Light'",
+    "nameRu": "Со льдом крем, обезжиренный, ваниль, ' лёгкий '",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 46,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, low-fat, Coconut flavor",
+    "nameRu": "Со льдом крем, обезжиренный, кокос вкус",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 39,
+    "gl": 8.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, low-fat, Blueberry Pomegranate flavor",
+    "nameRu": "Со льдом крем, обезжиренный, черника гранат вкус",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 32,
+    "gl": 6.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Ice cream, chocolate flavored #",
+    "nameRu": "Со льдом крем, шоколад со вкусом #",
+    "category": "Молочные продукты и альтернативы",
+    "gi": 68,
+    "gl": 14.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "XLR8®, orange flavor (Softpac Industries Inc., Plymouth, MN, USA) #",
+    "nameRu": "XLR 8®, апельсин вкус (Softpac Industries Inc., Plymouth, MN, USA) #",
+    "category": "Напитки",
+    "gi": 68,
+    "gl": 17.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Ginger beer, carbonated beverage",
+    "nameRu": "Имбирь пиво, газированный напиток",
+    "category": "Напитки",
+    "gi": 65,
+    "gl": 16.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Oat milk",
+    "nameRu": "Овсяное молоко",
+    "category": "Напитки",
+    "gi": 49,
+    "gl": 12.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Beer (4.5% alcohol by volume) (Nikolai Lager)",
+    "nameRu": "Пиво (4.5% алк. по объёму) (Nikolai Lager)",
+    "category": "Напитки",
+    "gi": 119,
+    "gl": 12.0,
+    "carbs": 10.0
+  },
+  {
+    "name": "Beer, non-alcoholic (0.0% alcohol by volume) (Nikolai Lager)",
+    "nameRu": "Пиво, безалкогольное (0.0% алк. по объёму) (Nikolai Lager)",
+    "category": "Напитки",
+    "gi": 80,
+    "gl": 8.0,
+    "carbs": 10.0
+  },
+  {
+    "name": "Smoothie drink, soy, banana, 1% fat",
+    "nameRu": "Смузи, soy, банан, 1% жир",
+    "category": "Напитки",
+    "gi": 30,
+    "gl": 8.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Smoothie, banana",
+    "nameRu": "Смузи, банан",
+    "category": "Напитки",
+    "gi": 30,
+    "gl": 8.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Smoothie, strawberry and banana",
+    "nameRu": "Смузи, клубника и банан",
+    "category": "Напитки",
+    "gi": 39,
+    "gl": 10.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Smoothie, raspberry",
+    "nameRu": "Смузи, малина",
+    "category": "Напитки",
+    "gi": 33,
+    "gl": 8.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Smoothie, mango",
+    "nameRu": "Смузи, манго",
+    "category": "Напитки",
+    "gi": 32,
+    "gl": 8.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Smoothie, mango and passionfruit",
+    "nameRu": "Смузи, манго и маракуйя",
+    "category": "Напитки",
+    "gi": 36,
+    "gl": 9.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Iced Green Tea, 7% lemon juice",
+    "nameRu": "Со льдом зелёный Tea, 7% лимонный сок",
+    "category": "Напитки",
+    "gi": 66,
+    "gl": 17.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Iced lemon tea, lemon juice powder 0.2%",
+    "nameRu": "Со льдом лимон tea, лимонный сок порошок 0.2%",
+    "category": "Напитки",
+    "gi": 72,
+    "gl": 18.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Iced peach tea, 9.5% peach juice",
+    "nameRu": "Со льдом персик tea, 9.5% персиковый сок",
+    "category": "Напитки",
+    "gi": 71,
+    "gl": 18.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Soy beverage (Grupo Leche Pascual, Aranda de Duero, Spain)8 #",
+    "nameRu": "Соевый напиток (Grupo Leche Pascual, Aranda de Duero, Spain) 8 #",
+    "category": "Напитки",
+    "gi": 17,
+    "gl": 4.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Fruit flavored beverage",
+    "nameRu": "Фруктовый напиток",
+    "category": "Напитки",
+    "gi": 67,
+    "gl": 17.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Fruit drink, increased GI variant (containing 8% sucrose)",
+    "nameRu": "Фруктовый напиток, вариант с повышенным ГИ (содержащий 8% сахароза)",
+    "category": "Напитки",
+    "gi": 86,
+    "gl": 22.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Fruit drink, decreased GI variant (containing 8% isomaltose)",
+    "nameRu": "Фруктовый напиток, вариант с пониженным ГИ (содержащий 8% isomaltose)",
+    "category": "Напитки",
+    "gi": 48,
+    "gl": 12.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Pea, green (Pisum Sativum) #",
+    "nameRu": "Pea, зелёный (Pisum Sativum) #",
+    "category": "Овощи",
+    "gi": 54,
+    "gl": 5.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Yam (Dioscorea spp.), boiled #",
+    "nameRu": "Yam (Dioscorea spp.), вареный #",
+    "category": "Овощи",
+    "gi": 74,
+    "gl": 15.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Green banana, boiled #",
+    "nameRu": "Зелёный банан, вареный #",
+    "category": "Овощи",
+    "gi": 38,
+    "gl": 8.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Corn, fresh, boiled #",
+    "nameRu": "Кукуруза, свежий, вареный #",
+    "category": "Овощи",
+    "gi": 82,
+    "gl": 16.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Sweet corn",
+    "nameRu": "Сладкий кукуруза",
+    "category": "Овощи",
+    "gi": 55,
+    "gl": 11.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Gingerbread cookies",
+    "nameRu": "Имбирный пряник",
+    "category": "Печенье",
+    "gi": 66,
+    "gl": 13.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Oat biscuit",
+    "nameRu": "Овсяный печенье",
+    "category": "Печенье",
+    "gi": 45,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Oat biscuit",
+    "nameRu": "Овсяный печенье",
+    "category": "Печенье",
+    "gi": 55,
+    "gl": 11.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Biscuit, NS",
+    "nameRu": "Печенье, без уточнения",
+    "category": "Печенье",
+    "gi": 72,
+    "gl": 14.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Biscuit, NS #",
+    "nameRu": "Печенье, без уточнения #",
+    "category": "Печенье",
+    "gi": 70,
+    "gl": 14.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Biscuit, made from wheat flour, flavored with ginger #",
+    "nameRu": "Печенье, сделанный из пшеничной муки, со вкусом с имбирь #",
+    "category": "Печенье",
+    "gi": 60,
+    "gl": 12.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Biscuit, wholegrain",
+    "nameRu": "Печенье, цельнозерновой",
+    "category": "Печенье",
+    "gi": 54,
+    "gl": 11.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Sweet biscuit",
+    "nameRu": "Сладкий печенье",
+    "category": "Печенье",
+    "gi": 47,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Sweet biscuit",
+    "nameRu": "Сладкий печенье",
+    "category": "Печенье",
+    "gi": 63,
+    "gl": 13.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Bun",
+    "nameRu": "Булочка",
+    "category": "Региональные/традиционные блюда",
+    "gi": 82,
+    "gl": 29.0,
+    "carbs": 50.0
+  },
+  {
+    "name": "Honey, NS",
+    "nameRu": "Мёд, без уточнения",
+    "category": "Сахара и сиропы",
+    "gi": 74,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Honey, NS #",
+    "nameRu": "Мёд, без уточнения #",
+    "category": "Сахара и сиропы",
+    "gi": 61,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Honey, NS #",
+    "nameRu": "Мёд, без уточнения #",
+    "category": "Сахара и сиропы",
+    "gi": 87,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose",
+    "nameRu": "Сахароза",
+    "category": "Сахара и сиропы",
+    "gi": 59,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose",
+    "nameRu": "Сахароза",
+    "category": "Сахара и сиропы",
+    "gi": 61,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose",
+    "nameRu": "Сахароза",
+    "category": "Сахара и сиропы",
+    "gi": 64,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose",
+    "nameRu": "Сахароза",
+    "category": "Сахара и сиропы",
+    "gi": 66,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose",
+    "nameRu": "Сахароза",
+    "category": "Сахара и сиропы",
+    "gi": 84,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 59,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 60,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 62,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 68,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 68,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 69,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 74,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 78,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 81,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 82,
+    "gl": 4.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 94,
+    "gl": 5.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose #",
+    "nameRu": "Сахароза #",
+    "category": "Сахара и сиропы",
+    "gi": 110,
+    "gl": 6.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose (Sigma Chemical Company, USA) #",
+    "nameRu": "Сахароза (Sigma Chemical Company, USA) #",
+    "category": "Сахара и сиропы",
+    "gi": 59,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Sucrose8 #",
+    "nameRu": "Сахароза 8 #",
+    "category": "Сахара и сиропы",
+    "gi": 58,
+    "gl": 3.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose",
+    "nameRu": "Фруктоза",
+    "category": "Сахара и сиропы",
+    "gi": 23,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose #",
+    "nameRu": "Фруктоза #",
+    "category": "Сахара и сиропы",
+    "gi": 20,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose #",
+    "nameRu": "Фруктоза #",
+    "category": "Сахара и сиропы",
+    "gi": 21,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose (Sigma Chemical Company, St. Louis, MO, USA) #",
+    "nameRu": "Фруктоза (Sigma Chemical Company, St. Louis, MO, USA) #",
+    "category": "Сахара и сиропы",
+    "gi": 24,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose (Sweeten Less, Canada) #",
+    "nameRu": "Фруктоза (Sweeten Less, Canada) #",
+    "category": "Сахара и сиропы",
+    "gi": 12,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose (Sweeten Less, Maximum Nutrition Inc., Toronto, Canada) #",
+    "nameRu": "Фруктоза (Sweeten Less, Maximum Nutrition Inc., Toronto, Canada) #",
+    "category": "Сахара и сиропы",
+    "gi": 11,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Fructose from corn",
+    "nameRu": "Фруктоза из кукуруза",
+    "category": "Сахара и сиропы",
+    "gi": 25,
+    "gl": 1.0,
+    "carbs": 5.0
+  },
+  {
+    "name": "Apricot and Almond bar",
+    "nameRu": "Абрикос и миндаль bar",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 34,
+    "gl": 9.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Almond Chocolate",
+    "nameRu": "Миндаль шоколад",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 24,
+    "gl": 6.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Milk chocolate egg",
+    "nameRu": "Молоко шоколад egg",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 48,
+    "gl": 12.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Chocolate, NS",
+    "nameRu": "Шоколад, без уточнения",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 49,
+    "gl": 12.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Chocolate, milk",
+    "nameRu": "Шоколад, молоко",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 54,
+    "gl": 14.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Chocolate, milk",
+    "nameRu": "Шоколад, молоко",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 42,
+    "gl": 11.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "Chocolate, milk (Cadbury's Confectionery, Ringwood, Australia) #",
+    "nameRu": "Шоколад, молоко (Cadbury's Confectionery, Ringwood, Australia) #",
+    "category": "Снеки и кондитерские изделия",
+    "gi": 49,
+    "gl": 12.0,
+    "carbs": 25.0
+  },
+  {
+    "name": "All-Bran™ (Kellogg's Inc., Canada) #",
+    "nameRu": "Все -отруби™ (Kellogg's Inc., Canada) #",
+    "category": "Сухие завтраки",
+    "gi": 51,
+    "gl": 10.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "All-Bran™ (Kellogg's Inc., South Korea) #",
+    "nameRu": "Все -отруби™ (Kellogg's Inc., South Korea) #",
+    "category": "Сухие завтраки",
+    "gi": 51,
+    "gl": 10.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "All-Bran™ (Kellogg's, Battle Creek, MI, USA) #",
+    "nameRu": "Все -отруби™ (Kellogg's, Battle Creek, MI, USA) #",
+    "category": "Сухие завтраки",
+    "gi": 38,
+    "gl": 8.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "All-Bran™ (Kellogg's, Battle Creek, MI, USA) #",
+    "nameRu": "Все -отруби™ (Kellogg's, Battle Creek, MI, USA) #",
+    "category": "Сухие завтраки",
+    "gi": 55,
+    "gl": 11.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Sultana Bran (Healthy Living, UK) #",
+    "nameRu": "Изюм отруби (Healthy Living, UK) #",
+    "category": "Сухие завтраки",
+    "gi": 90,
+    "gl": 18.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Raisin Bran™",
+    "nameRu": "Изюм отруби™",
+    "category": "Сухие завтраки",
+    "gi": 61,
+    "gl": 12.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Sultana Bran™",
+    "nameRu": "Изюм отруби™",
+    "category": "Сухие завтраки",
+    "gi": 64,
+    "gl": 13.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Cream of Wheat™ (Nabisco Brands Ltd., Canada) #",
+    "nameRu": "Крем of пшеница™ (Nabisco Brands Ltd., Canada) #",
+    "category": "Сухие завтраки",
+    "gi": 67,
+    "gl": 13.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Corn Bran™ (Quaker Oats Co. of Canada, Peterborough, Canada) #",
+    "nameRu": "Кукуруза отруби™ (Quaker Oats Co. of Canada, Peterborough, Canada) #",
+    "category": "Сухие завтраки",
+    "gi": 76,
+    "gl": 15.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Oat bran, raw #",
+    "nameRu": "Овсяный отруби, сырой #",
+    "category": "Сухие завтраки",
+    "gi": 60,
+    "gl": 12.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Oat bran, raw (Quaker Oats Co., Canada) #",
+    "nameRu": "Овсяный отруби, сырой (Quaker Oats Co., Canada) #",
+    "category": "Сухие завтраки",
+    "gi": 51,
+    "gl": 10.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "POM Pomegranate juice",
+    "nameRu": "POM гранат сок",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 53,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apricot jam",
+    "nameRu": "Абрикос джем",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 69,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Orange marmalade",
+    "nameRu": "Апельсин мармелад",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 48,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Orange juice",
+    "nameRu": "Апельсиновый сок",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 41,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Orange juice #",
+    "nameRu": "Апельсиновый сок #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 46,
+    "gl": 9.0,
+    "carbs": 20.0
+  },
+  {
+    "name": "Banana  #",
+    "nameRu": "Банан #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 62,
+    "gl": 9.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana (Musa paradisiaca) #",
+    "nameRu": "Банан (Musa paradisiaca) #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 44,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 35,
+    "gl": 5.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 41,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 47,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 49,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 59,
+    "gl": 9.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 59,
+    "gl": 9.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, NS #",
+    "nameRu": "Банан, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 70,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Banana, raw",
+    "nameRu": "Банан, сырой",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 47,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Pear, dried #",
+    "nameRu": "Груша, сушёный #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 43,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Pear, raw, NS #",
+    "nameRu": "Груша, сырой, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 33,
+    "gl": 5.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Pear, raw, NS #",
+    "nameRu": "Груша, сырой, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 43,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Ginger marmalade, Original",
+    "nameRu": "Имбирь мармелад, классический",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 50,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Strawberry jam",
+    "nameRu": "Клубника джем",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 51,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Strawberry jam, containing apple juice #",
+    "nameRu": "Клубника джем, содержащий яблоко сок #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 47,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Strawberries, fresh, raw",
+    "nameRu": "Клубника, свежий, сырой",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 40,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Mango (Magnifera inidica) #",
+    "nameRu": "Манго (Magnifera inidica) #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 34,
+    "gl": 5.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Mango, raw (Chin-Hwang Mango)",
+    "nameRu": "Манго, сырой (Chin -Hwang манго)",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 48,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Peach (Prunus persica)",
+    "nameRu": "Персик (Prunus persica)",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 76,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Peach, dried #",
+    "nameRu": "Персик, сушёный #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 35,
+    "gl": 5.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Peach, raw #",
+    "nameRu": "Персик, сырой #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 28,
+    "gl": 4.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Peach, raw #",
+    "nameRu": "Персик, сырой #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 57,
+    "gl": 9.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Plum, NS #",
+    "nameRu": "Слива, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 24,
+    "gl": 4.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Plum, NS #",
+    "nameRu": "Слива, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 53,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Blueberries (sour cherry), raw #",
+    "nameRu": "Черника (sour cherry), сырой #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 28,
+    "gl": 4.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple juice, green apple (100%)",
+    "nameRu": "Яблоко сок, зелёный яблоко (100%)",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 67,
+    "gl": 13.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, NS #",
+    "nameRu": "Яблоко, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 28,
+    "gl": 4.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, NS #",
+    "nameRu": "Яблоко, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 41,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, NS #",
+    "nameRu": "Яблоко, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 34,
+    "gl": 5.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, NS #",
+    "nameRu": "Яблоко, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 40,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, NS #",
+    "nameRu": "Яблоко, без уточнения #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 45,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, Green, raw #",
+    "nameRu": "Яблоко, зелёный, сырой #",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 41,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Apple, dried",
+    "nameRu": "Яблоко, сушёный",
+    "category": "Фрукты и продукты из фруктов",
+    "gi": 29,
+    "gl": 4.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "45% oat bran and 50% wheat flour bread #",
+    "nameRu": "45% овсяный отруби и 50% пшеничная мука хлеб #",
+    "category": "Хлеб",
+    "gi": 51,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "50% oat bran and 50% wheat flour bread #",
+    "nameRu": "50% овсяный отруби и 50% пшеничная мука хлеб #",
+    "category": "Хлеб",
+    "gi": 45,
+    "gl": 7.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Soy &Linseed bread",
+    "nameRu": "Soy и лён хлеб",
+    "category": "Хлеб",
+    "gi": 56,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Soy flour bread",
+    "nameRu": "Soy мука хлеб",
+    "category": "Хлеб",
+    "gi": 40,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Gluten free bread (rice flour and potato starch) #",
+    "nameRu": "Без глютена хлеб (рисовая мука и potato starch) #",
+    "category": "Хлеб",
+    "gi": 71,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "White wheat bread",
+    "nameRu": "Белая пшеница хлеб",
+    "category": "Хлеб",
+    "gi": 51,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Buckwheat bread #",
+    "nameRu": "Гречка хлеб #",
+    "category": "Хлеб",
+    "gi": 67,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Light rye (Silverstein's Bakery, Toronto, Canada) #",
+    "nameRu": "Лёгкий рожь (Silverstein's Bakery, Toronto, Canada) #",
+    "category": "Хлеб",
+    "gi": 69,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Linseed rye bread (Rudolph's Specialty Bakery Ltd., Toronto, Canada) #",
+    "nameRu": "Лён рожь хлеб (Rudolph's Specialty Bakery Ltd., Toronto, Canada) #",
+    "category": "Хлеб",
+    "gi": 55,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Oat and buckwheat bread #",
+    "nameRu": "Овсяный и гречка хлеб #",
+    "category": "Хлеб",
+    "gi": 58,
+    "gl": 9.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Oat bread #",
+    "nameRu": "Овсяный хлеб #",
+    "category": "Хлеб",
+    "gi": 32,
+    "gl": 5.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wheat bread",
+    "nameRu": "Пшеница хлеб",
+    "category": "Хлеб",
+    "gi": 84,
+    "gl": 13.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Rice bread #",
+    "nameRu": "Рис хлеб #",
+    "category": "Хлеб",
+    "gi": 73,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Rye bread #",
+    "nameRu": "Рожь хлеб #",
+    "category": "Хлеб",
+    "gi": 65,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Rye bread (50% rye flour + 50% wheat flour) #",
+    "nameRu": "Рожь хлеб (50% рожь мука + 50% пшеничная мука) #",
+    "category": "Хлеб",
+    "gi": 51,
+    "gl": 8.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Bread, increased GI variant (sugar-to-flour ratio: 0.24)",
+    "nameRu": "Хлеб, вариант с повышенным ГИ (соотношение сахара к муке: 0.24)",
+    "category": "Хлеб",
+    "gi": 69,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Bread, decreased GI variant (sugar-to-flour ratio: 0.0)",
+    "nameRu": "Хлеб, вариант с пониженным ГИ (соотношение сахара к муке: 0.0)",
+    "category": "Хлеб",
+    "gi": 40,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal flour bread",
+    "nameRu": "Цельнозерновой мука хлеб",
+    "category": "Хлеб",
+    "gi": 69,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal flour bread",
+    "nameRu": "Цельнозерновой мука хлеб",
+    "category": "Хлеб",
+    "gi": 75,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal flour bread #",
+    "nameRu": "Цельнозерновой мука хлеб #",
+    "category": "Хлеб",
+    "gi": 72,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal wheat flour bread",
+    "nameRu": "Цельнозерновой пшеничная мука хлеб",
+    "category": "Хлеб",
+    "gi": 70,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal rye bread #",
+    "nameRu": "Цельнозерновой рожь хлеб #",
+    "category": "Хлеб",
+    "gi": 42,
+    "gl": 6.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal rye bread #",
+    "nameRu": "Цельнозерновой рожь хлеб #",
+    "category": "Хлеб",
+    "gi": 64,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal rye bread #",
+    "nameRu": "Цельнозерновой рожь хлеб #",
+    "category": "Хлеб",
+    "gi": 67,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 75,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 65,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 66,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 67,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 68,
+    "gl": 10.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 70,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 70,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 72,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 75,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread #",
+    "nameRu": "Цельнозерновой хлеб #",
+    "category": "Хлеб",
+    "gi": 88,
+    "gl": 13.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread (Barilla G.eR. Fratelli S.p.A., Parma, Italy) #",
+    "nameRu": "Цельнозерновой хлеб (Barilla G. eR. Fratelli S. p. A., Parma, Italy) #",
+    "category": "Хлеб",
+    "gi": 75,
+    "gl": 11.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread (Tip Top Bakeries, Australia) #",
+    "nameRu": "Цельнозерновой хлеб (Tip Top Bakeries, Australia) #",
+    "category": "Хлеб",
+    "gi": 77,
+    "gl": 12.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Wholemeal bread (Tip Top Bakeries, Australia) #",
+    "nameRu": "Цельнозерновой хлеб (Tip Top Bakeries, Australia) #",
+    "category": "Хлеб",
+    "gi": 78,
+    "gl": 12.0,
+    "carbs": 15.0
+  },
+  {
+    "name": "Barley flour bread, 100% barley flour #",
+    "nameRu": "Ячменная мука хлеб, 100% ячменная мука #",
+    "category": "Хлеб",
+    "gi": 68,
+    "gl": 10.0,
+    "carbs": 15.0
+  }
+]
