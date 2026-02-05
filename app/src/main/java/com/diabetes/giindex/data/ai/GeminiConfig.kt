@@ -3,7 +3,9 @@ package com.diabetes.giindex.data.ai
 object GeminiConfig {
     // Google Gemini API ключ
     // Бесплатный лимит: 60 запросов/минуту, 1500 запросов/день
-    const val API_KEY = "AIzaSyB6meIMD5DWTEOWeVcLfOg2scKz016bZyM"
+    // ВАЖНО: Получите свой API ключ на https://aistudio.google.com/app/apikey
+    // Никогда не коммитьте реальный ключ в Git!
+    const val API_KEY = "YOUR_GEMINI_API_KEY_HERE"
     
     // Примечание: Для production приложения рекомендуется:
     // 1. Хранить ключ в BuildConfig или через Firebase Remote Config

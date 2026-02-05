@@ -109,3 +109,8 @@ Thumbs.db
 *~
 *.swp
 *.bak
+
+# API Keys and secrets
+keystore.properties
+**/GeminiConfig.kt
+local_api_keys.properties
