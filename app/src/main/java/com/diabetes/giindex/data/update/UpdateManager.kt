@@ -11,8 +11,11 @@ import android.os.Environment
 import android.util.Log
 import androidx.core.content.FileProvider
 import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.isActive
+import kotlinx.coroutines.launch
 import java.io.File
 
 class UpdateManager(private val context: Context) {
@@ -42,6 +45,42 @@ class UpdateManager(private val context: Context) {
             Log.d(TAG, "Download started with ID: $downloadId")
             
             trySend(DownloadStatus.Downloading(0))
+            
+            // Запускаем корутину для отслеживания прогресса
+            val progressJob = launch {
+                while (isActive) {
+                    try {
+                        val query = DownloadManager.Query().setFilterById(downloadId)
+                        val cursor = downloadManager.query(query)
+                        
+                        if (cursor.moveToFirst()) {
+                            val bytesDownloadedIndex = cursor.getColumnIndex(DownloadManager.COLUMN_BYTES_DOWNLOADED_SO_FAR)
+                            val bytesTotalIndex = cursor.getColumnIndex(DownloadManager.COLUMN_TOTAL_SIZE_BYTES)
+                            val statusIndex = cursor.getColumnIndex(DownloadManager.COLUMN_STATUS)
+                            
+                            val bytesDownloaded = cursor.getLong(bytesDownloadedIndex)
+                            val bytesTotal = cursor.getLong(bytesTotalIndex)
+                            val status = cursor.getInt(statusIndex)
+                            
+                            if (bytesTotal > 0) {
+                                val progress = ((bytesDownloaded * 100) / bytesTotal).toInt()
+                                Log.d(TAG, "Download progress: $progress% ($bytesDownloaded / $bytesTotal)")
+                                trySend(DownloadStatus.Downloading(progress))
+                            }
+                            
+                            // Если загрузка завершена или провалилась, выходим из цикла
+                            if (status == DownloadManager.STATUS_SUCCESSFUL || 
+                                status == DownloadManager.STATUS_FAILED) {
+                                break
+                            }
+                        }
+                        cursor.close()
+                        delay(500) // Проверяем каждые 500мс
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error checking download progress", e)
+                    }
+                }
+            }
             
             val receiver = object : BroadcastReceiver() {
                 override fun onReceive(context: Context, intent: Intent) {
@@ -88,6 +127,7 @@ class UpdateManager(private val context: Context) {
             
             awaitClose {
                 try {
+                    progressJob.cancel()
                     context.unregisterReceiver(receiver)
                 } catch (e: Exception) {
                     Log.e(TAG, "Error unregistering receiver", e)
