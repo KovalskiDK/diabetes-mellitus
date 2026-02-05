@@ -13,6 +13,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.diabetes.giindex.data.update.UpdateService
+import com.diabetes.giindex.data.update.UpdateManager
+import com.diabetes.giindex.data.update.DownloadStatus
+import com.diabetes.giindex.ui.components.*
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -42,9 +47,29 @@ fun SettingsScreen(
         ) {
             SettingsSection(title = "Данные") {
                 SettingsItem(
-                    title = "Источники данных",
+                    title = "Источники данных ГИ",
                     subtitle = "Управление источниками ГИ",
                     onClick = onSourcesClick
+                )
+                SettingsItem(
+                    title = "Очистить кэш",
+                    subtitle = "Удалить все кэшированные данные (изображения, AI-анализы)",
+                    onClick = {
+                        try {
+                            context.cacheDir.deleteRecursively()
+                            android.widget.Toast.makeText(
+                                context,
+                                "Кэш успешно очищен",
+                                android.widget.Toast.LENGTH_SHORT
+                            ).show()
+                        } catch (e: Exception) {
+                            android.widget.Toast.makeText(
+                                context,
+                                "Ошибка при очистке кэша: ${e.message}",
+                                android.widget.Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
                 )
             }
             
@@ -53,9 +78,12 @@ fun SettingsScreen(
             SettingsSection(title = "О приложении") {
                 SettingsItem(
                     title = "Версия",
-                    subtitle = "1.5.5",
+                    subtitle = "1.9.0",
                     onClick = { }
                 )
+                
+                UpdateCheckSection()
+                
                 SettingsItem(
                     title = "GitHub",
                     subtitle = "github.com/KovalskiDK/diabetes-mellitus",

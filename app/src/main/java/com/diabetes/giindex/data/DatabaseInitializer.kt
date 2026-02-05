@@ -62,11 +62,11 @@ object DatabaseInitializer {
                 Log.d("DatabaseInitializer", "Creating default data sources")
             val defaultSources = listOf(
                 DataSource(
-                    name = "GI Foundation (Sydney)",
-                    url = "https://raw.githubusercontent.com/KovalskiDK/diabetes-mellitus/main/gi-database.json",
+                    name = "Популярные продукты",
+                    url = "https://raw.githubusercontent.com/KovalskiDK/diabetes-mellitus/main/gi-popular-products.json",
                     type = SourceType.JSON,
                     version = "1.0",
-                    description = "Официальная база данных гликемических индексов Сиднейского университета",
+                    description = "База популярных продуктов с гликемическим индексом",
                     isActive = true,
                     priority = 100
                 )
