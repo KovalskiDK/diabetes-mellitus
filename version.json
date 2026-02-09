@@ -1,7 +1,7 @@
 {
   "versionCode": 49,
   "versionName": "1.9.9.0",
-  "downloadUrl": "https://github.com/KovalskiDK/diabetes-mellitus/releases/download/v1.9.9.0/app-debug.apk",
+  "downloadUrl": "https://github.com/KovalskiDK/diabetes-mellitus/releases/download/v1.9.9.0/GI_Index_v1.9.9.0.apk",
   "releaseNotes": "AI-поиск продуктов:\n- Поиск продуктов через искусственный интеллект\n- Автоматическое кэширование найденных продуктов\n- Полная информация: ГИ, углеводы, рекомендации и советы\n- Интеграция с фильтрами и категориями\n- Возможность добавления в избранное\n- Кнопка 'Очистить кэш' теперь удаляет и AI-продукты",
   "mandatory": false,
   "minSupportedVersion": 1,
